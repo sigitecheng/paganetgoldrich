@@ -4,6 +4,6 @@
 
     <script src="assets/css/fe_css/js/flickity.pkgd.min.js"></script>
 
-    <script src="assets/css/fe_css/js/main.js"></script>
+    <script src="assets/css/fe_css/main.js"></script>
 </body>
 </html>
