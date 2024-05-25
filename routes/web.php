@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-Route::resource('/', ProgrammakangratisController::class);
+// Route::resource('/', ProgrammakangratisController::class);
 
 // Route::get('/', function () {
 //     return view('welcome');
