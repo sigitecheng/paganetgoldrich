@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-// Route::resource('/', ProgrammakangratisController::class);
+Route::resource('/', ProgrammakangratisController::class);
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -54,23 +54,6 @@ Route::get('/masuk', function () {
 //     ]);
 
 // })->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-require __DIR__.'/auth.php';
-// -------------------------------------------------------
-Route::get('/error', function () {
-    return view('404',[
-        'title' => '404',
-        // 'title_halaman' => 'Halaman Dashboard',
-
-    ]);
-})->middleware(['auth', 'verified'])->name('dashboard');
-
 
 
 // ----------------------------------------------------
