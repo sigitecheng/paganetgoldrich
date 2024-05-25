@@ -66,17 +66,18 @@
 
                             <a href="details.html" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
-                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden;">
+                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
                                         <img src="https://picsum.photos/200/300/?fish" class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
+                                    
                                     <div class="flex flex-col gap-1">
                                         <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Cileunyi, Bandung</p>
                                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s;" class="badge">
+                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
                                                 Donasi
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -85,17 +86,18 @@
                             
                             <a href="details.html" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
-                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden;">
-                                        <img src="https://picsum.photos/200/300/?cileunyi" class="w-full h-full object-cover" alt="thumbnail">
+                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
+                                        <img src="https://picsum.photos/200/300/?bandng" class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
+                                    
                                     <div class="flex flex-col gap-1">
                                         <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Kopo, Bandung</p>
                                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s;" class="badge">
+                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
                                                 Donasi
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -104,17 +106,18 @@
                             
                             <a href="details.html" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
-                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden;">
-                                        <img src="https://picsum.photos/200/300/?kopo" class="w-full h-full object-cover" alt="thumbnail">
+                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
+                                        <img src="https://picsum.photos/200/300/?jakarta" class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
+                                    
                                     <div class="flex flex-col gap-1">
                                         <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Lembang, Kab Bandung</p>
                                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s;" class="badge">
+                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
                                                 Donasi
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -122,17 +125,19 @@
                             
                             <a href="details.html" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
-                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden;">
-                                        <img src="https://picsum.photos/200/300/?stasiun" class="w-full h-full object-cover" alt="thumbnail">
+                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
+                                        <img src="https://picsum.photos/200/300/?surabaya" class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
+                                    
                                     <div class="flex flex-col gap-1">
                                         <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Stasiun Bandung, Bandung</p>
                                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s;" class="badge">
+                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
                                                 Donasi
-                                              </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -144,10 +149,13 @@
                     </div>
                 </div>
             </div>
-            <div style="margin-top: 0.5rem; margin-bottom: 2rem;">
-                <button style="padding: 6px 12px; border-radius: 9999px; background-color: silver; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s; border: none;">
-                  Donasi
-                </button>
+            <div style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                <div style="text-align: center;">
+                    <button style="padding: 8px 12px; border-radius: 9999px; background-color: silver; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s; border: none;">
+                        Donasi
+                    </button>
+                </div>
+                
               </div>
               
         </div>
@@ -157,7 +165,7 @@
 
         <div id="best-choices" class="mt-8 -mb-6">
             <div class="px-4 flex justify-between items-center">
-                <h2 class="font-bold text-lg">HaiuCare Indonesia <br>Penggalangan Dana Untuk Sesama</h2>
+                <h2 class="font-bold text-sm">HaiuCare Indonesia <br>Penggalangan Dana Untuk Sesama</h2>
                 <a href="" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                     Daftar Mitra
                   </a>
@@ -238,7 +246,7 @@
         {{-- ===================================================================================================== --}}
 
         <div class="px-4 flex justify-between items-center mb-4">
-            <h2 class="font-bold text-lg">Program <br>Makan Gratis</h2>
+            <h2 class="font-bold text-sm">Program <br>Makan Gratis</h2>
             <a href="" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                 Ajukan Lokasi
               </a>
@@ -295,7 +303,7 @@
                       </a>
                       <a href="" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s;">
                         <img src="assets/css/fe_css/images/icons/distribusi.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
-                        Alur Distribusi
+                         Distribusi
                       </a>
                       <a href="" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s;">
                         <img src="assets/css/fe_css/images/icons/star.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
@@ -320,32 +328,8 @@
                 </div>
             </div>
             @include('fe_dashboard.menu.menufooter')
-            @include('fe_dashboard.menu.android')
+            {{-- @include('fe_dashboard.menu.android') --}}
         
-
-        {{-- <div id="menu" class="max-w-[341px] w-full fixed bottom-[20px] p-3 flex items-center justify-between rounded-[30px] bg-[#1E2037] transform -translate-x-1/2 left-1/2">
-            <a href="" class="p-[14px_16px] flex items-center gap-[6px] rounded-full bg-[#FF7815]">
-                <div class="flex shrink-0">
-                    <img src="assets/images/icons/heart.svg" alt="icon">
-                </div>
-                <span class="font-semibold text-sm text-white">Discover</span>
-            </a>
-            <a href="" class="flex items-center justify-center w-[56px] h-[52px] p-[14px_16px]">
-                <div class="flex shrink-0 w-6 h-6 overflow-hidden">
-                    <img src="assets/images/icons/crown.svg" alt="icon">
-                </div>
-            </a>
-            <a href="" class="flex items-center justify-center w-[56px] h-[52px] p-[14px_16px]">
-                <div class="flex shrink-0 w-6 h-6 overflow-hidden">
-                    <img src="assets/images/icons/3dcube.svg" alt="icon">
-                </div>
-            </a>
-            <a href="" class="flex items-center justify-center w-[56px] h-[52px] p-[14px_16px]">
-                <div class="flex shrink-0 w-6 h-6 overflow-hidden">
-                    <img src="assets/images/icons/setting-2.svg" alt="icon">
-                </div>
-            </a>
-        </div> --}}
 
     </section>
     
