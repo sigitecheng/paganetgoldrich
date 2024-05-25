@@ -83,7 +83,7 @@
                                 </div>
                             </a>
                             
-                            
+                            <br>
                             <a href="details.html" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
@@ -103,7 +103,7 @@
                                 </div>
                             </a>
                             
-                            
+                            <br>
                             <a href="details.html" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
@@ -122,6 +122,8 @@
                                     </div>
                                 </div>
                             </a>
+
+                            <br>
                             
                             <a href="details.html" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
