@@ -36,7 +36,7 @@
             <div class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl bg-white" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(190, 192, 206)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden" style="margin-right: 15px;">
-                        <img src="https://picsum.photos/200/300/?{{ $data->gambar}}" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="{{ $data->gambar}}" class="w-full h-full object-cover" alt="{{ $data->gambar }}">
                     </div>
                     <div class="flex flex-col gap-1">
                         {{-- <p class="font-bold text-blue-800 border-spacing-2" style="font-size: 14px; color : blue; ">{{ $data->kota }}, Kota Bandung, Jawa Barat</p> --}}

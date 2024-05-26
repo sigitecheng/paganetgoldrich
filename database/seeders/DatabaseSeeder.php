@@ -17,9 +17,31 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         
         // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+            //     'name' => 'Test User',
+            //     'email' => 'test@example.com',
+            // ]);
+            
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg1.jpeg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg2.jpeg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg3.jpeg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg4.jpg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg5.jpeg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg6.jpeg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg7.jpg',
+        ]);
 
         Tentangkami::factory()->create([
             'nama_perusahaan' => 'PT. HaiuCare Bangun Indonesia',
@@ -41,7 +63,7 @@ class DatabaseSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-         Daftarmitrarumahmakann::factory(7)->create();
+        //  Daftarmitrarumahmakann::factory(7)->create();
     
     }
 }
