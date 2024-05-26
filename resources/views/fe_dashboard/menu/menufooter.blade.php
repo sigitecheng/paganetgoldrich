@@ -14,11 +14,36 @@
         </a>
     </div>
 
-    <div class="main-carousel mt-[50px] ml-[100px]" style="display: flex; margin-top: 50px; margin-left: 100px;">
+    <div class="main-carousel mt-[50px] ml-[100px]" style="display: flex; margin-top: 50px; margin-left: 15px;">
         
         <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
             <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                <img src="assets/css/fe_css/images/icons/facebook.svg" alt="icon" style="width: 40px; height: 40px; flex-shrink: 0;">
+                <img src="assets/css/fe_css/images/icons/facebook.svg" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+            </div>
+        </div>
+        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                <img src="assets/css/fe_css/images/icons/email.svg" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+            </div>
+        </div>
+        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                <img src="assets/css/fe_css/images/icons/youtube.svg" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+            </div>
+        </div>
+        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                <img src="assets/css/fe_css/images/icons/tiktok.svg" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+            </div>
+        </div>
+        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                <img src="assets/css/fe_css/images/icons/twitter.svg" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+            </div>
+        </div>
+        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                <img src="assets/css/fe_css/images/icons/instagram.svg" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
             </div>
         </div>
 
