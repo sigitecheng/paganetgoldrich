@@ -71,7 +71,7 @@
                                     </div>
                                     
                                     <div class="flex flex-col gap-1">
-                                        <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Cileunyi, Bandung</p>
+                                        <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Cileunyi, Bandung</p>
                                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
@@ -91,7 +91,7 @@
                                     </div>
                                     
                                     <div class="flex flex-col gap-1">
-                                        <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Kopo, Bandung</p>
+                                        <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Kopo, Bandung</p>
                                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
@@ -110,7 +110,7 @@
                                     </div>
                                     
                                     <div class="flex flex-col gap-1">
-                                        <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Lembang, Kab Bandung</p>
+                                        <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Lembang, Kab Bandung</p>
                                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
@@ -129,7 +129,7 @@
                                     </div>
                                     
                                     <div class="flex flex-col gap-1">
-                                        <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Stasiun Bandung, Bandung</p>
+                                        <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Stasiun Bandung, Bandung</p>
                                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
@@ -165,7 +165,7 @@
         <div id="best-choices" class="mt-8 -mb-6">
             <div class="px-4 flex justify-between items-center">
                 <h2 class="font-bold text-sm">HaiuCare Indonesia <br>Penggalangan Dana Untuk Sesama</h2>
-                <a href="" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
+                <a href="" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                     Daftar Mitra
                   </a>
                   
@@ -181,7 +181,7 @@
                                 <img src="https://picsum.photos/200/300/?kopo" class="w-full h-full object-cover" alt="thumbnail">
                             </div>
                             <div class="flex flex-col gap-[6px]">
-                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none">Makan Gratis Cileunyi, Bandung</a>
+                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Cileunyi, Bandung</a>
                                 <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                             </div>
                             <progress id="fund" value="32" max="100" class="w-full h-[6px] rounded-full overflow-hidden"></progress>
@@ -196,7 +196,7 @@
                                 <img src="https://picsum.photos/200/300/?gratis" class="w-full h-full object-cover" alt="thumbnail">
                             </div>
                             <div class="flex flex-col gap-[6px]">
-                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none">Makan Gratis Kopo, Bandung</a>
+                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Kopo, Bandung</a>
                                 <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                             </div>
                             <progress id="fund" value="32" max="100" class="w-full h-[6px] rounded-full overflow-hidden"></progress>
@@ -211,7 +211,7 @@
                                 <img src="https://picsum.photos/200/300/?lembang" class="w-full h-full object-cover" alt="thumbnail">
                             </div>
                             <div class="flex flex-col gap-[6px]">
-                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none">Makan Gratis Lembang, Bandung</a>
+                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Lembang, Bandung</a>
                                 <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                             </div>
                             <progress id="fund" value="32" max="100" class="w-full h-[6px] rounded-full overflow-hidden"></progress>
@@ -225,7 +225,7 @@
                                 <img src="https://picsum.photos/200/300/?bandung" class="w-full h-full object-cover" alt="thumbnail">
                             </div>
                             <div class="flex flex-col gap-[6px]">
-                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none">Makan Gratis Stasiun Bandung, Bandung</a>
+                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Stasiun Bandung, Bandung</a>
                                 <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                             </div>
                             <progress id="fund" value="32" max="100" class="w-full h-[6px] rounded-full overflow-hidden"></progress>
@@ -246,7 +246,7 @@
 
         <div class="px-4 flex justify-between items-center mb-4">
             <h2 class="font-bold text-sm">Program <br>Makan Gratis</h2>
-            <a href="" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
+            <a href="" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                 Ajukan Lokasi
               </a>
             
@@ -260,7 +260,7 @@
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                                 <img src="assets/css/fe_css/images/icons/icon natural disasters.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
-                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center;">Distribusi Makan Gratis</span>
+                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Distribusi Makan Gratis</span>
                         </a>
                     </div>
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
@@ -268,7 +268,7 @@
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                                 <img src="assets/css/fe_css/images/icons/icon natural disasters.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
-                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center;">Mitra UMKM</span>
+                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Mitra UMKM</span>
                         </a>
                     </div>
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
@@ -276,7 +276,7 @@
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                                 <img src="assets/css/fe_css/images/icons/icon natural disasters.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
-                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center;">Laporan Distribusi </span>
+                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Laporan Distribusi </span>
                         </a>
                     </div>
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
@@ -284,7 +284,7 @@
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                                 <img src="assets/css/fe_css/images/icons/icon natural disasters.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
-                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center;">Daftar Menu Makanan</span>
+                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Daftar Menu Makanan</span>
                         </a>
                     </div>
                     
