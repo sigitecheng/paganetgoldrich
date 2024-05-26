@@ -6,7 +6,7 @@
              
             
             <nav class="pt-5 px-3 flex justify-between items-center">
-                <a href="/tentangkami">
+                <a href="/">
                     <div class="flex items-center gap-[10px]">
                         <div class="w-10 h-10 flex shrink-0">
                            <img src="assets/css/fe_css/images/icons/menuandroid/menuback.png" alt="icon">
@@ -37,7 +37,7 @@
 
             @foreach ($data_tentangkami as $data)
                 
-            <a href="#" class="card">
+            <a href="/tentangkami" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:10px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
