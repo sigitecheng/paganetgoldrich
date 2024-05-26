@@ -65,7 +65,7 @@
                        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 14px; padding-left: 10px; padding-right: 10px;">
 
                             <a href="details.html" class="card">
-                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
+                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
                                         <img src="https://picsum.photos/200/300/?fish" class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
@@ -83,9 +83,9 @@
                                 </div>
                             </a>
                             
-                            <br>
+                            
                             <a href="details.html" class="card">
-                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
+                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
                                         <img src="https://picsum.photos/200/300/?bandng" class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
@@ -102,10 +102,9 @@
                                     </div>
                                 </div>
                             </a>
-                            
-                            <br>
+
                             <a href="details.html" class="card">
-                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
+                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
                                         <img src="https://picsum.photos/200/300/?jakarta" class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
@@ -123,10 +122,8 @@
                                 </div>
                             </a>
 
-                            <br>
-                            
                             <a href="details.html" class="card">
-                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff;">
+                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
                                         <img src="https://picsum.photos/200/300/?surabaya" class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
