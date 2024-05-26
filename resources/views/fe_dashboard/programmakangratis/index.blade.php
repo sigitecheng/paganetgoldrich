@@ -11,7 +11,7 @@
              <a href="/tentangkami">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img src="assets/css/fe_css/images/icons/loc.svg" alt="icon">
+                        <img src="assets/css/fe_css/images/icons/menuandroid/menulokasi.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
@@ -23,7 +23,7 @@
              <a href="/lokasimakangratis">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img src="assets/css/fe_css/images/icons/loc.svg" alt="icon">
+                        <img src="assets/css/fe_css/images/icons/menuandroid/menulokasimakangratis.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
@@ -35,7 +35,7 @@
              <a href="/halo">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img src="assets/css/fe_css/images/icons/loc.svg" alt="icon">
+                        <img src="assets/css/fe_css/images/icons/menuandroid/menudaftarumkm.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
