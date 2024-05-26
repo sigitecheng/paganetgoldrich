@@ -8,7 +8,7 @@
             
             <nav class="pt-5 px-3 flex justify-between items-center">
              
-             <a href="/halo">
+             <a href="/tentangkami">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
                         <img src="assets/css/fe_css/images/icons/loc.svg" alt="icon">
@@ -20,7 +20,7 @@
                 </div>
             </a>   
              
-             <a href="/halo">
+             <a href="/lokasimakangratis">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
                         <img src="assets/css/fe_css/images/icons/loc.svg" alt="icon">

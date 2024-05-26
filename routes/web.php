@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammakangratisController;
+use App\Http\Controllers\TentangkamiController;
 use App\Models\Programmakangratis;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,10 @@ use Illuminate\Support\Facades\Route;
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/', ProgrammakangratisController::class);
+// ----------------------------------------------------
+
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::resource('/tentangkami', TentangkamiController::class);
 
 // Route::get('/', function () {
 //     return view('welcome');
