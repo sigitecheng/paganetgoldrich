@@ -8,7 +8,7 @@
         <a href="" style="margin-left: 2px; margin-right: 2px;">
             <h5 class="font-semibold ml-2 mr-2 text-sm" style="font-weight: 600; font-size: 0.875rem;">Syarat & Ketentuan</h5>
         </a>
-        <p></p>
+        <p>|</p>
         <a href="" style="margin-left: 2px; margin-right: 2px;">
             <h5 class="font-semibold ml-2 mr-2 text-sm" style="font-weight: 600; font-size: 0.875rem;">Pusat Bantuan</h5>
         </a>
