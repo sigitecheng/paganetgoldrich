@@ -26,8 +26,8 @@
                    <h4 class="font-extrabold text-xl leading-[36px] text-white text-center" style="font-size: 14px">Tentang Kami</h4>
                </div>
                
-               <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 1rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                   <img src="assets/css/fe_css/images/backgrounds/programmakangratis.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+               <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+                   <img src="assets/css/fe_css/images/tentangkami/tentangkami.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
    
             </nav>

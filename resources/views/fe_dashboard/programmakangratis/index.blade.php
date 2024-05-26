@@ -55,7 +55,7 @@
             </div>
             
             <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 1rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                <img src="assets/css/fe_css/images/backgrounds/programmakangratis.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+                <img src="assets/css/fe_css/images/backgrounds/newselamatdatang.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
             </div>
 
             <div class="container" style="display: flex; justify-content: center; margin-top: 10px; margin-left: 10px; margin-right: 10px;">
