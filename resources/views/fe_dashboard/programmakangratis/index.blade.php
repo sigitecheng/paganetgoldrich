@@ -322,7 +322,7 @@
                   </div>
                   
         
-                  {{-- @include('fe_dashboard.menu.android') --}}
+                  @include('fe_dashboard.menu.android')
                   
                 </div>
             </div>
