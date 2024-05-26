@@ -4,6 +4,7 @@
 
 <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
                 <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
+                    
                     <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
             
             <nav class="pt-5 px-3 flex justify-between items-center">
