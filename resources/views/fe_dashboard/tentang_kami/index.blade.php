@@ -1,5 +1,5 @@
 @include('fe_dashboard.menu.header')
-<body class="font-poppins text-[#292E4B] bg-[#374f68]">
+<body class="font-poppins text-[#292E4B] bg-[#7ca4ce]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
   
         <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
@@ -36,7 +36,7 @@
             @foreach ($data_tentangkami as $data)
                 
             <a href="/tentangkami" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom,  rgb(148, 225, 250), rgb(190, 192, 206)); margin-top:10px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom,  rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:10px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
@@ -55,7 +55,7 @@
             </a>
             
             <a href="#" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
@@ -75,7 +75,7 @@
 
          
             <a href="#" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
@@ -94,7 +94,7 @@
             </a>
             
             <a href="#" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
@@ -135,7 +135,7 @@
          
          
             <a href="#" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
@@ -155,7 +155,7 @@
 
          
             <a href="#" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
@@ -174,7 +174,7 @@
             </a>
 
             <a href="#" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
@@ -193,7 +193,7 @@
             </a>
 
             <a href="https://haiucares.com" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
@@ -212,7 +212,7 @@
             </a>
 
             <a href="" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
