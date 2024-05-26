@@ -40,7 +40,7 @@
             <a href="/tentangkami" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:10px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Nama Perusahaan </p>
@@ -59,7 +59,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Deskripsi</p>
@@ -79,7 +79,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Berdiri</p>
@@ -98,7 +98,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Founder</p>
@@ -118,7 +118,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Alamat</p>
@@ -138,7 +138,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Alamat</p>
@@ -158,7 +158,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Email</p>
@@ -177,7 +177,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Telepon</p>
@@ -196,7 +196,7 @@
             <a href="https://haiucares.com" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Website</p>
@@ -215,7 +215,7 @@
             <a href="" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="https://picsum.photos/200/300/?tentang" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Industri</p>
