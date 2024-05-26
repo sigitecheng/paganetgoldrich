@@ -64,22 +64,42 @@ class DaftarmitrarumahmakannFactory extends Factory
         $alamatrumahmakan = $this->faker->randomElement($alamat_rumahmakan);
 
         
-        $alamat_email = [];
+        // $alamat_email = [];
 
-        foreach ($alamat_rumahmakan as $data) {
-            // Konversi nama rumah makan menjadi lowercase dan hapus spasi
-            $username = str_replace(' ', '', strtolower($data));
-            // Generate email secara acak dengan menambahkan domain
-            $email = $username . rand(100, 999) . "@gmail.com";
-            // Tambahkan email ke dalam array
-            $alamat_email[] = $email;
-        }
+        // foreach ($alamat_rumahmakan as $data) {
+        //     // Konversi nama rumah makan menjadi lowercase dan hapus spasi
+        //     $username = str_replace(' ', '', strtolower($data));
+        //     // Generate email secara acak dengan menambahkan domain
+        //     $email = $username . rand(100, 999) . "@gmail.com";
+        //     // Tambahkan email ke dalam array
+        //     $alamat_email[] = $email;
+        // }
 
-        print_r($alamat_email);
+        // print_r($alamat_email);
         
         $cities = ['Cileunyi', 'Kopo', 'Lembang', 'Bandung Barat'];
         
         $city = $this->faker->randomElement($cities);
+
+        // ---------------------------------------
+
+        $nama_rumahmakan = [
+            "Warteg Makmur",
+            "Sari Warteg  Asri",
+            "Warteg Indah",
+            "Warteg Sejahtera",
+            "Warteg Prima",
+            "Warteg Sejahtera",
+            "Warteg Sejahtera",
+            "Warteg Stasiun",
+            "Warteg Sentosa",
+            "Warteg Makmur"
+        ];
+    
+        $random_nama_rumahmakan = $nama_rumahmakan[array_rand($nama_rumahmakan)];
+        // Menghilangkan spasi dan mengonversi menjadi huruf kecil
+        $username = strtolower(str_replace(' ', '', $random_nama_rumahmakan));
+        
 
         return [
 
@@ -92,7 +112,9 @@ class DaftarmitrarumahmakannFactory extends Factory
             // 'alamat' => $this->faker->streetAddress . ', ' . $city . ', Indonesia',
             'telepon' => '08' . $this->faker->numerify('##########'),
             // 'email' => $this->faker->unique()->safeEmail,
-            'email' => $alamat_email,
+            // 'email' => $this->faker->unique()->gmail(),
+            'email' => $username . '@gmail.com',
+            // 'email' => $alamat_email,
             'ktp' => $this->faker->numerify('################'), // 16 digit KTP number
             'gambar' => $this->faker->imageUrl(640, 480, 'business'),
             'kuotamakan' => $this->faker->numberBetween(1, 10000),
