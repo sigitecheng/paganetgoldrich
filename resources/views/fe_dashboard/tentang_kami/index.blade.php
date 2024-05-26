@@ -13,7 +13,7 @@
                        </div>
                        <div class="flex flex-col text-white">
                            {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                           <p class="font-semibold text-sm">Tentang Kami</p>
+                           <p class="font-semibold text-sm">HaiuCare Bangun Indonesia</p>
                        </div>
                    </div>
                </a>   
@@ -22,7 +22,7 @@
                </nav>
    
                <div class="mt-[30px] z-10">
-                   <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center" style="font-size:20px">HaiuCare Bangun Indonesia<br></h1>
+                   {{-- <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center" style="font-size:20px">HaiuCare Bangun Indonesia<br></h1> --}}
                    <h4 class="font-extrabold text-xl leading-[36px] text-white text-center" style="font-size: 14px">Tentang Kami</h4>
                </div>
                
@@ -30,15 +30,13 @@
                    <img src="assets/css/fe_css/images/tentangkami/tentangkami.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
    
-            </nav>
-            
         </div>
         <div class="flex flex-col gap-4 px-4">
 
             @foreach ($data_tentangkami as $data)
                 
             <a href="/tentangkami" class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(173, 216, 230), rgb(111, 113, 124)); margin-top:10px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom,  rgb(148, 225, 250), rgb(190, 192, 206)); margin-top:10px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>

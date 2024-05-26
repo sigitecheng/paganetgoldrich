@@ -2,7 +2,7 @@
 @include('fe_dashboard.menu.header')
 
 
-<body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
+            <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
                 <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
                     
                     <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
@@ -33,7 +33,7 @@
                 </div>
             </a>   
              
-             <a href="/halo">
+             <a href="/daftarumkm">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
                         <img src="assets/css/fe_css/images/icons/menuandroid/menudaftarumkm.png" alt="icon">

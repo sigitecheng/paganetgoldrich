@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\DaftarmitrarumahmakannController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammakangratisController;
 use App\Http\Controllers\TentangkamiController;
+use App\Models\Daftarmitrarumahmakann;
 use App\Models\Programmakangratis;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +28,9 @@ Route::resource('/', ProgrammakangratisController::class);
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/tentangkami', TentangkamiController::class);
+
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::resource('/daftarumkm', DaftarmitrarumahmakannController::class);
 
 // Route::get('/', function () {
 //     return view('welcome');
