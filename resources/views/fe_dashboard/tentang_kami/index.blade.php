@@ -5,7 +5,7 @@
         <div class="header flex flex-col bg-[#56BBC5] rounded-b-[50px] overflow-hidden h-[320px] bg-gradient-to-b from-[#5bc7eb] to-[#0b4fb6] -mb-[181px]">
             <nav class="pt-5 px-3 flex justify-between items-center">
                 <div class="flex items-center gap-[10px]">
-                    <a href="/makangratis" class="w-10 h-10 flex shrink-0">
+                    <a href="/" class="w-10 h-10 flex shrink-0">
                         <img src="assets/images/icons/back.svg" alt="icon">
                     </a>
                 </div>
