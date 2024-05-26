@@ -1,49 +1,60 @@
 <div id="popular-fundrising" class="mt-8" style="display: flex; flex-direction: column; align-items: center;">
 
     <div class="px-4 flex justify-center items-center" style="display: flex; justify-content: center; align-items: center;">
-        <a href="" style="margin-left: 2px; margin-right: 2px;">
+        <a href="/comingsoon" style="margin-left: 2px; margin-right: 2px;">
             <h5 class="font-semibold ml-2 mr-2 text-sm" style="font-weight: 600; font-size: 0.875rem;">HaiuCare</h5>
         </a>
         <p>|</p>
-        <a href="" style="margin-left: 2px; margin-right: 2px;">
+        <a href="/comingsoon" style="margin-left: 2px; margin-right: 2px;">
             <h5 class="font-semibold ml-2 mr-2 text-sm" style="font-weight: 600; font-size: 0.875rem;">Syarat & Ketentuan</h5>
         </a>
         <p>|</p>
-        <a href="" style="margin-left: 2px; margin-right: 2px;">
+        <a href="/comingsoon" style="margin-left: 2px; margin-right: 2px;">
             <h5 class="font-semibold ml-2 mr-2 text-sm" style="font-weight: 600; font-size: 0.875rem;">Pusat Bantuan</h5>
         </a>
     </div>
 
     <div class="main-carousel mt-[50px] ml-[100px]" style="display: flex; margin-top: 50px; margin-left: 15px;">
         
-        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
-            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                <img src="assets/css/fe_css/images/icons/icontiktok.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+        <a href="/comingsoon">
+            <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+                <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                    <img src="assets/css/fe_css/images/icons/icontiktok.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                </div>
             </div>
-        </div>
+        </a>
         <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
-        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
-            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                <img src="assets/css/fe_css/images/icons/iconyoutube.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+        <a href="/comingsoon">
+            <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+                <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                    <img src="assets/css/fe_css/images/icons/iconyoutube.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                </div>
             </div>
-        </div>
-        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
-            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                <img src="assets/css/fe_css/images/icons/iconinstagram.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+        </a>
+
+        <a href="/comingsoon">
+            <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+                <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                    <img src="assets/css/fe_css/images/icons/iconinstagram.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                </div>
             </div>
-        </div>
-        <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
-        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
-            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                <img src="assets/css/fe_css/images/icons/icontwitter.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+        </a>
+
+        <a href="/comingsoon">
+            <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+                <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                    <img src="assets/css/fe_css/images/icons/icontwitter.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                </div>
             </div>
-        </div>
-        <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
-        <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
-            <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                <img src="assets/css/fe_css/images/icons/iconfacebook.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+        </a>
+        
+        <a href="/comingsoon">
+            <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
+                <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
+                    <img src="assets/css/fe_css/images/icons/iconfacebook.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                </div>
             </div>
-        </div>
+        </a>
         <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
 
     </div>
