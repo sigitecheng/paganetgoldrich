@@ -240,7 +240,7 @@
              
         @include('fe_dashboard.menu.menufooter')
 
-        @include('fe_dashboard.menu.enter')
+        {{-- @include('fe_dashboard.menu.enter') --}}
 
 
         @include('fe_dashboard.menu.android')
