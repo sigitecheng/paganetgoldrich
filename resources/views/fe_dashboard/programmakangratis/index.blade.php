@@ -64,10 +64,10 @@
                        <br>
                        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 14px; padding-left: 10px; padding-right: 10px;">
 
-                            <a href="details.html" class="card">
+                            <a href="/comingsoon" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-                                        <img src="https://picsum.photos/200/300/?fish" class="w-full h-full object-cover" alt="thumbnail">
+                                        <img src="assets/css/fe_css/images/programmakangratis/makangratiscileunyi.jpeg" class="w-full h-full object-cover" alt="assets/images/programmakangratis/makangratiscileunyi.jpeg">
                                     </div>
                                     
                                     <div class="flex flex-col gap-1">
@@ -84,10 +84,10 @@
                             </a>
                             
                             
-                            <a href="details.html" class="card">
+                            <a href="/comingsoon" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-                                        <img src="https://picsum.photos/200/300/?bandng" class="w-full h-full object-cover" alt="thumbnail">
+                                        <img src="assets/css/fe_css/images/programmakangratis/makangratiskopo.jpg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratiskopo.jpg">
                                     </div>
                                     
                                     <div class="flex flex-col gap-1">
@@ -103,10 +103,10 @@
                                 </div>
                             </a>
 
-                            <a href="details.html" class="card">
+                            <a href="/comingsoon" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-                                        <img src="https://picsum.photos/200/300/?jakarta" class="w-full h-full object-cover" alt="thumbnail">
+                                        <img src="assets/css/fe_css/images/programmakangratis/makangratislembang.jpg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratislembang.jpg">
                                     </div>
                                     
                                     <div class="flex flex-col gap-1">
@@ -122,10 +122,10 @@
                                 </div>
                             </a>
 
-                            <a href="details.html" class="card">
+                            <a href="/comingsoon" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-                                        <img src="https://picsum.photos/200/300/?surabaya" class="w-full h-full object-cover" alt="thumbnail">
+                                        <img src="assets/css/fe_css/images/programmakangratis/makangratisstasiunbandung.jpeg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratisstasiunbandung.jpeg">
                                     </div>
                                     
                                     <div class="flex flex-col gap-1">
@@ -165,7 +165,7 @@
         <div id="best-choices" class="mt-8 -mb-6">
             <div class="px-4 flex justify-between items-center">
                 <h2 class="font-bold text-sm">HaiuCare Indonesia <br>Penggalangan Dana Untuk Sesama</h2>
-                <a href="" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
+                <a href="/comingsoon" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                     Daftar Mitra
                   </a>
                   
@@ -176,9 +176,9 @@
             <div class="main-carousel" style="margin-top: 14px; display: flex; flex-direction: row; overflow-x: auto;">
                 <div class="carousel-item" style="padding: 0 2px;">
                     <div class="carousel-content" style="border: 1px solid #E8E9EE; padding: 14px; width: 208px; border-radius: 1rem;">
-                        <a href="details.html">
+                        <a href="/comingsoon">
                             <div class="rounded-2xl w-full h-[120px] flex shrink-0 overflow-hidden">
-                                <img src="https://picsum.photos/200/300/?kopo" class="w-full h-full object-cover" alt="thumbnail">
+                                <img src="assets/css/fe_css/images/programmakangratis/makangratiscileunyi.jpeg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratiscileunyi.jpeg">
                             </div>
                             <div class="flex flex-col gap-[6px]">
                                 <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Cileunyi, Bandung</a>
@@ -191,9 +191,9 @@
             
                 <div class="carousel-item" style="padding: 0 2px;">
                     <div class="carousel-content" style="border: 1px solid #E8E9EE; padding: 14px; width: 208px; border-radius: 1rem;">
-                        <a href="details.html">
+                        <a href="/comingsoon">
                             <div class="rounded-2xl w-full h-[120px] flex shrink-0 overflow-hidden">
-                                <img src="https://picsum.photos/200/300/?gratis" class="w-full h-full object-cover" alt="thumbnail">
+                                <img src="assets/css/fe_css/images/programmakangratis/makangratiskopo.jpg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratiskopo.jpg">
                             </div>
                             <div class="flex flex-col gap-[6px]">
                                 <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Kopo, Bandung</a>
@@ -206,9 +206,9 @@
              
                 <div class="carousel-item" style="padding: 0 2px;">
                     <div class="carousel-content" style="border: 1px solid #E8E9EE; padding: 14px; width: 208px; border-radius: 1rem;">
-                        <a href="details.html">
+                        <a href="/comingsoon">
                             <div class="rounded-2xl w-full h-[120px] flex shrink-0 overflow-hidden">
-                                <img src="https://picsum.photos/200/300/?lembang" class="w-full h-full object-cover" alt="thumbnail">
+                                <img src="assets/css/fe_css/images/programmakangratis/makangratislembang.jpg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratislembang.jpg">
                             </div>
                             <div class="flex flex-col gap-[6px]">
                                 <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Lembang, Bandung</a>
@@ -220,9 +220,9 @@
                 </div>
                 <div class="carousel-item" style="padding: 0 2px;">
                     <div class="carousel-content" style="border: 1px solid #E8E9EE; padding: 14px; width: 208px; border-radius: 1rem;">
-                        <a href="details.html">
+                        <a href="/comingsoon">
                             <div class="rounded-2xl w-full h-[120px] flex shrink-0 overflow-hidden">
-                                <img src="https://picsum.photos/200/300/?bandung" class="w-full h-full object-cover" alt="thumbnail">
+                                <img src="assets/css/fe_css/images/programmakangratis/makangratisstasiunbandung.jpeg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratisstasiunbandung.jpeg">
                             </div>
                             <div class="flex flex-col gap-[6px]">
                                 <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Stasiun Bandung, Bandung</a>
@@ -246,7 +246,7 @@
 
         <div class="px-4 flex justify-between items-center mb-4">
             <h2 class="font-bold text-sm">Program <br>Makan Gratis</h2>
-            <a href="" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
+            <a href="/comingsoon" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                 Ajukan Lokasi
               </a>
             
@@ -256,7 +256,7 @@
         <br>
                 <div id="popular-fundrising" class="mt-4" style="display: flex; overflow-x: auto;">
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
-                        <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
+                        <a href="/comingsoon" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                                 <img src="assets/css/fe_css/images/icons/distribusimakanan.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
@@ -264,7 +264,7 @@
                         </a>
                     </div>
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
-                        <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
+                        <a href="/comingsoon" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                                 <img src="assets/css/fe_css/images/icons/mitraumkm.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
@@ -272,7 +272,7 @@
                         </a>
                     </div>
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
-                        <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
+                        <a href="/comingsoon" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                                 <img src="assets/css/fe_css/images/icons/laporandistribusi.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
@@ -280,7 +280,7 @@
                         </a>
                     </div>
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
-                        <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
+                        <a href="/comingsoon" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                                 <img src="assets/css/fe_css/images/icons/daftarmenumakanan.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
@@ -296,25 +296,25 @@
         
                 <div id="popular-fundrising" class="mt-8">
                     <div class="px-4 popular-link" style="display: flex; justify-content: center; align-items: center;">
-                      <a href="" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
+                      <a href="/comingsoon" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
                         <img src="assets/css/fe_css/images/icons/kontributors.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
                         Kontributors
                       </a>
-                      <a href="" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
+                      <a href="/comingsoon" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
                         <img src="assets/css/fe_css/images/icons/distribusi.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
                          Distribusi
                       </a>
-                      <a href="" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
+                      <a href="/comingsoon" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
                         <img src="assets/css/fe_css/images/icons/star.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
                         Awwards
                       </a>
                     </div>
                     <div class="px-4 popular-link mt-4" style="display: flex; justify-content: center; align-items: center;">
-                      <a href="/tentangkami" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
-                        <img src="assets/css/fe_css/images/icons/distribusi.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
+                      <a href="/comingsoon" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
+                        <img src="assets/css/fe_css/images/icons/star.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
                         Tentang Kami
                       </a>
-                      <a href="" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
+                      <a href="/comingsoon" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
                         <img src="assets/css/fe_css/images/icons/star.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
                         Kontak Kami
                       </a>
