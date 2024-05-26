@@ -100,16 +100,36 @@
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                         <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
+
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
-                        <p class="font-bold text-white border-spacing-5">Founder</p>
-                        <p class="font-semibold line-clamp-1 hover:line-clamp-none text-green-300" style="text-align:justify">{{ $data->founder}}</p>
-                        {{-- <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 55.000.000</span></p> --}}
-                        {{-- <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
-                            <p class="font-semibold sm:font-medium text-xs leading-[18px]">Putra Bangsa</p>
-                            <div class="flex shrink-0">
-                                <img src="assets/images/icons/tick-circle.svg" alt="icon">
+                        <p class="font-bold text-white border-spacing-5" style="margin-bottom: 10px;">Founder</p>
+                        {{-- <p class="font-semibold line-clamp-1 hover:line-clamp-none text-green-300" style="text-align:justify">{{ $data->founder}}</p>
+                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 55.000.000</span></p> --}}
+                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                            <p class="font-bold text-xs leading-[18px]" style="margin-left: 25px;">Yogi Maxy Antony, ST., MA., MSE</p>
+                            <div class="w-20 h-20 flex items-center justify-center overflow-hidden rounded-full" style="width: 100px; height: 100px;">
+                                <img src="assets/css/fe_css/images/founder/new2.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                        </div> --}}
+                            
+                        </div>
+
+                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                            <p class="font-bold text-xs leading-[18px]" style="margin-left: 25px;">Sigit Dwi Prasetyo, ST</p>
+                            <div class="w-20 h-20 flex items-center justify-center overflow-hidden rounded-full" style="width: 100px; height: 100px;">
+                                <img src="assets/css/fe_css/images/founder/new1.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            
+                        </div>
+
+                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                            <p class="font-bold text-xs leading-[18px]" style="margin-left: 25px;">Sigit Septiadi, ST</p>
+                            <div class="w-20 h-20 flex items-center justify-center overflow-hidden rounded-full" style="width: 100px; height: 100px;">
+                                <img src="assets/css/fe_css/images/founder/new3.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            
+                        </div>
+
+                        
                     </div>
                 </div>
             </a>
@@ -181,7 +201,7 @@
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Telepon</p>
-                        <p class="font-semibold line-clamp-1 hover:line-clamp-none text-green-300" style="text-align:justify">+6282129208716</p>
+                        <p class="font-semibold line-clamp-1 hover:line-clamp-none text-blue-300" style="text-align:justify"><a href="https://wa.me/6282129208716">+6282129208716</a></p>
                         {{-- <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 55.000.000</span></p> --}}
                         {{-- <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                             <p class="font-semibold sm:font-medium text-xs leading-[18px]">Putra Bangsa</p>
