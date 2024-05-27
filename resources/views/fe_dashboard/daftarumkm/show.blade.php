@@ -123,9 +123,9 @@
                     <p class="desc-less text-sm leading-[26px]">{{ $data->alamat_rumahmakan}}</p>
                     {{-- <p class="desc-more text-sm leading-[26px] hidden">Kebakaran Hutan dan Lahan (Karhutla) yang terjadi di sejumlah titik di wilayah Kalimantan Barat (Kalbar) selama beberapa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis a earum iure nihil voluptas tenetur. <button class="text-[#FF7815] underline" onclick="toggleSeeMoreLess()">see less</button></p> --}}
                 </div>
-                <div class="flex flex-col gap-[2px]" style="margin-top: 5px;">
-                    <h2 class="font-bold" style="font-size: 14px;">Telepon</h2>
-                    <p class="desc-less text-sm leading-[26px]" style="cursor: pointer;"> <a href="https://api.whatsapp.com/send?phone={{$data->telepon}}">{{ $data->telepon}}</p></a>
+                <div class="flex flex-col gap-[2px]" style="margin-top: 5px; background-color:antiquewhite; border-radius:20px; padding-top:10px; padding-bottom:10px;">
+                    <h2 class="font-bold" style="font-size: 14px; margin-left:5px;" >Telepon</h2>
+                    <p class="desc-less text-sm leading-[26px]" style="cursor: pointer; margin-left:5px;"> <a href="https://api.whatsapp.com/send?phone={{$data->telepon}}">{{ $data->telepon}}</p></a>
                         
                     {{-- <p class="desc-more text-sm leading-[26px] hidden">Kebakaran Hutan dan Lahan (Karhutla) yang terjadi di sejumlah titik di wilayah Kalimantan Barat (Kalbar) selama beberapa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis a earum iure nihil voluptas tenetur. <button class="text-[#FF7815] underline" onclick="toggleSeeMoreLess()">see less</button></p> --}}
                 </div>
