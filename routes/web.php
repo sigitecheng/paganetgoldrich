@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DaftarmitrarumahmakannController;
+use App\Http\Controllers\LokasimakangratisController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammakangratisController;
 use App\Http\Controllers\TentangkamiController;
@@ -32,6 +33,10 @@ Route::resource('/tentangkami', TentangkamiController::class);
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/daftarumkm', DaftarmitrarumahmakannController::class);
 Route::get('/daftarumkm/{namarumahmakan}', 'DaftarmitrarumahmakannController@showDetails')->name('daftarumkm');
+
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::resource('/lokasimakangratis', LokasimakangratisController::class);
+Route::get('/lokasimakangratis/{alamat}', 'LokasimakangratisController@showDetails')->name('lokasimakangratis');
 
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 

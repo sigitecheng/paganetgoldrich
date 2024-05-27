@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Tentangkami;
+use App\Models\Lokasimakangratis;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -42,6 +43,53 @@ class DatabaseSeeder extends Seeder
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg7.jpg',
         ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg8.jpg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg9.jpg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg10.jpg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg11.jpg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg12.jpg',
+        ]);
+        Daftarmitrarumahmakann::factory()->create([
+            'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg13.jpg',
+        ]);
+
+        Lokasimakangratis::factory()->create([
+            'kota' => 'Cileunyi',
+            'daftarmitrarumahmakann_id' => '1',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        
+        Lokasimakangratis::factory()->create([
+            'kota' => 'Lembang',
+            'daftarmitrarumahmakann_id' => '2',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        
+        Lokasimakangratis::factory()->create([
+            'kota' => 'Kopo',
+            'daftarmitrarumahmakann_id' => '3',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        
+        Lokasimakangratis::factory()->create([
+            'kota' => 'Stasiun Bandung',
+            'daftarmitrarumahmakann_id' => '4',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        
 
         Tentangkami::factory()->create([
             'nama_perusahaan' => 'PT. HaiuCare Bangun Indonesia',

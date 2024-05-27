@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('alamat_pemilik');
             $table->text('alamat_rumahmakan');
             $table->string('kota');
+            $table->string('status');
             // $table->string('alamat');
             $table->string('telepon')->nullable();
             $table->string('email')->nullable();

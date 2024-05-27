@@ -108,6 +108,7 @@ class DaftarmitrarumahmakannFactory extends Factory
             'alamat_pemilik' => $this->faker->address,
             'alamat_rumahmakan' => $alamatrumahmakan,
             'kota' => $city,
+            'status' => $this->faker->randomElement(['approved', 'delay', 'in progress']),
             // 'kota' => $this->faker->randomElement(['Cileunyi', 'Kopo', 'Lembang', 'Bandung Barat']),
             // 'alamat' => $this->faker->streetAddress . ', ' . $city . ', Indonesia',
             'telepon' => '08' . $this->faker->numerify('##########'),

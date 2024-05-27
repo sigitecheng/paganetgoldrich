@@ -6,15 +6,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Daftarmitrarumahmakann extends Model
+class Lokasimakangratis extends Model
 {
-
     use HasFactory, SoftDeletes;
 
     protected $guarded = ['id'];
 
-    public function lokasimakangratis()
+
+    public function daftarmitrarumahmakann()
     {
-        return $this->hasMany(Lokasimakangratis::class);
+        return $this->belongsTo(Daftarmitrarumahmakann::class);
     }
 }
