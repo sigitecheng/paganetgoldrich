@@ -32,7 +32,10 @@ Route::resource('/tentangkami', TentangkamiController::class);
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/daftarumkm', DaftarmitrarumahmakannController::class);
-Route::get('/daftarumkm/{namarumahmakan}', 'DaftarmitrarumahmakannController@showDetails')->name('daftarumkm');
+Route::get('/daftarumkm/{namarumahmakan}', 'DaftarmitrarumahmakannController@show')->name('daftarumkm');
+Route::get('/daftarmitra', [DaftarmitrarumahmakannController::class, 'daftarmitra'])->name('daftarmitra');
+Route::get('/daftarmitra/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'showdaftarmitra'])->name('daftarmitra');
+// Route::get('/daftarumkm/{namarumahmakan}', 'DaftarmitrarumahmakannController@showdaftarmitra')->name('daftarmitra');
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/lokasimakangratis', LokasimakangratisController::class);

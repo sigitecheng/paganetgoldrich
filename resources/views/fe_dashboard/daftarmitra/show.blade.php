@@ -24,7 +24,7 @@
 
             <div class="w-full h-full absolute bg-white overflow-hidden">
                 <div class="w-full h-[266px] bg-gradient-to-b from-black/90 to-[#080925]/0 absolute z-10"></div>
-                <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/daftarumkm.jpg" class="w-full h-full object-cover" alt="">
+                <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/daftarmitra.jpg" class="w-full h-full object-cover" alt="">
                 {{-- <img src="{{ asset('/public/assets/css/fe_css/images/daftarmitrarumahmakan/' . $data->gambar)}}" class="w-full h-full object-cover" alt="cover"> --}}
             </div>
         </div>
@@ -51,7 +51,15 @@
             </div>
             <div id="content" class="w-full bg-white rounded-t-[40px] flex flex-col gap-5 p-[30px_24px_120px]">
                 <div class="flex flex-col gap-[10px]">
-                    <p style="display: inline-block; padding: 6px 12px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:90px; background-color: #2d1bd3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">APPROVED</p>
+                    <p style="text-align:center; display: inline-block; padding: 2px 12px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:110px; background-color: 
+                    @if($data->status == 'approved')
+                        #0baf13
+                    @elseif($data->status == 'in progress')
+                        #166cce
+                    @elseif($data->status == 'delay')
+                        #e53e3e
+                    @endif
+                    ; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">{{$data->status}}</p>
                     {{-- <h1 class="font-extrabold text-[26px] leading-[39px]">Perbaikan Kebakaran Alam Hutani Perlidanita</h1> --}}
                     <h1 class="font-extrabold text-[26px] leading-[39px]" style="font-size: 14px">{{$data->namarumahmakan}}</h1>
                     <div class="flex items-center gap-2">
@@ -70,36 +78,36 @@
                     <h2 class="font-semibold" style="font-size: 14px">Kuota Makan Gratis <span class="badge-wrapper" style="background-color: #2b05b3; color: #fff; padding: 0.2rem 0.5rem; border-radius: 0.25rem; margin-left:5px;">
                         {{ $data->kuotamakan }}
                     </span>
-                      </h2>
-                    <div class="flex items-center justify-between">
+                      {{-- </h2> --}}
+                    {{-- <div class="flex items-center justify-between">
                         <p id="tersalurkan" class="text-sm text-[#66697A] font-bold" style="font-size: 14px; color: red">90<span style="font-size:14px; color: black; margin-left:4px" class="font-bold">Porsi Sudah Tersalurkan</span></p>
                         <p id="sisaKuota" class="text-sm text-[#66697A] font-bold" style="font-size: 14px; color: green;"></p>
-                          
-                    </div>
+                           --}}
+                    {{-- </div> --}}
                     {{-- <progress id="fund" value="66" max="100" class="w-full h-[6px] rounded-full overflow-hidden"></progress> --}}
                     <!-- Menambahkan elemen span dengan ID untuk menampilkan jumlah porsi yang sudah tersalurkan -->
 
-<!-- Script JavaScript untuk menghitung dan menampilkan sisa kuota -->
-<script>
-  // Ambil nilai data kuotamakan
-  var kuotamakan = parseInt("{{$data->kuotamakan}}");
-  
-  // Ambil nilai porsi yang sudah tersalurkan
-  var tersalurkan = parseInt(document.getElementById('tersalurkan').innerText);
-  
-  // Hitung sisa kuota
-  var sisaKuota = kuotamakan - tersalurkan;
-  
-  // Tampilkan sisa kuota
-  document.getElementById('sisaKuota').innerText = "Sisa Kuota Tersedia: " + sisaKuota;
-</script>
+                    <!-- Script JavaScript untuk menghitung dan menampilkan sisa kuota -->
+                    <script>
+                    // Ambil nilai data kuotamakan
+                    var kuotamakan = parseInt("{{$data->kuotamakan}}");
+                    
+                    // Ambil nilai porsi yang sudah tersalurkan
+                    var tersalurkan = parseInt(document.getElementById('tersalurkan').innerText);
+                    
+                    // Hitung sisa kuota
+                    var sisaKuota = kuotamakan - tersalurkan;
+                    
+                    // Tampilkan sisa kuota
+                    document.getElementById('sisaKuota').innerText = "Sisa Kuota Tersedia: " + sisaKuota;
+                    </script>
 
 
 <!-- Menambahkan elemen div sebagai wadah untuk elemen progress -->
-<div class="progress-wrapper" style="width: 100%;">
+{{-- <div class="progress-wrapper" style="width: 100%;"> --}}
   <!-- Menambahkan elemen progress -->
-  <progress id="fund" value="66" max="100" class="w-full h-[6px] rounded-full overflow-hidden" style="width: 100%; height: 6px; border-radius: 9999px; overflow: hidden; background-color: grey;"></progress>
-</div>
+  {{-- <progress id="fund" value="66" max="100" class="w-full h-[6px] rounded-full overflow-hidden" style="width: 100%; height: 6px; border-radius: 9999px; overflow: hidden; background-color: grey;"></progress>
+</div> --}}
 
 <!-- Script JavaScript untuk menghitung nilai progress -->
             <script>
@@ -120,6 +128,8 @@
                 </script>
 
                 </div>
+
+
                 <div class="flex flex-col gap-[2px]" style="margin-top: 5px;">
                     <h2 class="font-bold" style="font-size: 14px;">Alamat Rumah Makan</h2>
                     <p class="desc-less text-sm leading-[26px]">{{ $data->alamat_rumahmakan}}</p>

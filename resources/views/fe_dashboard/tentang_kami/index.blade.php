@@ -114,14 +114,14 @@
                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                             <p class="font-bold text-xs leading-[18px]" style="margin-right: 10px;">Sigit Dwi Prasetyo, ST</p>
                             <div class="w-20 h-20 flex items-center justify-center overflow-hidden rounded-full" style="width: 100px; height: 100px;">
-                                <img src="assets/css/fe_css/images/founder/new1.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="assets/css/fe_css/images/founder/omsigit.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             
                         </div>
 
                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                             <div class="w-20 h-20 flex items-center justify-center overflow-hidden rounded-full" style="width: 100px; height: 100px;">
-                                <img src="assets/css/fe_css/images/founder/new3.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="assets/css/fe_css/images/founder/sigit.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <p class="font-bold text-xs leading-[18px]" style="margin-left: 10px;">Sigit Septiadi, ST</p>
                             

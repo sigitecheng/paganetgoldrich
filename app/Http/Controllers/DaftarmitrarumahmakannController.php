@@ -25,6 +25,17 @@ class DaftarmitrarumahmakannController extends Controller
         ]); 
     }
 
+    public function daftarmitra()
+    {
+        //
+        return view('fe_dashboard.daftarmitra.index',[
+            'title' => 'List Mitra',
+            
+            'data_daftarmitra'  => Daftarmitrarumahmakann::paginate(5)
+
+        ]); 
+    }
+
     // public function show(Daftarmitrarumahmakann $data)
     // {
     //     //
@@ -41,6 +52,18 @@ class DaftarmitrarumahmakannController extends Controller
         return view('fe_dashboard.daftarumkm.show', [
             'title'             => 'Details UMKM',
             'title_halaman'     => 'View Data',
+            'data'    => $datas,
+            // 'categories'        => Category::all(),
+        ]);
+    }
+
+    public function showdaftarmitra($data)
+    {
+        //
+        $datas = Daftarmitrarumahmakann::where('namarumahmakan', $data)->first();
+        return view('fe_dashboard.daftarmitra.show', [
+            'title'             => 'Details Mitra',
+            // 'title_halaman'     => 'View Data',
             'data'    => $datas,
             // 'categories'        => Category::all(),
         ]);

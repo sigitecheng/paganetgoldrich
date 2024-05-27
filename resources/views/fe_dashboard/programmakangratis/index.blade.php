@@ -166,7 +166,7 @@
         <div id="best-choices" class="mt-8 -mb-6">
             <div class="px-4 flex justify-between items-center">
                 <h2 class="font-bold text-sm">HaiuCare Indonesia <br>Penggalangan Dana Untuk Sesama</h2>
-                <a href="/comingsoon" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
+                <a href="/daftarmitra" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                     Daftar Mitra
                   </a>
                   
