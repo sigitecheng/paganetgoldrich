@@ -118,17 +118,18 @@
                 </script>
 
                 </div>
-                <div class="flex flex-col gap-[2px]">
+                <div class="flex flex-col gap-[2px]" style="margin-top: 5px;">
                     <h2 class="font-bold" style="font-size: 14px;">Alamat Rumah Makan</h2>
                     <p class="desc-less text-sm leading-[26px]">{{ $data->alamat_rumahmakan}}</p>
                     {{-- <p class="desc-more text-sm leading-[26px] hidden">Kebakaran Hutan dan Lahan (Karhutla) yang terjadi di sejumlah titik di wilayah Kalimantan Barat (Kalbar) selama beberapa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis a earum iure nihil voluptas tenetur. <button class="text-[#FF7815] underline" onclick="toggleSeeMoreLess()">see less</button></p> --}}
                 </div>
-                <div class="flex flex-col gap-[2px]">
+                <div class="flex flex-col gap-[2px]" style="margin-top: 5px;">
                     <h2 class="font-bold" style="font-size: 14px;">Telepon</h2>
-                    <p class="desc-less text-sm leading-[26px]">{{ $data->telepon}}</p>
+                    <p class="desc-less text-sm leading-[26px]" style="cursor: pointer;"> <a href="https://api.whatsapp.com/send?phone={{$data->telepon}}">{{ $data->telepon}}</p></a>
+                        
                     {{-- <p class="desc-more text-sm leading-[26px] hidden">Kebakaran Hutan dan Lahan (Karhutla) yang terjadi di sejumlah titik di wilayah Kalimantan Barat (Kalbar) selama beberapa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis a earum iure nihil voluptas tenetur. <button class="text-[#FF7815] underline" onclick="toggleSeeMoreLess()">see less</button></p> --}}
                 </div>
-                <div class="flex flex-col gap-[2px]">
+                <div class="flex flex-col gap-[2px]" style="margin-top:5px;">
                     <h2 class="font-bold" style="font-size: 14px;">Email</h2>
                     <p class="desc-less text-sm leading-[26px]">{{ $data->email}}</p>
                     {{-- <p class="desc-more text-sm leading-[26px] hidden">Kebakaran Hutan dan Lahan (Karhutla) yang terjadi di sejumlah titik di wilayah Kalimantan Barat (Kalbar) selama beberapa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis a earum iure nihil voluptas tenetur. <button class="text-[#FF7815] underline" onclick="toggleSeeMoreLess()">see less</button></p> --}}
