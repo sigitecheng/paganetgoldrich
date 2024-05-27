@@ -19,8 +19,8 @@ class DaftarmitrarumahmakannController extends Controller
         return view('fe_dashboard.daftarumkm.index',[
             'title' => 'Daftar UMKM',
             // 'title_halaman' => 'Halaman Fundraising',
-
-            'data_daftarmitrarumahmakan'  => Daftarmitrarumahmakann::paginate(7),
+            $data = Daftarmitrarumahmakann::where('status', 'approved')->get(),
+            'data_daftarmitrarumahmakan'  => $data,
 
         ]); 
     }
