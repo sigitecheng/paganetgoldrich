@@ -5,8 +5,10 @@
         <div class="header flex flex-col bg-[#56BBC5] overflow-hidden h-[350px] relative -mb-[92px]">
             <nav class="pt-5 px-3 flex justify-between items-center relative z-20">
                 <div class="w-10 h-10 flex shrink-0">
-                    <img src="/assets/css/fe_css/images/icons/menuandroid/menuback.png" alt="icon">
-                    {{-- <p class="font-semibold text-sm" >HaiuCare Bangun Indonesia</p> --}}
+                    <a href="javascript:history.back()">
+                        <img src="/assets/css/fe_css/images/icons/menuandroid/menuback.png" alt="icon">
+                    </a>
+                        {{-- <p class="font-semibold text-sm" >HaiuCare Bangun Indonesia</p> --}}
                 </div>
                 <div class="flex flex-col items-center text-center">
                     <p class="text-xs leading-[18px] text-white" style="font-size: 14px;">Mitra UMKM</p>

@@ -24,11 +24,12 @@
         </div>
     </a>
   
-    <a href="/" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
-        <div style=" border: 2px solid white; border-radius: 25%;  display: flex; align-items: center; justify-content: center; overflow: hidden; font-size:100px">
+    <a href="javascript:history.back()" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
+        <div style="border: 2px solid white; border-radius: 25%; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size:100px">
             <img src="/assets/css/fe_css/images/icons/menuandroid/menuback.png" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
     </a>
+    
   
    
 </div>
