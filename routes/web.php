@@ -31,6 +31,10 @@ Route::resource('/tentangkami', TentangkamiController::class);
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/daftarumkm', DaftarmitrarumahmakannController::class);
+Route::get('/daftarumkm/{namarumahmakan}', 'DaftarmitrarumahmakannController@showDetails')->name('daftarumkm');
+
+// Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
+
 
 // Route::get('/', function () {
 //     return view('welcome');

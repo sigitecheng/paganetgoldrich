@@ -19,7 +19,7 @@
         <a href="/comingsoon">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="assets/css/fe_css/images/icons/icontiktok.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/css/fe_css/images/icons/icontiktok.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
@@ -27,7 +27,7 @@
         <a href="/comingsoon">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="assets/css/fe_css/images/icons/iconyoutube.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/css/fe_css/images/icons/iconyoutube.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
@@ -35,7 +35,7 @@
         <a href="/comingsoon">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="assets/css/fe_css/images/icons/iconinstagram.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/css/fe_css/images/icons/iconinstagram.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
@@ -43,7 +43,7 @@
         <a href="/comingsoon">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="assets/css/fe_css/images/icons/icontwitter.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/css/fe_css/images/icons/icontwitter.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
@@ -51,7 +51,7 @@
         <a href="/comingsoon">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="assets/css/fe_css/images/icons/iconfacebook.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/css/fe_css/images/icons/iconfacebook.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
@@ -62,7 +62,7 @@
         
             <div class="flex items-center">
                 <div class="w-10 h-10 flex shrink-0">
-                   <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" alt="icon">
+                   <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" alt="icon">
                 </div>               
            </div>
        
