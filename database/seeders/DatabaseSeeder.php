@@ -95,7 +95,7 @@ class DatabaseSeeder extends Seeder
      Daftarmenu::factory()->create([
             'menu' => 'Nasi Soto Bandung',
             'gambar' => 'assets/css/fe_css/images/daftarmenu/5sotoayam.jpg',
-            'keteranganmenu' => '',
+            'keteranganmenu' => 'Nasi Soto Bandung adalah hidangan khas dari kota Bandung, Indonesia, yang terkenal dengan kuah sotonya yang kaya rasa dan beraroma. Hidangan ini terdiri dari nasi yang disajikan bersama potongan daging sapi, tauge, daun bawang, dan emping, disiram dengan kuah soto yang gurih. Kuah sotonya yang hangat dan bumbu rempahnya yang khas membuat hidangan ini menjadi favorit di kalangan penduduk lokal maupun wisatawan yang berkunjung ke kota Bandung.',
         ]);
      Daftarmenu::factory()->create([
             'menu' => 'Nasi Sayur Asem Pedas Manis',
