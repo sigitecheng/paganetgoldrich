@@ -1,31 +1,30 @@
 @include('fe_dashboard.menu.header')
 
-<body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
-    <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-slate-100 overflow-x-hidden pb-4">
-        <div class="header flex flex-col bg-[#5856c5] rounded-b-[50px] overflow-hidden h-[320px] bg-gradient-to-b from-[#5bc7eb] to-[#0b4fb6] -mb-[181px]" style="background-image: linear-gradient(to bottom, #2fb7da, #1539b1);">
-            <nav class="pt-5 px-3 flex justify-between items-center">
-                <a href="/">
-                    <div class="flex items-center gap-[10px]">
-                        <div class="w-10 h-10 flex shrink-0">
-                           <img src="assets/css/fe_css/images/icons/menuandroid/menuback.png" alt="icon">
-                       </div>
-                       <div class="flex flex-col text-white">
-                           {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                           <p class="font-semibold text-sm">HaiuCare Bangun Indonesia</p>
-                       </div>
-                   </div>
-               </a>   
-                
-                
-               </nav>
-   
-               <div class="mt-[30px] z-10">
-                   <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center" style="font-size:18px">Daftar List Mitra <br></h1>
-                   {{-- <h4 class="font-extrabold text-xl leading-[36px] text-white text-center" style="font-size: 14px">Tentang Kami</h4> --}}
+<body class="font-poppins text-[#292E4B] bg-[#7ca4ce]">
+    <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
+        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
+            
+            <nav class="pt-5 px-3 flex justify-between items-center relative z-20">
+                <div class="w-10 h-10 flex shrink-0">
+                    <a href="javascript:history.back()">
+                        <img src="/assets/css/fe_css/images/icons/menuandroid/homehaiu.png" alt="icon">
+                    </a>
+                        {{-- <p class="font-semibold text-sm" >HaiuCare Bangun Indonesia</p> --}}
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    {{-- <p class="text-xs leading-[18px] text-white" style="font-size: 14px;">Mitra UMKM</p> --}}
+                    <p class="font-semibold text-sm text-white">#makangratis</p>
+                </div>
+
+            </nav>
+            
+               <div class="mt-[0px] z-10">
+                   <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center" style="font-size:18px">HaiuCare Bangun Indonesia<br></h1>
+                   <h4 class="font-extrabold text-xl leading-[36px] text-white text-center" style="font-size: 14px">List Antrian Mitra UMKM</h4>
                </div>
                
                <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                   <img src="assets/css/fe_css/images/tentangkami/tentangkami.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+                   <img src="/assets/css/fe_css/images/tentangkami/listantrianmitra.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
    
         </div>
@@ -74,7 +73,7 @@
            
             @endforeach
             
-            <div class="btn-group" style="display: flex; justify-content: center;">
+            <div class="btn-group" style="display: flex; justify-content: center; margin-top:10px;">
                 {{-- Tombol Sebelumnya --}}
                 @if ($data_daftarmitra->previousPageUrl())
                     <a href="{{ $data_daftarmitra->previousPageUrl() }}" style="margin-right:10px; display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:35px; background-color: #166cce; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">&laquo;</a>

@@ -6,7 +6,7 @@
             <nav class="pt-5 px-3 flex justify-between items-center relative z-20">
                 <div class="w-10 h-10 flex shrink-0">
                     <a href="javascript:history.back()">
-                        <img src="/assets/css/fe_css/images/icons/menuandroid/menuback.png" alt="icon">
+                        <img src="/assets/css/fe_css/images/icons/menuandroid/homehaiu.png" alt="icon">
                     </a>
                         {{-- <p class="font-semibold text-sm" >HaiuCare Bangun Indonesia</p> --}}
                 </div>
@@ -24,7 +24,7 @@
 
             <div class="w-full h-full absolute bg-white overflow-hidden">
                 <div class="w-full h-[266px] bg-gradient-to-b from-black/90 to-[#080925]/0 absolute z-10"></div>
-                <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/daftarumkm.jpg" class="w-full h-full object-cover" alt="">
+                <img src="/assets/css/fe_css/images/tentangkami/showdaftarumkm.jpg" class="w-full h-full object-cover" alt="">
                 {{-- <img src="{{ asset('/public/assets/css/fe_css/images/daftarmitrarumahmakan/' . $data->gambar)}}" class="w-full h-full object-cover" alt="cover"> --}}
             </div>
         </div>
@@ -53,8 +53,8 @@
                 <div class="flex flex-col gap-[10px]">
                     <p style="display: inline-block; padding: 6px 12px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:90px; background-color: #2d1bd3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">APPROVED</p>
                     {{-- <h1 class="font-extrabold text-[26px] leading-[39px]">Perbaikan Kebakaran Alam Hutani Perlidanita</h1> --}}
-                    <h1 class="font-extrabold text-[26px] leading-[39px]" style="font-size: 14px">{{$data->namarumahmakan}}</h1>
-                    <div class="flex items-center gap-2">
+                    <h1 class="font-extrabold text-[26px] leading-[39px]" style="font-size: 18px; margin-bottom:5px;">{{$data->namarumahmakan}}</h1>
+                    <div class="flex items-center gap-2" style="margin-bottom: 5px;">
                         <div class="w-9 h-9 flex shrink-0 rounded-full overflow-hidden">
                             <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/avatar.png" class="w-full h-full object-cover" alt="photo">
                         </div>
@@ -66,7 +66,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2">
+
+                <div class="flex flex-col gap-2" style="margin-bottom: 5px;">
                     <h2 class="font-semibold" style="font-size: 14px">Kuota Makan Gratis <span class="badge-wrapper" style="background-color: #2b05b3; color: #fff; padding: 0.2rem 0.5rem; border-radius: 0.25rem; margin-left:5px;">
                         {{ $data->kuotamakan }}
                     </span>
@@ -138,26 +139,31 @@
                 </div>
 
                 {{-- <div class="flex flex-col gap-[10px] p-5 rounded-[20px] bg-[#3486bd]"> --}}
-                <div style="display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(224, 232, 238), rgb(202, 236, 77));">
+                <div style="display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(166, 204, 233), rgb(55, 89, 241));">
                       
-                    <h2 class="font-bold text-sm" style="margin-left: 10px; font-size:14px;">Lokasi & Tempat UMKM</h2>
+                    <h2 class="font-bold text-sm" style="margin-left: 10px; font-size:14px; margin-top:5px;">Lokasi & Tempat UMKM</h2>
                     <div class="aspect-[61/30] rounded-2xl bg-[#D9D9D9] overflow-hidden">
                         {{-- <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/janganlupabahagia.jpg" class="w-full h-full object-cover" alt="thumbnail"> --}}
                         <img src="{{ asset($data->gambar)}}" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
-                    <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px;">Keterangan : <br>{{ $data->deskripsi}}</p>
+                    <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px; color:white; margin-top:5px; margin-bottom:10px; margin-right:10px;">Keterangan : <br>{{ $data->deskripsi}}</p>
                 </div>
                 
-                <div style="display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(224, 232, 238), rgb(202, 236, 77));">
+                
+                <div style="display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(166, 204, 233), rgb(55, 89, 241));">
                       
-                    <h2 class="font-bold text-sm" style="margin-left: 10px; font-size:14px;">Jangan Lupa Bahagia</h2>
+                    <h2 class="font-bold text-sm" style="margin-left: 10px; font-size:14px; margin-top:5px;">Jangan Lupa Bahagia</h2>
                     <div class="aspect-[61/30] rounded-2xl bg-[#D9D9D9] overflow-hidden">
                         <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/janganlupabahagia.jpg" class="w-full h-full object-cover" alt="thumbnail">
                         {{-- <img src="{{ asset($data->gambar)}}" class="w-full h-full object-cover" alt="thumbnail"> --}}
                     </div>
-                    <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px;">Keterangan : <br>{{ $data->deskripsi}}</p>
-                </div>
+                    <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px; color:white; margin-top:5px; margin-bottom:10px; margin-right:10px;">Keterangan : <br>
 
+                        "Dengan penuh tanggung jawab, kami dengan gembira mengumumkan bahwa bantuan yang diberikan oleh para donatur telah berhasil kami salurkan kepada masyarakat yang membutuhkan, terutama dalam program makan gratis ini. Melalui upaya kolaboratif kami dengan berbagai lembaga amal dan relawan, kami telah berhasil menyediakan makanan gratis kepada mereka yang terdampak secara langsung oleh kesulitan ekonomi atau krisis kesehatan. Dengan dukungan yang berkelanjutan dari para donatur, kami berharap dapat terus memperluas jangkauan program ini dan memberikan bantuan yang lebih besar kepada mereka yang membutuhkan dalam komunitas kami."</p>
+                </div>
+                
+                
+                
 
                 {{-- ------------------------------------------- --}}
                 {{-- <div class="flex flex-col gap-3">

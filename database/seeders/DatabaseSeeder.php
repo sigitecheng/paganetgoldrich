@@ -25,42 +25,55 @@ class DatabaseSeeder extends Seeder
             
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg1.jpeg',
+            'deskripsi' => 'Warung makan warteg yang nyaman ini menawarkan suasana hangat dan ramah dengan akses mudah di pinggir jalan utama. Menu autentik Indonesia, pelayanan efisien, dan harga terjangkau membuatnya menjadi pilihan sempurna untuk menikmati hidangan lezat tanpa harus mengeluarkan banyak uang.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg2.jpeg',
+            'deskripsi' => 'Warung makan warteg yang nyaman ini menawarkan suasana yang hangat dan ramah, dengan meja-meja kayu yang sederhana namun mengundang. Terletak di tepi jalan utama, warung ini mudah dijangkau dan menjadi tempat yang cocok untuk istirahat sejenak setelah beraktivitas. Dengan pilihan hidangan autentik Indonesia yang beragam, pelayanan yang efisien, dan harga yang terjangkau, warung ini menjadi destinasi favorit bagi pecinta kuliner yang ingin menikmati hidangan lezat tanpa perlu khawatir tentang biaya.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg3.jpeg',
+            'deskripsi' => 'Warung makan warteg yang nyaman ini memiliki atmosfer yang hangat dan ramah, dengan meja-meja kayu yang sederhana namun menarik. Terletak di pinggir jalan utama, warung ini mudah diakses dan menjadi tempat yang ideal untuk bersantai setelah hari yang sibuk. Dengan beragam hidangan Indonesia yang otentik, pelayanan yang cepat, dan harga yang terjangkau, warung ini menjadi destinasi favorit bagi mereka yang ingin menikmati makanan yang lezat tanpa menguras kantong.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg4.jpg',
+            'deskripsi' => 'Warung makan warteg yang nyaman ini menghadirkan suasana yang hangat dan bersahabat, dengan meja-meja kayu yang simpel namun menawan. Berlokasi di tepi jalan utama, warung ini mudah dijangkau dan menjadi tempat yang sempurna untuk singgah setelah beraktivitas. Dengan ragam hidangan Indonesia yang autentik, pelayanan yang efisien, dan harga yang terjangkau, warung ini menjadi destinasi favorit bagi pecinta kuliner yang ingin menikmati sajian yang lezat tanpa harus menguras dompet./css/fe_css/images/daftarmitrarumahmakan/warteg4.jpg',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg5.jpeg',
+            'deskripsi' => 'Warung makan warteg yang nyaman ini, suasana hangat dan ramah tercipta dengan meja-meja kayu yang sederhana namun menarik. Berlokasi di pinggiran jalan utama, warung ini mudah diakses dan menjadi tempat ideal untuk bersantai setelah beraktivitas. Dengan menu hidangan autentik Indonesia yang beragam, pelayanan yang efisien, dan harga yang terjangkau, warung ini menjadi tujuan favorit bagi para penggemar kuliner yang ingin menikmati hidangan lezat tanpa harus menghabiskan banyak uang.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg6.jpeg',
+            'deskripsi' => 'Warung makan warteg yang nyaman ini mengundang dengan suasana yang hangat dan penuh keramahan, ditambah dengan meja-meja kayu yang simpel namun memberikan kesan yang menarik. Terletak di tepi jalan utama, warung ini mudah dijangkau dan menjadi tempat yang tepat untuk singgah setelah seharian beraktivitas. Dengan beragam hidangan autentik Indonesia, pelayanan yang cepat dan ramah, serta harga yang bersahabat, warung ini menjadi pilihan utama bagi mereka yang mencari makanan lezat dengan budget yang terjangkau.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg7.jpg',
+            'deskripsi' => 'Warung makan warteg ini menampilkan suasana yang hangat dan bersahabat, dengan meja-meja kayu yang sederhana namun menarik. Berada di pinggir jalan utama, warung ini mudah dijangkau dan menjadi tempat yang cocok untuk bersantai setelah aktivitas sepanjang hari. Dengan ragam hidangan Indonesia yang autentik, pelayanan yang efektif, dan harga yang terjangkau, warung ini menjadi pilihan favorit bagi para pecinta kuliner yang menginginkan sajian lezat tanpa merogoh kocek terlalu dalam.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg8.jpg',
+            'deskripsi' => 'Warung makan warteg ini memberikan suasana yang hangat dan bersahaja, dengan dekorasi yang simpel namun menarik. Berlokasi di tepi jalan utama, warung ini mudah diakses dan menjadi tempat yang tepat untuk bersantai setelah seharian beraktivitas. Dengan ragam hidangan autentik Indonesia, pelayanan yang ramah dan efisien, serta harga yang terjangkau, warung ini menjadi pilihan favorit bagi mereka yang ingin menikmati hidangan lezat tanpa harus merogoh kocek terlalu dalam.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg9.jpg',
+            'deskripsi' => 'Warung makan warteg ini menawarkan atmosfer yang hangat dan ramah, tanpa adanya sentuhan kayu yang mencolok namun tetap memberikan kesan menarik. Terletak di pinggir jalan utama, warung ini mudah dijangkau dan menjadi tempat yang sempurna untuk bersantai setelah beraktivitas. Dengan berbagai hidangan autentik Indonesia, pelayanan yang cepat dan ramah, serta harga yang terjangkau, warung ini menjadi pilihan utama bagi mereka yang ingin menikmati hidangan lezat tanpa perlu khawatir tentang biaya.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg10.jpg',
+            'deskripsi' => 'Warung makan warteg ini menyuguhkan suasana yang hangat dan mengundang, dengan dekorasi yang sederhana namun menarik. Terletak di pinggir jalan utama, warung ini mudah diakses dan menjadi tempat yang ideal untuk menikmati hidangan lezat setelah beraktivitas. Dengan menu hidangan autentik Indonesia yang beragam, pelayanan yang ramah dan efisien, serta harga yang terjangkau, warung ini menjadi pilihan favorit bagi mereka yang mencari pengalaman kuliner yang memuaskan tanpa harus menguras dompet.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg11.jpg',
+            'deskripsi' => 'Warung makan warteg ini menghadirkan suasana yang hangat dan ramah, dengan sentuhan dekorasi yang sederhana namun menarik. Berlokasi di tepi jalan utama, warung ini mudah dijangkau dan menjadi tempat yang sempurna untuk bersantai setelah beraktivitas. Dengan ragam hidangan autentik Indonesia, pelayanan yang efisien dan ramah, serta harga yang terjangkau, warung ini menjadi destinasi favorit bagi pecinta kuliner yang ingin menikmati hidangan lezat tanpa harus khawatir tentang biaya.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg12.jpg',
+            'deskripsi' => 'Warung makan warteg ini menciptakan suasana yang hangat dan menyambut, dengan dekorasi yang simpel namun mengundang. Terletak di tepi jalan utama, warung ini mudah dijangkau dan menjadi tempat yang cocok untuk bersantai setelah beraktivitas. Dengan berbagai pilihan hidangan autentik Indonesia, pelayanan yang ramah dan efisien, serta harga yang bersahabat, warung ini menjadi pilihan utama bagi mereka yang mencari makanan lezat tanpa menguras kantong.',
         ]);
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg13.jpg',
+            'deskripsi' => 'Warung makan warteg ini, suasana yang hangat dan menyenangkan tersaji dengan dekorasi yang sederhana namun menarik. Terletak di pinggir jalan utama, warung ini mudah dijangkau dan menjadi tempat yang sempurna untuk menikmati hidangan setelah beraktivitas. Dengan hidangan autentik Indonesia yang beragam, pelayanan yang ramah dan efisien, serta harga yang terjangkau, warung ini menjadi destinasi favorit bagi pencinta kuliner yang ingin menikmati pengalaman makan yang memuaskan tanpa harus membayar mahal.',
         ]);
      // ===================================================================
         
@@ -124,6 +137,7 @@ class DatabaseSeeder extends Seeder
         Lokasimakangratis::factory()->create([
             'kota' => 'Cileunyi',
             'daftarmitrarumahmakann_id' => '1',
+            'deskripsi' => 'Sebagai bagian dari program makan gratis, rumah makan warteg ini telah menjalani strategi yang efektif dengan lokasi yang mudah dijangkau oleh masyarakat, terletak di wilayah Cileunyi, memastikan aksesibilitasnya bagi semua orang yang membutuhkan. Dengan bangunan yang luas, rumah makan ini mampu menampung puluhan orang pada satu waktu, menciptakan ruang yang nyaman dan aman bagi para pengunjung. Dengan dukungan dari relawan dan staf yang terlatih, pelayanan yang efisien dijamin terjaga, sehingga setiap orang dapat menikmati hidangan mereka dengan tenang dan tanpa tekanan.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -131,6 +145,7 @@ class DatabaseSeeder extends Seeder
         Lokasimakangratis::factory()->create([
             'kota' => 'Lembang',
             'daftarmitrarumahmakann_id' => '2',
+            'deskripsi' => 'Sebagai bagian dari program makan gratis, rumah makan warteg ini telah mengimplementasikan strategi yang efisien dengan lokasi yang mudah diakses oleh masyarakat, terletak di pusat kota Bandung, di daerah Kopo. Hal ini memastikan kemudahan akses bagi semua individu yang membutuhkan. Dengan ruangan yang luas, rumah makan ini mampu menampung puluhan orang pada saat bersamaan, menciptakan lingkungan yang nyaman dan aman bagi para pengunjung. Didukung oleh tim relawan dan staf yang terlatih, pelayanan yang cepat dan efektif dijamin, sehingga setiap pengunjung dapat menikmati hidangan mereka dengan rasa tenteram dan tanpa tekanan.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -138,6 +153,7 @@ class DatabaseSeeder extends Seeder
         Lokasimakangratis::factory()->create([
             'kota' => 'Kopo',
             'daftarmitrarumahmakann_id' => '3',
+            'deskripsi' => 'Sebagai bagian dari program makan gratis, restoran warteg ini telah menerapkan strategi yang efisien dengan lokasi yang mudah dijangkau oleh masyarakat, berada di daerah Lembang. Hal ini memastikan ketersediaan bagi semua individu yang membutuhkan. Dengan ruangan yang luas, restoran ini mampu menampung puluhan orang pada saat yang sama, menciptakan lingkungan yang nyaman dan aman bagi pengunjung. Didukung oleh tim sukarelawan dan staf yang terlatih, pelayanan yang ramah dan cepat dijamin, sehingga setiap pengunjung dapat menikmati hidangan mereka dengan damai dan tanpa tekanan.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -145,6 +161,7 @@ class DatabaseSeeder extends Seeder
         Lokasimakangratis::factory()->create([
             'kota' => 'Stasiun Bandung',
             'daftarmitrarumahmakann_id' => '4',
+            'deskripsi' => 'Sebagai bagian dari program makan gratis, warung makan warteg ini berlokasi di sekitar Stasiun Bandung, memastikan akses bagi semua individu yang membutuhkan. Dengan ruang yang luas, warung ini mampu menampung banyak pengunjung sekaligus, menciptakan lingkungan yang nyaman dan aman. Didukung oleh tim sukarelawan dan staf yang terlatih, pelayanan yang ramah dan efisien dijamin, sehingga setiap pengunjung dapat menikmati hidangan mereka dengan tenang.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

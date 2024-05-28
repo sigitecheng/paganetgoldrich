@@ -29,7 +29,7 @@ class DaftarmitrarumahmakannController extends Controller
     {
         //
         return view('fe_dashboard.daftarmitra.index',[
-            'title' => 'List Mitra',
+            'title' => 'List Antrian Mitra',
             
             'data_daftarmitra'  => Daftarmitrarumahmakann::paginate(5)
 
@@ -64,7 +64,7 @@ class DaftarmitrarumahmakannController extends Controller
         return view('fe_dashboard.daftarmitra.show', [
             'title'             => 'Details Mitra',
             // 'title_halaman'     => 'View Data',
-            'data_showlokasimakangratis'    => $datas,
+            'data'    => $datas,
             // 'categories'        => Category::all(),
         ]);
     }

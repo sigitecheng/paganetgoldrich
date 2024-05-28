@@ -1,7 +1,6 @@
 @include('fe_dashboard.menu.header')
 <body class="font-poppins text-[#292E4B] bg-[#7ca4ce]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
-  
         <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
              
             
@@ -26,10 +25,14 @@
                </div>
                
                <div style="width: 45%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                   <img src="assets/css/fe_css/images/tentangkami/newtentangkami.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+                   <img src="/assets/css/fe_css/images/tentangkami/newtentangkami.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
    
         </div>
+
+
+
+
         <div class="flex flex-col gap-4 px-4">
 
             @foreach ($data_tentangkami as $data)
@@ -37,7 +40,7 @@
             <a href="/tentangkami" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom,  rgb(6, 45, 200), rgb(217, 219, 236)); margin-top:10px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Nama Perusahaan </p>
@@ -56,7 +59,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 200), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Deskripsi</p>
@@ -76,7 +79,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 200), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Berdiri</p>
@@ -95,7 +98,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 200), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
 
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
@@ -104,7 +107,7 @@
                         <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 55.000.000</span></p> --}}
                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                             <div class="w-20 h-20 flex items-center justify-center overflow-hidden rounded-full" style="width: 100px; height: 100px;">
-                                <img src="assets/css/fe_css/images/founder/new2.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="/assets/css/fe_css/images/founder/new2.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <p class="font-bold text-xs leading-[18px]" style="margin-left: 10px;">Yogi Maxy Antony, ST., MA., MSE</p>
                             
@@ -113,14 +116,14 @@
                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                             <p class="font-bold text-xs leading-[18px]" style="margin-right: 10px;">Sigit Dwi Prasetyo, ST</p>
                             <div class="w-20 h-20 flex items-center justify-center overflow-hidden rounded-full" style="width: 100px; height: 100px;">
-                                <img src="assets/css/fe_css/images/founder/omsigit.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="/assets/css/fe_css/images/founder/omsigit.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             
                         </div>
 
                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                             <div class="w-20 h-20 flex items-center justify-center overflow-hidden rounded-full" style="width: 100px; height: 100px;">
-                                <img src="assets/css/fe_css/images/founder/sigit.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="/assets/css/fe_css/images/founder/sigit.jpg" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                             <p class="font-bold text-xs leading-[18px]" style="margin-left: 10px;">Sigit Septiadi, ST</p>
                             
@@ -136,7 +139,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 200), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Alamat</p>
@@ -156,7 +159,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 200), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Email</p>
@@ -175,7 +178,7 @@
             <a href="#" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 200), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Telepon</p>
@@ -194,7 +197,7 @@
             <a href="https://haiucares.com" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 200), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Website</p>
@@ -213,7 +216,7 @@
             <a href="" class="card">
                 <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 220), rgb(217, 219, 236)); margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
-                        <img src="assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
                         <p class="font-bold text-white border-spacing-5">Industri</p>

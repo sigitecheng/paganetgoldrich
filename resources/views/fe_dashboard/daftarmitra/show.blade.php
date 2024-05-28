@@ -6,7 +6,7 @@
             <nav class="pt-5 px-3 flex justify-between items-center relative z-20">
                 <div class="w-10 h-10 flex shrink-0">
                     <a href="javascript:history.back()">
-                        <img src="/assets/css/fe_css/images/icons/menuandroid/menuback.png" alt="icon">
+                        <img src="/assets/css/fe_css/images/icons/menuandroid/homehaiu.png" alt="icon">
                     </a>
                         {{-- <p class="font-semibold text-sm" >HaiuCare Bangun Indonesia</p> --}}
                 </div>
@@ -21,6 +21,10 @@
                     <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/warteg1.jpeg" alt="{{ asset('assets/css/fe_css/images/daftarmitrarumahmakan/' . $data->gambar) }}">
                 </a> --}}
             </nav>
+            <div class="mt-[0px] z-10" style="color: white">
+                <h1 class="font-extrabold text-2xl leading-[36px]  text-center" style="font-size:18px; color: white;">HaiuCare Bangun Indonesia<br></h1>
+                <h4 class="font-extrabold text-xl leading-[36px]  text-center" style="font-size: 14px; color: white;">Profile Mitra</h4>
+            </div>
 
             <div class="w-full h-full absolute bg-white overflow-hidden">
                 <div class="w-full h-[266px] bg-gradient-to-b from-black/90 to-[#080925]/0 absolute z-10"></div>
@@ -148,26 +152,16 @@
                 </div>
 
                 {{-- <div class="flex flex-col gap-[10px] p-5 rounded-[20px] bg-[#3486bd]"> --}}
-                <div style="display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(224, 232, 238), rgb(202, 236, 77));">
+                    <div style="display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(166, 204, 233), rgb(55, 89, 241));">
                       
-                    <h2 class="font-bold text-sm" style="margin-left: 10px; font-size:14px;">Lokasi & Tempat UMKM</h2>
-                    <div class="aspect-[61/30] rounded-2xl bg-[#D9D9D9] overflow-hidden">
-                        {{-- <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/janganlupabahagia.jpg" class="w-full h-full object-cover" alt="thumbnail"> --}}
-                        <img src="{{ asset($data->gambar)}}" class="w-full h-full object-cover" alt="thumbnail">
+                        <h2 class="font-bold text-sm" style="margin-left: 10px; font-size:14px; margin-top:5px;">Lokasi & Tempat UMKM</h2>
+                        <div class="aspect-[61/30] rounded-2xl bg-[#D9D9D9] overflow-hidden">
+                            {{-- <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/janganlupabahagia.jpg" class="w-full h-full object-cover" alt="thumbnail"> --}}
+                            <img src="{{ asset($data->gambar)}}" class="w-full h-full object-cover" alt="thumbnail">
+                        </div>
+                        <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px; color:white; margin-top:5px; margin-bottom:10px; margin-right:10px;">Keterangan : <br>{{ $data->deskripsi}}</p>
                     </div>
-                    <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px;">Keterangan : <br>{{ $data->deskripsi}}</p>
-                </div>
-                
-                <div style="display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(224, 232, 238), rgb(202, 236, 77));">
-                      
-                    <h2 class="font-bold text-sm" style="margin-left: 10px; font-size:14px;">Jangan Lupa Bahagia</h2>
-                    <div class="aspect-[61/30] rounded-2xl bg-[#D9D9D9] overflow-hidden">
-                        <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/janganlupabahagia.jpg" class="w-full h-full object-cover" alt="thumbnail">
-                        {{-- <img src="{{ asset($data->gambar)}}" class="w-full h-full object-cover" alt="thumbnail"> --}}
-                    </div>
-                    <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px;">Keterangan : <br>{{ $data->deskripsi}}</p>
-                </div>
-
+                    
 
                 {{-- ------------------------------------------- --}}
                 {{-- <div class="flex flex-col gap-3">
