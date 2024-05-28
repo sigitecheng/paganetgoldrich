@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Tentangkami;
 use App\Models\Lokasimakangratis;
@@ -61,7 +62,65 @@ class DatabaseSeeder extends Seeder
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg13.jpg',
         ]);
+     // ===================================================================
+        
+     
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Pedas Ayam Goreng',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/0nasiayamgoreng.jpg',
+            'keteranganmenu' => 'Nasi pedas ayam goreng adalah hidangan yang menggugah selera dengan perpaduan sempurna antara nasi yang lezat dan ayam goreng yang renyah. Nasi yang diolah dengan rempah-rempah khas memberikan cita rasa pedas yang menggelora namun tetap menyegarkan, sementara ayam goreng yang digoreng hingga kecokelatan memberikan tekstur yang renyah di luar dan lembut di dalam. Keduanya bersatu sempurna dalam satu hidangan yang memanjakan lidah dan memuaskan selera.
+            ',
+        ]);
 
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Campur Sayur Bihun',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/1nasicampur.jpg',
+            'keteranganmenu' => 'Nasi campur sayur bihun adalah sajian yang menggugah selera dengan paduan yang seimbang antara nasi, sayuran, dan bihun. Nasi yang pulen dan harum dipadukan dengan beragam sayuran segar seperti wortel, kacang panjang, dan sawi, memberikan tekstur yang renyah dan cita rasa yang segar. Ditambah dengan bihun yang lembut dan berpadu dengan bumbu-bumbu rempah yang khas, menjadikan hidangan ini pilihan yang sempurna untuk menyajikan kelezatan dan kesehatan dalam satu sajian.',
+        ]);
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Goreng Ayam Special',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/2nasigoreng.jpg',
+            'keteranganmenu' => 'Nasi goreng ayam special adalah hidangan yang menggoda dengan cita rasa yang kaya dan tekstur yang menggigit. Nasi yang dimasak dengan sempurna dan dicampur dengan ayam potong-potong yang diolah dengan bumbu rempah khas, memberikan kelezatan yang tiada tara. Ditambah dengan tambahan bahan seperti telur dadar, irisan sayuran segar, dan taburan bawang goreng, menjadikan hidangan ini istimewa dan memikat selera.',
+        ]);
+     Daftarmenu::factory()->create([
+            'menu' => 'Mie Goreng Ayam Istimewa',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/3miegoreng.jpg',
+            'keteranganmenu' => 'Mie goreng ayam spesial adalah sajian yang menggoda dengan citarasa yang melimpah dan tekstur yang mengundang selera. Mie yang digoreng dengan sempurna dan dicampur dengan potongan ayam yang diolah dengan rempah-rempah pilihan, memberikan kenikmatan yang tak tertandingi. Tambahkan telur mata sapi, irisan sayuran segar, serta taburan bawang goreng, membuat hidangan ini menjadi istimewa dan memukau lidah.',
+        ]);
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Capcay Special',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/4capcay.jpg',
+            'keteranganmenu' => 'Nasi capcay special adalah hidangan yang memikat dengan kelezatan yang unik dan beragam. Nasi yang dihiasi dengan aneka macam sayuran segar seperti wortel, kembang kol, buncis, dan jamur, memberikan tekstur yang renyah dan cita rasa yang segar. Ditambah dengan potongan daging ayam, udang, atau daging sapi yang dimasak dengan bumbu-bumbu spesial, menjadikan hidangan ini istimewa dan memuaskan selera.',
+        ]);
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Soto Bandung',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/5sotoayam.jpg',
+            'keteranganmenu' => '',
+        ]);
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Sayur Asem Pedas Manis',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/6sayurasem.jpg',
+            'keteranganmenu' => 'Nasi soto Bandung adalah hidangan yang menggoda dengan citarasa yang khas dan aroma rempah yang menggugah selera. Nasi yang disajikan bersama kuah soto yang kaya akan rempah-rempah tradisional, ditambah potongan daging sapi yang empuk serta tambahan telur rebus dan kentang, menciptakan kombinasi yang mengenyangkan dan lezat. Taburan bawang goreng dan seledri segar sebagai garnis menambahkan aroma yang meriah dan memperkaya cita rasa hidangan ini, menjadikannya pilihan yang sempurna untuk dinikmati kapan pun.',
+        ]);
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Tahu Gejrot Pedas Asin',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/7nasitahugejrot.jpg',
+            'keteranganmenu' => 'Nasi tahu gejrot pedas asin adalah hidangan yang memukau dengan sentuhan cita rasa yang unik dan memanjakan lidah. Potongan tahu yang digoreng hingga renyah disajikan di atas nasi, kemudian disiram dengan saus gejrot yang pedas dan asin, memberikan perpaduan rasa yang menggugah selera. Ditambah dengan taburan bawang goreng dan daun seledri segar sebagai hiasan, hidangan ini menawarkan sensasi yang memikat dan kenikmatan yang tiada tara bagi pencinta kuliner yang doyan pedas.',
+        ]);
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Telur Ceplok Gejrot Kecap Manis',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/8nasitelurgejrot.jpg',
+            'keteranganmenu' => '',
+        ]);
+     Daftarmenu::factory()->create([
+            'menu' => 'Nasi Uduk Betawi',
+            'gambar' => 'assets/css/fe_css/images/daftarmenu/9nasiuduk.jpg',
+            'keteranganmenu' => 'Nasi uduk Betawi adalah hidangan khas Jakarta yang menggugah selera dengan paduan sempurna antara nasi yang dimasak dalam santan kelapa dan rempah-rempah, menciptakan aroma harum yang menggoda dan cita rasa yang kaya. Disajikan dengan pelengkap seperti ayam goreng yang gurih dan renyah serta telur dadar yang lembut, nasi uduk Betawi menjadi pilihan sarapan atau makanan sehari-hari yang tak pernah mengecewakan, memukau lidah dan memberikan pengalaman kuliner yang tak terlupakan.',
+        ]);
+
+
+
+    
         Lokasimakangratis::factory()->create([
             'kota' => 'Cileunyi',
             'daftarmitrarumahmakann_id' => '1',
