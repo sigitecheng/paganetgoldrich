@@ -110,7 +110,7 @@ class DatabaseSeeder extends Seeder
      Daftarmenu::factory()->create([
             'menu' => 'Nasi Telur Ceplok Gejrot Kecap Manis',
             'gambar' => 'assets/css/fe_css/images/daftarmenu/8nasitelurgejrot.jpg',
-            'keteranganmenu' => '',
+            'keteranganmenu' => 'Nasi Telur Ceplok Gejrot Kecap Manis hidangan yang menggabungkan nasi dengan telur ceplok yang dimasak hingga kuning telur setengah matang atau matang sesuai selera. Kemudian, hidangan ini disiram dengan saus gejrot yang khas dan manis, yang terbuat dari campuran kecap manis, air, bawang merah, cabai, dan bumbu-bumbu lainnya. Kombinasi rasa manis, asam, dan pedas dari saus gejrot memberikan sentuhan unik pada hidangan ini, menciptakan pengalaman kuliner yang memikat bagi para penikmatnya.',
         ]);
      Daftarmenu::factory()->create([
             'menu' => 'Nasi Uduk Betawi',
