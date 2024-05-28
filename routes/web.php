@@ -23,6 +23,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+// ==========================================================
+Route::get('/comingsoon', function () {
+    return view('comingsoon', [
+        'title' => 'Coming Soon',
+    ]);});
 
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
