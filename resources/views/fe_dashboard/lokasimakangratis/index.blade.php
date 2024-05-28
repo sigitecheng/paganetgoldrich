@@ -48,7 +48,6 @@
                         {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Deskripsi : <span class="font-bold text-stone-800">{{ $data->deskripsi}}</span></p>  --}}
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Kuota : <span style="font-size: 14px; color: blue; border: black">{{ $data->kuota}} </span><span style="font-size: 14px">Porsi</span></p> 
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; text-align:justify">Keterangan : <span style="font-size: 14px; color: black; border: black">{{ $data->deskripsi}} </span><span style="font-size: 14px">Porsi</span></p> 
-                        {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Rumah Makan : <span class="bg-blue-200 px-3 badge-pill rounded-full font-bold text-stone-800">{{ $data->nama_rumah_makan}}</span></p>  --}}
                         {{-- <span style="background-color: rgb(36, 36, 179); color: white; padding: 2px 10px; border-radius: 5px; font-size:12px;">Show Details</span> --}}
                         <a href="/daftarumkm/{{ $data->namarumahmakan}}">
                             <span style="background-color: rgb(31, 211, 40); color: white; padding: 2px 10px; border-radius: 5px; font-size:12px; cursor: pointer;">Show Details Lokasi</span>

@@ -64,7 +64,7 @@ class DaftarmitrarumahmakannController extends Controller
         return view('fe_dashboard.daftarmitra.show', [
             'title'             => 'Details Mitra',
             // 'title_halaman'     => 'View Data',
-            'data'    => $datas,
+            'data_showlokasimakangratis'    => $datas,
             // 'categories'        => Category::all(),
         ]);
     }

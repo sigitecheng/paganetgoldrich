@@ -48,11 +48,11 @@
                         {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Deskripsi : <span class="font-bold text-stone-800">{{ $data->deskripsi}}</span></p>  --}}
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Kuota : <span style="font-size: 14px; color: blue; border: black">{{ $data->kuotamakan}} </span><span style="font-size: 14px">Porsi</span></p> 
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Status: <span style="text-align:center; display: inline-block; padding: 2px 12px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:110px; background-color: 
-                            @if($data->status == 'approved')
+                            @if($data->status == 'Approved')
                                 #0baf13
-                            @elseif($data->status == 'in progress')
+                            @elseif($data->status == 'In Progress')
                                 #166cce
-                            @elseif($data->status == 'delay')
+                            @elseif($data->status == 'Delay')
                                 #e53e3e
                             @endif
                             ; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">{{ $data->status }}</span></p>

@@ -39,7 +39,7 @@ Route::get('/daftarmitra/{namarumahmakan}', [DaftarmitrarumahmakannController::c
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/lokasimakangratis', LokasimakangratisController::class);
-Route::get('/lokasimakangratis/{alamat}', 'LokasimakangratisController@showDetails')->name('lokasimakangratis');
+Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 
