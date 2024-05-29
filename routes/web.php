@@ -9,6 +9,7 @@ use App\Http\Controllers\PaymentgatewayController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammakangratisController;
 use App\Http\Controllers\TentangkamiController;
+use App\Http\Controllers\LoginController;
 use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Programmakangratis;
@@ -35,6 +36,11 @@ Route::get('/comingsoon', function () {
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/', ProgrammakangratisController::class);
+// ----------------------------------------------------
+
+// ----------------------------------------------------
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::resource('/logins', LoginController::class);
 // ----------------------------------------------------
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
@@ -67,23 +73,23 @@ Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'pa
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+// Route::middleware('auth')->group(function () {
+//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
 
 require __DIR__.'/auth.php';
     
 
-Route::get('/masuk', function () {
-        return view('masuk');
-    });
+// Route::get('/masuk', function () {
+//         return view('masuk');
+//     });
 
 
 // Route::get('/dashboard', function () {
