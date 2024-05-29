@@ -29,7 +29,7 @@
 
                         <div class="w-full h-full absolute bg-white overflow-hidden">
                             <div class="w-full h-[900px] bg-gradient-to-b from-black/90 to-[#080925]/0 absolute z-10"></div>
-                            <img src="{{asset($data->daftarmitrarumahmakann->gambar)}}" class="w-full h-full object-cover" alt="">
+                            <img src="{{ asset($data->daftarmitrarumahmakann->gambar) }}" class="w-full h-full object-cover" alt="">
                             {{-- <img src="{{ asset('/public/assets/css/fe_css/images/daftarmitrarumahmakan/' . $data->gambar)}}" class="w-full h-full object-cover" alt="cover"> --}}
                         </div>
                         </div>
