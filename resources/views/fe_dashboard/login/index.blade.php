@@ -46,10 +46,10 @@
                      {{-- =========================================================================== --}}
                             <form action="/login" method="post" class="mt-2">
                               @csrf
-                                <div class="input-group mb-3">
+                                <div class="input-group mb-3" style="margin-top: 15px;">
                                     <label class="font-semibold" for="">Email</label>
                                     <br>
-                                    <input style="padding: 5px 100px; margin-bottom:10px;" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="" required value="{{ old('email') }}">
+                                    <input style="padding: 5px 75px; margin-bottom:20px;" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="" required value="{{ old('email') }}">
                                     @error('email') 
                                     <div class="invalid-feedback mb-2">
                                         {{ $message }}
@@ -60,7 +60,7 @@
                                 <div class="input-group mb-3">
                                     <label class="font-semibold" for="" style="margin-left: 10px;">Password</label>
                                     <br>
-                                    <input style="padding: 5px 100px; margin-bottom:10px" type="text" name="password" class="form-control rounded-full mt-0 @error('password') is-invalid @enderror" id="password" placeholder="" required value="{{ old('password') }}">
+                                    <input style="padding: 5px 75px; margin-bottom:10px" type="text" name="password" class="form-control rounded-full mt-0 @error('password') is-invalid @enderror" id="password" placeholder="" required value="{{ old('password') }}">
                                     @error('password') 
                                     <div class="invalid-feedback mb-2">
                                         {{ $message }}
@@ -71,12 +71,12 @@
                                 
                                 <div class="form-group mt-4">
                                   {{-- <input type="submit" class="btn solid" /> --}}
-                                    <button type="submit" style="margin-top:10px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:400px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">Login</button>
-                                    <div class="forgot-password" style="text-align: right;"> 
+                                    <button type="submit" style="margin-top:10px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:250px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">Login</button>
+                                    <div style="text-align: right; margin-bottom: 10px;"> 
                                       <a href="{{ route('password.request') }}"> <!-- Mengarahkan ke halaman forgot password -->
-                                          <small class="text-theme" style="color: white"><strong>Forgot password?</strong></small>
+                                          <small class="text-theme" style="color: white; margin-bottom:10x;"><strong>Forgot password?</strong></small>
                                       </a>
-                                      <a href="{{ route('password.request') }}" style="margin-left: 25px; color:white"> <!-- Mengarahkan ke halaman forgot password -->
+                                      <a href="{{ route('password.request') }}" style="margin-left: 25px; color:white; margin-right:15px;"> <!-- Mengarahkan ke halaman forgot password -->
                                           <small class="text-theme"><strong>Register Here?</strong></small>
                                       </a>
                                   </div>
