@@ -65,7 +65,7 @@
                        <br>
                        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 14px; padding-left: 10px; padding-right: 10px;">
 
-                            <a href="/comingsoon" class="card">
+                            <a href="/paymentgateway/cileunyi" class="card">
                                 <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
                                     <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
                                         <img src="assets/css/fe_css/images/programmakangratis/makangratiscileunyi.jpeg" class="w-full h-full object-cover" alt="assets/images/programmakangratis/makangratiscileunyi.jpeg">
@@ -182,7 +182,7 @@
                                 <img src="assets/css/fe_css/images/programmakangratis/makangratiscileunyi.jpeg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratiscileunyi.jpeg">
                             </div>
                             <div class="flex flex-col gap-[6px]">
-                                <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Cileunyi, Bandung</a>
+                                <a href="/paymentgateway/cileunyi" class="font-bold line-clamp-2 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Cileunyi, Bandung</a>
                                 <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                             </div>
                             <progress id="fund" value="32" max="100" class="w-full h-[6px] rounded-full overflow-hidden"></progress>

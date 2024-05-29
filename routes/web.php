@@ -4,6 +4,8 @@ use App\Http\Controllers\DaftarmenuController;
 use App\Http\Controllers\DaftarmitrarumahmakannController;
 use App\Http\Controllers\JadimitraController;
 use App\Http\Controllers\LokasimakangratisController;
+use App\Http\Controllers\Paymentgateway;
+use App\Http\Controllers\PaymentgatewayController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammakangratisController;
 use App\Http\Controllers\TentangkamiController;
@@ -54,8 +56,11 @@ Route::resource('/daftarmenu', DaftarmenuController::class);
 // Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-Route::resource('/jadimitra', JadimitraController::class);
+Route::resource('/daftarjadimitra', JadimitraController::class);
 Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
+
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::get('/paymentgateway/cileunyi', [PaymentgatewayController::class, 'cileunyi'])->name('cileunyi');
 
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 
