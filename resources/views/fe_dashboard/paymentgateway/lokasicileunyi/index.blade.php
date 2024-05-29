@@ -60,7 +60,7 @@
                 
                 <div class="grid grid-cols-2 w-fit mx-auto justify-center gap-[30px]">
                     
-                    <a href="https://app.midtrans.com/payment-links/1716977431395" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1716977819671" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
