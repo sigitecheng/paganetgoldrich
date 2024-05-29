@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('menu');
             $table->string('gambar')->nullable();
             $table->text('keteranganmenu');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
