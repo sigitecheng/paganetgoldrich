@@ -77,10 +77,10 @@
                 {{-- <h1 class="text-center font-extrabold text-[24px] leading-[36px]">Pilih Donasi Kamu</h1> --}}
                 
                     <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 220), rgb(217, 219, 236)); margin-top:5px;">
-                        <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
+                        <div class="w-10 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                             <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                         </div>
-                        <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
+                        <div class="flex flex-col gap-1" style="margin-left: 5px; font-size:12px;">
                             {{-- <p class="font-bold text-white border-spacing-5">Industri</p> --}}
                             {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Daftar Menu Makanan : <span style="font-size: 14px; color: white;"><a href="">Klik Here</a></span></p>  --}}
                             <a href="/daftarmenu">
