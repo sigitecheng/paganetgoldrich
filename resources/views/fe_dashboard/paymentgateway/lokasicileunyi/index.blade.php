@@ -104,7 +104,7 @@
                             <div class="badge" style="display: inline-block; border-radius: 4px; overflow: hidden; width: 100%; text-align: center;">
                                 {{-- <a href="#" class="button" style="width:100%; display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; font-weight: bold; border-radius: 4px; transition: background-color 0.3s ease;">Donasi Sepuasnya</a> --}}
                                 <a style="width: 100%" href="checkout.html" class="flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
-                                    <div class="flex shrink-0 overflow-hidden" style="width: 10%;" >
+                                    <div class="flex shrink-0 overflow-hidden" style="width: 20%;" >
                                         <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                                     </div>
                                     <p class="font-bold" style="font-size: 18px; color: white">Donasi Sepuasnya</p>
