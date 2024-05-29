@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Daftarmitrarumahmakann;
+use App\Models\Lokasimakangratis;
 use Illuminate\Http\Request;
 
 class ProgrammakangratisController extends Controller
@@ -14,7 +16,8 @@ class ProgrammakangratisController extends Controller
             'title' => 'HaiuCare Bangun Indonesia',
             // 'title_halaman' => 'Halaman Fundraising',
 
-            // 'data_fundraising'  => Fundraising::paginate(10),
+            'data_lokasimakangratis'  => Lokasimakangratis::all(),
+            'data_daftarmitrarumahmakan'  => Daftarmitrarumahmakann::all(),
 
         ]); 
     }

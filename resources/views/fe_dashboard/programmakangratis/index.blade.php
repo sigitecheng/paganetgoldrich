@@ -65,83 +65,32 @@
                        <br>
                        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 14px; padding-left: 10px; padding-right: 10px;">
 
-                            <a href="/paymentgateway/cileunyi" class="card">
-                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
-                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-                                        <img src="assets/css/fe_css/images/programmakangratis/makangratiscileunyi.jpeg" class="w-full h-full object-cover" alt="assets/images/programmakangratis/makangratiscileunyi.jpeg">
-                                    </div>
-                                    
-                                    <div class="flex flex-col gap-1">
-                                        <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Cileunyi, Bandung</p>
-                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
-                                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
-                                            {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
-                                                Donasi
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            
-                            
-                            <a href="/comingsoon" class="card">
-                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
-                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-                                        <img src="assets/css/fe_css/images/programmakangratis/makangratiskopo.jpg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratiskopo.jpg">
-                                    </div>
-                                    
-                                    <div class="flex flex-col gap-1">
-                                        <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Kopo, Bandung</p>
-                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
-                                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
-                                            {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
-                                                Donasi
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
 
-                            <a href="/comingsoon" class="card">
-                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
-                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-                                        <img src="assets/css/fe_css/images/programmakangratis/makangratislembang.jpg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratislembang.jpg">
-                                    </div>
-                                    
-                                    <div class="flex flex-col gap-1">
-                                        <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Lembang, Kab Bandung</p>
-                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
-                                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
-                                            {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
-                                                Donasi
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+@foreach ($data_lokasimakangratis as $data)
+    
 
-                            <a href="/comingsoon" class="card">
-                                <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
-                                    <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-                                        <img src="assets/css/fe_css/images/programmakangratis/makangratisstasiunbandung.jpeg" class="w-full h-full object-cover" alt="assets/css/fe_css/images/programmakangratis/makangratisstasiunbandung.jpeg">
-                                    </div>
-                                    
-                                    <div class="flex flex-col gap-1">
-                                        <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis Stasiun Bandung, Bandung</p>
-                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
-                                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
-                                            {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                                            <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
-                                                Donasi
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+<a href="/paymentgateway/cileunyi" class="card">
+    <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
+        <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
+            <img src="{{$data->daftarmitrarumahmakann->gambar}}" class="w-full h-full object-cover" alt="assets/images/programmakangratis/makangratiscileunyi.jpeg">
+        </div>
+        
+        <div class="flex flex-col gap-1">
+            <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis {{ $data->kota}}</p>
+            <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px; color:green;">Rumah Makan : {{ $data->daftarmitrarumahmakann->namarumahmakan}}</p>
+            <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
+            <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
+                <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
+                    Donasi
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+@endforeach
+                            
                             
                             
                             <br><br>

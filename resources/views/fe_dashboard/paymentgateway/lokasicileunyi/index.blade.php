@@ -16,10 +16,19 @@
                         <img src="/assets/css/fe_css/images/icons/menuandroid/homehaiu.png" alt="icon">
                     </a>
                         {{-- <p class="font-semibold text-sm" >HaiuCare Bangun Indonesia</p> --}}
-                </div>
-                <div class="flex flex-col items-center text-center">
-                    {{-- <p class="text-xs leading-[18px] text-white" style="font-size: 14px;">Mitra UMKM</p> --}}
-                    <p class="font-semibold text-sm text-white">#makangratis</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <a href="/daftarmenu">
+                            <div class="flex items-center gap-[10px]">
+                                <div class="w-10 h-10 flex shrink-0">
+                                   <img src="/assets/css/fe_css/images/icons/menuandroid/apphome.png" alt="icon">
+                               </div>
+                               <div class="flex flex-col text-white">
+                                   {{-- <p class="text-xs leading-[18px]">Location</p> --}}
+                                   <p class="font-semibold text-sm">Daftar Menu</p>
+                               </div>
+                           </div>
+                       </a>
                 </div>
 
             </nav>
