@@ -50,8 +50,17 @@
             </nav>
 
             <div class="mt-[30px] z-10">
-                <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br></h1>
+                @if(auth()->check()) 
+    <!-- Jika pengguna sudah login -->
+    <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br>Selamat Datang ! {{ auth()->user()->name }}</h1>
+@else
+    <!-- Jika pengguna belum login -->
+    <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br></h1>
+@endif
+
+                {{-- <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br></h1> --}}
                 <h4 class="font-extrabold text-xl leading-[36px] text-white text-center">Program Makan Gratis</h4>
+
             </div>
             
             <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 1rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">

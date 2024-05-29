@@ -6,6 +6,7 @@ use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Tentangkami;
 use App\Models\Lokasimakangratis;
+use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -22,6 +23,21 @@ class DatabaseSeeder extends Seeder
             //     'name' => 'Test User',
             //     'email' => 'test@example.com',
             // ]);
+
+
+            User::create([
+                'name'  => 'Sigit Septiadi',
+                'username' => 'iqlima Nuri',
+                'email' => 'sigitseptiadi1@gmail.com',
+                'password' => bcrypt('adminadmin')
+            ]);
+    
+            User::create([
+                'name'  => 'Haiu',
+                'username' => 'Haiu',
+                'email' => 'hbi@haiucares.com',
+                'password' => bcrypt('adminadmin')
+            ]);    
             
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg1.jpeg',
@@ -187,7 +203,7 @@ class DatabaseSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        //  Daftarmitrarumahmakann::factory(7)->create();
+         User::factory(7)->create();
     
     }
 }
