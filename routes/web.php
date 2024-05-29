@@ -36,7 +36,7 @@ Route::get('/comingsoon', function () {
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/', ProgrammakangratisController::class);
-Route::resource('/dashboard', ProgrammakangratisController::class);
+// Route::resource('/dashboard', ProgrammakangratisController::class);
 // ----------------------------------------------------
 
 // ----------------------------------------------------
