@@ -98,7 +98,7 @@
                 <div class="flex flex-col gap-4 px-4">
                 
                     
-                    <div class="card">
+                    <div class="card" style="margin-top: 10px;">
                         <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl bg-white" style="background-image: linear-gradient(to bottom, rgb(34, 182, 231), rgb(28, 50, 219)); margin-top:5px;">
                             
                             <div class="badge" style="display: inline-block; border-radius: 4px; overflow: hidden; width: 100%; text-align: center; margin-top:10px;">
