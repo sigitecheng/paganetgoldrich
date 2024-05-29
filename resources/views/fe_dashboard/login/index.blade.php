@@ -49,7 +49,7 @@
                                 <div class="input-group mb-3" style="margin-top: 15px;">
                                     <label class="font-semibold" for="">Email</label>
                                     <br>
-                                    <input style="padding: 5px 75px; margin-bottom:20px;" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="" required value="{{ old('email') }}">
+                                    <input style="padding: 5px 40px; margin-bottom:20px;" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="" required value="{{ old('email') }}">
                                     @error('email') 
                                     <div class="invalid-feedback mb-2">
                                         {{ $message }}
@@ -60,7 +60,7 @@
                                 <div class="input-group mb-3">
                                     <label class="font-semibold" for="" style="margin-left: 10px;">Password</label>
                                     <br>
-                                    <input style="padding: 5px 75px; margin-bottom:10px" type="text" name="password" class="form-control rounded-full mt-0 @error('password') is-invalid @enderror" id="password" placeholder="" required value="{{ old('password') }}">
+                                    <input style="padding: 5px 40px; margin-bottom:10px" type="text" name="password" class="form-control rounded-full mt-0 @error('password') is-invalid @enderror" id="password" placeholder="" required value="{{ old('password') }}">
                                     @error('password') 
                                     <div class="invalid-feedback mb-2">
                                         {{ $message }}
