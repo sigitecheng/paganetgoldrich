@@ -75,7 +75,7 @@
         <div class="flex flex-col z-30">
             <div id="content" class="w-full min-h-[calc(100vh-220px)] h-full bg-white rounded-t-[40px] flex flex-col gap-[30px] p-[30px_24px_30px]">
                 {{-- <h1 class="text-center font-extrabold text-[24px] leading-[36px]">Pilih Donasi Kamu</h1> --}}
-                <a href="" class="card">
+                
                     <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 220), rgb(217, 219, 236)); margin-top:5px;">
                         <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
                             <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
@@ -94,7 +94,6 @@
                             <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; text-align:justify;">Keterangan : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->deskripsi}}</span></p> 
                         </div>
                     </div>
-                </a>
                 
                 <div class="flex flex-col gap-4 px-4">
                 
