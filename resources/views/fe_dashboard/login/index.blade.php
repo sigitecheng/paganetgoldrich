@@ -47,7 +47,7 @@
                             <form action="/login" method="post" class="mt-2">
                               @csrf
                                 <div class="input-group mb-3">
-                                    <label class="font-semibold" for="" style="margin-left: 10px;">Email</label>
+                                    <label class="font-semibold" for="">Email</label>
                                     <br>
                                     <input style="padding: 5px 100px; margin-bottom:10px" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="" required value="{{ old('email') }}">
                                     @error('email') 
