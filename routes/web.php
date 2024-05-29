@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DaftarmenuController;
 use App\Http\Controllers\DaftarmitrarumahmakannController;
+use App\Http\Controllers\JadimitraController;
 use App\Http\Controllers\LokasimakangratisController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammakangratisController;
@@ -52,8 +53,11 @@ Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, '
 Route::resource('/daftarmenu', DaftarmenuController::class);
 // Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
-// Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::resource('/jadimitra', JadimitraController::class);
+Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
+// Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 
 // Route::get('/', function () {
 //     return view('welcome');

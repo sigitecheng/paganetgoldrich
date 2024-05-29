@@ -26,7 +26,10 @@
                <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
                    <img src="/assets/css/fe_css/images/tentangkami/listantrianmitra.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
-   
+
+               <div class="badge" style="display: inline-block; border-radius: 4px; overflow: hidden;">
+                <a href="/daftarjadimitra" style="text-align:center; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:100%; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">Daftar jadi mitra</a>
+                    </div>   
         </div>
         <div class="flex flex-col gap-4 px-4">
 
@@ -60,6 +63,7 @@
                         {{-- <span style="background-color: rgb(36, 36, 179); color: white; padding: 2px 10px; border-radius: 5px; font-size:12px;">Show Details</span> --}}
                         <a href="/daftarmitra/{{ $data->namarumahmakan}}">
                             <span style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Show Details</span>
+                        
                         </a>
                         {{-- <a href="/dashboard/posts/{{ $post->slug }}">
                             <button class="btn btn-primary" data-toggle="modal" ><i class="fa fa-eye"></i></button>
