@@ -60,7 +60,7 @@ Route::resource('/daftarjadimitra', JadimitraController::class);
 Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-Route::get('/paymentgateway/cileunyi', [PaymentgatewayController::class, 'cileunyi'])->name('cileunyi');
+Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'paymentmakan'])->name('paymentmakan');
 
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 

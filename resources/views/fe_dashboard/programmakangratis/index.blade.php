@@ -69,7 +69,7 @@
 @foreach ($data_lokasimakangratis as $data)
     
 
-<a href="/paymentgateway/cileunyi" class="card">
+<a href="/paymentgateway/mitra/{{ $data->kota}}" class="card">
     <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
         <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
             <img src="{{$data->daftarmitrarumahmakann->gambar}}" class="w-full h-full object-cover" alt="assets/images/programmakangratis/makangratiscileunyi.jpeg">

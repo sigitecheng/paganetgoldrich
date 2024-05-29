@@ -1,52 +1,103 @@
 @include('fe_dashboard.menu.header')
 
 
-<body class="font-poppins text-[#292E4B] bg-[#7ca4ce]">
+{{-- <body class="font-poppins text-[#292E4B] bg-[#7ca4ce]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
-        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
+        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header"> --}}
 
 
 {{-- <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-[#FCF7F1] overflow-x-hidden">
         <div class="header flex flex-col overflow-hidden h-[220px] relative"> --}}
-            
-            <nav class="pt-5 px-3 flex justify-between items-center relative z-20">
-                <div class="w-10 h-10 flex shrink-0">
-                    <a href="javascript:history.back()">
-                        <img src="/assets/css/fe_css/images/icons/menuandroid/homehaiu.png" alt="icon">
-                    </a>
-                        {{-- <p class="font-semibold text-sm" >HaiuCare Bangun Indonesia</p> --}}
-                    </div>
-                    <div class="flex flex-col items-center text-center">
-                        <a href="/daftarmenu">
+            <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
+                <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden">
+                    <div class="header flex flex-col bg-[#56BBC5] overflow-hidden h-[350px] relative -mb-[92px]">
+                        <nav class="pt-5 px-3 flex justify-between items-center relative z-20">
                             <div class="flex items-center gap-[10px]">
-                                <div class="w-10 h-10 flex shrink-0">
-                                   <img src="/assets/css/fe_css/images/icons/menuandroid/apphome.png" alt="icon">
-                               </div>
-                               <div class="flex flex-col text-white">
-                                   {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                                   <p class="font-semibold text-sm">Daftar Menu</p>
-                               </div>
-                           </div>
-                       </a>
-                </div>
+                                <a href="javascript:history.back()" class="w-10 h-10 flex shrink-0">
+                                    <img src="/assets/css/fe_css/images/icons/menuandroid/homehaiu.png" alt="icon">
+                                </a>
+                            </div>
+                            <div class="flex flex-col items-center text-center">
+                                {{-- <p class="text-xs leading-[18px] text-white">Details</p> --}}
+                                <p class="font-semibold text-sm text-white">#makangratis</p>
+                            </div>
+                            <a href="" class="w-10 h-10 flex shrink-0">
+                                <img src="/assets/css/fe_css/images/icons/menuandroid/apphome.png" alt="icon">
+                            </a>
+                        </nav>
 
-            </nav>
-            
-               <div class="mt-[0px] z-10">
-                   {{-- <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center" style="font-size:18px">HaiuCare Bangun Indonesia<br></h1> --}}
-                   <h4 class="font-extrabold text-xl leading-[36px] text-white text-center" style="font-size: 14px">Donasi Makan Gratis Lokasi Cileunyi</h4>
-               </div>
-               
-               <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                   <img src="/assets/css/fe_css/images/tentangkami/lokasimakangratis.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
-               </div>
+                        <div class="w-full h-full absolute bg-white overflow-hidden">
+                            <div class="w-full h-[900px] bg-gradient-to-b from-black/90 to-[#080925]/0 absolute z-10"></div>
+                            <img src="{{asset($data->daftarmitrarumahmakann->gambar)}}" class="w-full h-full object-cover" alt="">
+                            {{-- <img src="{{ asset('/public/assets/css/fe_css/images/daftarmitrarumahmakan/' . $data->gambar)}}" class="w-full h-full object-cover" alt="cover"> --}}
+                        </div>
+                        </div>
 
+                        <div class="flex flex-col z-30">
+                            <div id="status" style="
+                            width: 100%;
+                            height: 92px;
+                            background-color: #2c15ff;
+                            background-image: linear-gradient(to bottom, #58c0e9, #1d06e7);
+                            border-top-left-radius: 40px;
+                            border-top-right-radius: 40px;
+                            padding-top: 0.75rem; /* Sesuaikan dengan kebutuhan Anda */
+                            padding-bottom: 3.125rem; /* Sesuaikan dengan kebutuhan Anda */
+                            display: flex;
+                            gap: 0.5rem; /* Sesuaikan dengan kebutuhan Anda */
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: -2.375rem; /* Sesuaikan dengan kebutuhan Anda */
+                            ">
+                                <div class="w-[30px] h-[30px] flex shrink-0">
+                                    <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" alt="icon" style="filter: invert(100%);">
+                                </div>
+                                <p class="font-semibold text-sm text-white">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</p>
+                        {{-- <div class="w-full h-full absolute bg-white overflow-hidden">
+                            <div class="w-full h-[266px] bg-gradient-to-b from-black/90 to-[#080925]/0 absolute z-10"></div>
+                            <img src="{{ asset($data->daftarmitrarumahmakann->gambar)}}" class="w-full h-full object-cover" alt="cover">
+                        </div> --}}
+                    </div>
+                    
+                    <div class="flex flex-col z-30">
+                        {{-- <div id="status" class="w-full h-[92px] bg-[#FF7815] rounded-t-[40px] pt-3 pb-[50px] flex gap-2 justify-center items-center -mb-[38px]">
+                            <div class="w-[30px] h-[30px] flex shrink-0">
+                                <img src="assets/images/icons/lovely.svg" alt="icon">
+                            </div>
+                            
+                            <p class="font-semibold text-sm text-white">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</p>
+                        </div> --}}
+                        {{-- @endforeach --}}
         </div>
+
+
         <div class="flex flex-col z-30">
             <div id="content" class="w-full min-h-[calc(100vh-220px)] h-full bg-white rounded-t-[40px] flex flex-col gap-[30px] p-[30px_24px_30px]">
                 {{-- <h1 class="text-center font-extrabold text-[24px] leading-[36px]">Pilih Donasi Kamu</h1> --}}
+                <a href="" class="card">
+                    <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl" style="background-image: linear-gradient(to bottom, rgb(6, 45, 220), rgb(217, 219, 236)); margin-top:5px;">
+                        <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
+                            <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
+                        </div>
+                        <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
+                            {{-- <p class="font-bold text-white border-spacing-5">Industri</p> --}}
+                            {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Daftar Menu Makanan : <span style="font-size: 14px; color: white;"><a href="">Klik Here</a></span></p>  --}}
+                            <a href="/daftarmenu">
+                                <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Daftar Menu Makanan : <span style="display: inline-block; padding: 2px 18px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:100px; background-color: #babd0c; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#000000';" onmouseout="this.style.backgroundColor='#00000'; this.style.color='#fff';">Click Here</span></p> 
+                            </a>
+                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Nama Pemilik : <span style="font-size: 14px; color: white;">{{ $data->daftarmitrarumahmakann->nama_pemilik}}</span></p> 
+                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Rumah Makan : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</span></p> 
+                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Alamat : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->alamat_rumahmakan}}</span></p> 
+                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Telepon : <span style="font-size: 14px; color: white;">{{ $data->daftarmitrarumahmakann->telepon}}</span></p> 
+                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Email : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->email}}</span></p> 
+                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; text-align:justify;">Keterangan : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->deskripsi}}</span></p> 
+                        </div>
+                    </div>
+                </a>
+                
                 <div class="flex flex-col gap-4 px-4">
+                
                     
                     <div class="card">
                         <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl bg-white" style="background-image: linear-gradient(to bottom, rgb(34, 182, 231), rgb(28, 50, 219)); margin-top:5px;">
@@ -66,6 +117,8 @@
                             </div>
                         </div>
                 </div>
+
+                
                 
                 <div class="grid grid-cols-2 w-fit mx-auto justify-center gap-[30px]">
                     
@@ -139,7 +192,7 @@
             </div>
             @include('fe_dashboard.menu.menufooter')
     
-            {{-- @include('fe_dashboard.menu.enter') --}}
+            @include('fe_dashboard.menu.enter')
     
     
             @include('fe_dashboard.menu.android')
