@@ -40,7 +40,7 @@
                     {{-- <h1 class="text-center mb-5"><i class="fab fa-ravelry text-primary"></i> HaiuCare Indonesia</h1>     --}}
                     <div class="row">
                      
-                        <div class="col-md-6 col-sm-6 col-12 login-box-form p-4" style="text-align: center; margin-top:0px;">
+                        <div style="text-align: center; margin-top:0px;">
                      
                      
                      {{-- =========================================================================== --}}
@@ -49,7 +49,7 @@
                                 <div class="input-group mb-3">
                                     <label class="font-semibold" for="">Email</label>
                                     <br>
-                                    <input style="padding: 5px 100px; margin-bottom:10px" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="" required value="{{ old('email') }}">
+                                    <input style="padding: 5px 100px; margin-bottom:10px;" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="" required value="{{ old('email') }}">
                                     @error('email') 
                                     <div class="invalid-feedback mb-2">
                                         {{ $message }}
