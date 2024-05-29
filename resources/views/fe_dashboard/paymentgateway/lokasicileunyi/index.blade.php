@@ -101,7 +101,7 @@
                     <div class="card">
                         <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl bg-white" style="background-image: linear-gradient(to bottom, rgb(34, 182, 231), rgb(28, 50, 219)); margin-top:5px;">
                             
-                            <div class="badge" style="display: inline-block; border-radius: 4px; overflow: hidden; width: 100%; text-align: center;">
+                            <div class="badge" style="display: inline-block; border-radius: 4px; overflow: hidden; width: 100%; text-align: center; margin-top:10px;">
                                 {{-- <a href="#" class="button" style="width:100%; display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; font-weight: bold; border-radius: 4px; transition: background-color 0.3s ease;">Donasi Sepuasnya</a> --}}
                                 <a style="width: 100%" href="checkout.html" class="flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                                     <div class="flex shrink-0 overflow-hidden" style="width: 20%;" >
