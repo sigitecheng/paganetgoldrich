@@ -13,6 +13,7 @@ use App\Http\Controllers\LoginController;
 use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Programmakangratis;
+use App\Models\Lokasimakangratis;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,7 +32,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/comingsoon', function () {
     return view('comingsoon', [
         'title' => 'Coming Soon',
-    ]);});
+    ]);
+});
+
+// ==========================================================
+// Route::get('/dashboard', function () {
+//     return view('fe_dashboard.programmakangratis.index', [
+//         'title' => 'Selamat Datang',
+//     ]);
+// });
 
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
@@ -42,7 +51,7 @@ Route::resource('/', ProgrammakangratisController::class);
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 // Route::resource('/logins', LoginController::class);
-Route::get('/logins', [LoginController::class, 'index'])->name('logins')->middleware('guest'); // PENAMBAHAN FITUR GUEST 
+Route::get('/logins', [LoginController::class, 'index'])->name('logins')->middleware('guest');  
 Route::post('/logins', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 // ----------------------------------------------------
@@ -82,14 +91,20 @@ Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'pa
 //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 // });
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'paymentmakan'])->name('paymentmakan');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('fe_dashboard.dashboard.index', [
+        'title' => 'Selamat Datang !',
+        'data_lokasimakangratis'  => Lokasimakangratis::all(),
+        'data_daftarmitrarumahmakan'  => Daftarmitrarumahmakann::all(),
+    ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
 require __DIR__.'/auth.php';
-    
+
 
 // Route::get('/masuk', function () {
 //         return view('masuk');

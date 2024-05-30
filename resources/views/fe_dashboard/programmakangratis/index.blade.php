@@ -51,15 +51,20 @@
 
             <div class="mt-[30px] z-10">
                 @if(auth()->check()) 
-    <!-- Jika pengguna sudah login -->
-    <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br>Selamat Datang ! {{ auth()->user()->name }}</h1>
-@else
-    <!-- Jika pengguna belum login -->
-    <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br></h1>
-@endif
-
-                {{-- <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br></h1> --}}
-                <h4 class="font-extrabold text-xl leading-[36px] text-white text-center">Program Makan Gratis</h4>
+                            <!-- Jika pengguna sudah login -->
+                            <h1 class="font-semibold text-2xl leading-[36px] text-white text-center" style="font-size: 16px;">Selamat Datang ! <span class="font-bold" style="color:white"> {{ auth()->user()->name }}</span></h1>
+                        @else
+                            <!-- Jika pengguna belum login -->
+                            <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br></h1>
+                        @endif
+             
+                 @if(auth()->check()) 
+                            <!-- Jika pengguna sudah login -->
+                            <h1 class="font-semibold text-2xl leading-[36px] text-white text-center" style="font-size: 16px;">Anda Adalah <span class="font-bold" style="color:white"> {{ auth()->user()->is_admin }}</span></h1>
+                        @else
+                            <!-- Jika pengguna belum login -->
+                            <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">Program Makan Gratis<br></h1>
+                        @endif
 
             </div>
             

@@ -28,14 +28,24 @@ class DatabaseSeeder extends Seeder
             User::create([
                 'name'  => 'Sigit Septiadi',
                 'username' => 'iqlima Nuri',
+                'is_admin' => 'super_admin',
                 'email' => 'sigitseptiadi1@gmail.com',
-                'password' => bcrypt('adminadmin')
+                'password' => bcrypt('098890')
             ]);
-    
+            
             User::create([
-                'name'  => 'Haiu',
-                'username' => 'Haiu',
-                'email' => 'hbi@haiucares.com',
+                'name'  => 'Yogi Maxi Antony',
+                'username' => 'Yogi Maxi',
+                'is_admin' => 'super_admin',
+                'email' => 'yogimaxy@iuj.ac.jp',
+                'password' => bcrypt('Lovehate12345678')
+            ]); 
+            
+            User::create([
+                'name'  => 'Sigit Dwi Prasetyo',
+                'username' => 'Sigit Dwi',
+                'is_admin' => 'super_admin',
+                'email' => 'sigitdwi@gmail.com',
                 'password' => bcrypt('adminadmin')
             ]);    
             
