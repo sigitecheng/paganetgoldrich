@@ -13,16 +13,17 @@ return new class extends Migration
     {
         Schema::create('jadimitras', function (Blueprint $table) {
             $table->id();
-            $table->string('Nama');
-            $table->string('Alamat')->nullable();
-            $table->string('Nomor_telepon')->nullable();
-            $table->string('Email')->nullable();
-            $table->date('Tanggal_berdiri')->nullable();
-            $table->bigInteger('Kuota_porsi')->nullable();
-            $table->string('KTP')->nullable();
-            $table->string('Foto_Mitra')->nullable();
-            $table->string('Foto_UMKM')->nullable();
-            $table->text('Keterangan_Mitra')->nullable(); // Kolom untuk keterangan mitra
+            $table->string('nama_rumahmakan');
+            $table->string('nama_pemilik');
+            $table->text('alamat')->nullable();
+            $table->string('nomor_telepon')->nullable();
+            $table->string('email')->nullable();
+            $table->date('tanggal_berdiri')->nullable();
+            $table->bigInteger('kuota_porsi')->nullable();
+            $table->string('ktp')->nullable();
+            $table->string('foto_mitra')->nullable();
+            $table->string('foto_umkm')->nullable();
+            $table->text('keterangan_mitra')->nullable(); // Kolom untuk keterangan mitra
             $table->softDeletes();
             $table->timestamps();
         });
