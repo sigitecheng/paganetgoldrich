@@ -260,7 +260,7 @@ inputAlamat.addEventListener("change", function() {
 
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
-<div class="input-group mb-3" style="margin-top: 2px;">
+<div class="email input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="email" style="text-align: center">
         <i class="fas fa-envelope mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Email</span>
     </label>
@@ -271,6 +271,31 @@ inputAlamat.addEventListener("change", function() {
     </div>
     @enderror
 </div>
+
+<script>
+    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+var elemenEmail = document.querySelector('.email.input-group.mb-3');
+
+// Mulai dengan menyembunyikan elemen "Kota/Kab"
+elemenEmail.style.display = "none";
+
+// Simpan elemen input "Nama Pemilik" ke dalam variabel
+var inputNomorTelepon = document.getElementById("nomor_telepon");
+
+// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
+inputNomorTelepon.addEventListener("change", function() {
+    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
+    if (inputNomorTelepon.value.trim() !== "") {
+        // Jika terisi, tampilkan kembali elemen "Kota/Kab"
+        elemenEmail.style.display = "block";
+    } else {
+        // Jika tidak terisi, sembunyikan kembali elemen "Kota/Kab"
+        elemenEmail.style.display = "none";
+    }
+});
+
+</script>
+
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
