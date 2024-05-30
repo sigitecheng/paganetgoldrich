@@ -185,7 +185,7 @@ inputNamaPemilik.addEventListener("change", function() {
         <i class="fas fa-home mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Alamat</span>
     </label>
     {{-- <input style="padding: 5px 10px; margin-bottom:20px;" type="text" name="alamat" class="form-control rounded-full mt-0 @error('alamat') is-invalid @enderror" id="alamat" placeholder="Alamat" required value="{{ old('alamat') }}"> --}}
-    <textarea style="width:300px; height:200px; margin-bottom: 2px; rounded:10%" name="keterangan_mitra" class="form-control mt-0 @error('keterangan_mitra') is-invalid @enderror" id="keterangan_mitra" placeholder="Jelaskan Disini" required>{{ old('keterangan_mitra') }}</textarea>
+    <textarea style="width:300px; height:200px; margin-bottom: 2px; rounded:10%" name="alamat" class="form-control mt-0 @error('alamat') is-invalid @enderror" id="alamat" placeholder="Sertakan Alamat Saudara disini" required>{{ old('alamat') }}</textarea>
 
     @error('alamat') 
     <div class="invalid-feedback mb-2">
