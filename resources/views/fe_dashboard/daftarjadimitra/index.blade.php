@@ -234,19 +234,19 @@ inputPilihanKota.addEventListener("change", function() {
 
 
 <script>
-    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+// Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
 var elemenTelepon = document.querySelector('.telepon.input-group.mb-3');
 
 // Mulai dengan menyembunyikan elemen "Kota/Kab"
 elemenTelepon.style.display = "none";
 
-// Simpan elemen input "Nama Pemilik" ke dalam variabel
-var inputAlamat = document.getElementById("alamat");
+// Simpan elemen textarea "Alamat" ke dalam variabel
+var textareaAlamat = document.getElementById("alamat");
 
-// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
-inputAlamat.addEventListener("change", function() {
-    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
-    if (inputAlamat.value.trim() !== "") {
+// Tambahkan event listener untuk mendeteksi perubahan pada textarea "Alamat"
+textareaAlamat.addEventListener("change", function() {
+    // Periksa apakah nilai textarea "Alamat" sudah terisi atau tidak
+    if (textareaAlamat.value.trim() !== "") {
         // Jika terisi, tampilkan kembali elemen "Kota/Kab"
         elemenTelepon.style.display = "block";
     } else {
@@ -255,8 +255,9 @@ inputAlamat.addEventListener("change", function() {
     }
 });
 
-</script>
 
+
+</script>
 
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
