@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nama_rumahmakan');
             $table->string('nama_pemilik');
+            $table->string('pilihan_kota')->nullable();
+            $table->string('kecamatan')->nullable();
             $table->text('alamat')->nullable();
             $table->string('nomor_telepon')->nullable();
             $table->string('email')->nullable();

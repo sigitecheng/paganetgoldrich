@@ -67,6 +67,23 @@
 </div>
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
+<div class="input-group mb-3" style="margin-top: 15px;">
+    <label class="font-semibold flex items-center" for="pilihan_kota" style="text-align: center">
+        <i class="fas fa-map-marker-alt mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Kota/Kab</span>
+    </label>
+    <select style="padding: 5px 20px; margin-bottom:20px;" name="pilihan_kota" class="form-control rounded-full mt-0 @error('pilihan_kota') is-invalid @enderror" id="pilihan_kota" required>
+        <option value="">Pilih Kota/Kab</option>
+            <option value="kota_bandung">Kota Bandung</option>
+            <option value="kab_bandung">Kab Bandung</option>        
+    </select>
+    @error('pilihan_kota') 
+    <div class="invalid-feedback mb-2">
+        {{ $message }}
+    </div>
+    @enderror
+</div>
+
+{{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="alamat" style="text-align: center">
         <i class="fas fa-home mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Alamat</span>
