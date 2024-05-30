@@ -83,6 +83,104 @@
     @enderror
 </div>
 
+<div class="input-group mb-3" style="margin-top: 15px;">
+    <label class="font-semibold flex items-center" for="kecamatan" style="text-align: center">
+        <i class="fas fa-map-marker-alt mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Kecamatan</span>
+    </label>
+    <select style="padding: 5px 10px; margin-bottom:20px;" name="kecamatan" class="form-control rounded-full mt-0 @error('kecamatan') is-invalid @enderror" id="kecamatan" required>
+        <option value="">Pilih Kecamatan</option>
+        <optgroup label="Kota Bandung">
+            <option value="Andir">Andir</option>
+            <option value="Antapani">Antapani</option>
+            <option value="Arcamanik">Arcamanik</option>
+            <option value="Astanaanyar">Astanaanyar</option>
+            <option value="Babakan Ciparay">Babakan Ciparay</option>
+            <option value="Bandung Kidul">Bandung Kidul</option>
+            <option value="Bandung Kulon">Bandung Kulon</option>
+            <option value="Bandung Wetan">Bandung Wetan</option>
+            <option value="Batununggal">Batununggal</option>
+            <option value="Bojongloa Kaler">Bojongloa Kaler</option>
+            <option value="Bojongloa Kidul">Bojongloa Kidul</option>
+            <option value="Buahbatu">Buahbatu</option>
+            <option value="Cibeunying Kaler">Cibeunying Kaler</option>
+            <option value="Cibeunying Kidul">Cibeunying Kidul</option>
+            <option value="Cibiru">Cibiru</option>
+            <option value="Cicendo">Cicendo</option>
+            <option value="Cidadap">Cidadap</option>
+            <option value="Cinambo">Cinambo</option>
+            <option value="Coblong">Coblong</option>
+            <option value="Gedebage">Gedebage</option>
+            <option value="Kiaracondong">Kiaracondong</option>
+            <option value="Lengkong">Lengkong</option>
+            <option value="Mandalajati">Mandalajati</option>
+            <option value="Panyileukan">Panyileukan</option>
+            <option value="Rancasari">Rancasari</option>
+            <option value="Regol">Regol</option>
+            <option value="Sukajadi">Sukajadi</option>
+            <option value="Sukasari">Sukasari</option>
+            <option value="Sumur Bandung">Sumur Bandung</option>
+            <option value="Ujungberung">Ujungberung</option>
+        </optgroup>
+    </select>
+    @error('kecamatan') 
+    <div class="invalid-feedback mb-2">
+        {{ $message }}
+    </div>
+    @enderror
+</div>
+
+<div class="input-group mb-3" style="margin-top: 15px;">
+    <label class="font-semibold flex items-center" for="kecamatan" style="text-align: center">
+        <i class="fas fa-map-marker-alt mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Kecamatan</span>
+    </label>
+    <select style="padding: 5px 10px; margin-bottom:20px;" name="kecamatan" class="form-control rounded-full mt-0 @error('kecamatan') is-invalid @enderror" id="kecamatan" required>
+        <option value="">Pilih Kecamatan</option>
+        <optgroup label="Kabupaten Bandung">
+            <option value="Arjasari">Arjasari</option>
+            <option value="Baleendah">Baleendah</option>
+            <option value="Banjaran">Banjaran</option>
+            <option value="Bojongsoang">Bojongsoang</option>
+            <option value="Cangkuang">Cangkuang</option>
+            <option value="Cicalengka">Cicalengka</option>
+            <option value="Cikancung">Cikancung</option>
+            <option value="Cilengkrang">Cilengkrang</option>
+            <option value="Cileunyi">Cileunyi</option>
+            <option value="Cimaung">Cimaung</option>
+            <option value="Cimenyan">Cimenyan</option>
+            <option value="Ciparay">Ciparay</option>
+            <option value="Cipeundeuy">Cipeundeuy</option>
+            <option value="Cipongkor">Cipongkor</option>
+            <option value="Cisarua">Cisarua</option>
+            <option value="Dayeuhkolot">Dayeuhkolot</option>
+            <option value="Ibun">Ibun</option>
+            <option value="Katapang">Katapang</option>
+            <option value="Kertasari">Kertasari</option>
+            <option value="Kutawaringin">Kutawaringin</option>
+            <option value="Majalaya">Majalaya</option>
+            <option value="Margaasih">Margaasih</option>
+            <option value="Margahayu">Margahayu</option>
+            <option value="Nagreg">Nagreg</option>
+            <option value="Pacet">Pacet</option>
+            <option value="Pameungpeuk">Pameungpeuk</option>
+            <option value="Pangalengan">Pangalengan</option>
+            <option value="Paseh">Paseh</option>
+            <option value="Pasirjambu">Pasirjambu</option>
+            <option value="Rancabali">Rancabali</option>
+            <option value="Rongga">Rongga</option>
+            <option value="Saguling">Saguling</option>
+            <option value="Sindangkerta">Sindangkerta</option>
+            <option value="Solokan Jeruk">Solokan Jeruk</option>
+            <option value="Soreang">Soreang</option>
+        </optgroup>
+    </select>
+    @error('kecamatan') 
+    <div class="invalid-feedback mb-2">
+        {{ $message }}
+    </div>
+    @enderror
+</div>
+
+
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="alamat" style="text-align: center">
