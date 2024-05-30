@@ -71,7 +71,9 @@
     <label class="font-semibold flex items-center" for="alamat" style="text-align: center">
         <i class="fas fa-home mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Alamat</span>
     </label>
-    <input style="padding: 5px 10px; margin-bottom:20px;" type="text" name="alamat" class="form-control rounded-full mt-0 @error('alamat') is-invalid @enderror" id="alamat" placeholder="Alamat" required value="{{ old('alamat') }}">
+    {{-- <input style="padding: 5px 10px; margin-bottom:20px;" type="text" name="alamat" class="form-control rounded-full mt-0 @error('alamat') is-invalid @enderror" id="alamat" placeholder="Alamat" required value="{{ old('alamat') }}"> --}}
+    <textarea style="width:300px; height:200px; margin-bottom: 2px; rounded:10%" name="keterangan_mitra" class="form-control mt-0 @error('keterangan_mitra') is-invalid @enderror" id="keterangan_mitra" placeholder="Jelaskan Disini" required>{{ old('keterangan_mitra') }}</textarea>
+
     @error('alamat') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
@@ -82,9 +84,9 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="nomor_telepon" style="text-align: center">
-        <i class="fas fa-phone mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">No Telepon</span>
+        <i class="fas fa-phone mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">No Telepon</span>
     </label>
-    <input style="padding: 5px 40px; margin-bottom:20px;" type="text" name="nomor_telepon" class="form-control rounded-full mt-0 @error('nomor_telepon') is-invalid @enderror" id="nomor_telepon" placeholder="Nomor Telepon" required value="{{ old('nomor_telepon') }}">
+    <input style="padding: 5px 10px; margin-bottom:20px;" type="text" name="nomor_telepon" class="form-control rounded-full mt-0 @error('nomor_telepon') is-invalid @enderror" id="nomor_telepon" placeholder="Nomor Telepon" required value="{{ old('nomor_telepon') }}">
     @error('nomor_telepon') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
@@ -95,9 +97,9 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="email" style="text-align: center">
-        <i class="fas fa-envelope mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Email</span>
+        <i class="fas fa-envelope mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Email</span>
     </label>
-    <input style="padding: 5px 40px; margin-bottom:20px;" type="email" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="Email" required value="{{ old('email') }}">
+    <input style="padding: 5px 10px; margin-bottom:20px;" type="email" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="Email" required value="{{ old('email') }}">
     @error('email') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
@@ -108,9 +110,9 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="tanggal_berdiri" style="text-align: center">
-        <i class="fas fa-edit mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Berdiri</span>
+        <i class="fas fa-edit mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Berdiri</span>
     </label>
-    <input style="padding: 5px 40px; margin-bottom:20px;" type="date" name="tanggal_berdiri" class="form-control rounded-full mt-0 @error('tanggal_berdiri') is-invalid @enderror" id="tanggal_berdiri" placeholder="Didirikan" required value="{{ old('tanggal_berdiri') }}">
+    <input style="padding: 5px 10px; margin-bottom:20px;" type="date" name="tanggal_berdiri" class="form-control rounded-full mt-0 @error('tanggal_berdiri') is-invalid @enderror" id="tanggal_berdiri" placeholder="Didirikan" required value="{{ old('tanggal_berdiri') }}">
     @error('tanggal_berdiri') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
@@ -121,10 +123,10 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="kuota_porsi" style="text-align: center">
-        <i class="fas fa-calculator mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Kuota Porsi Makan</span>
+        <i class="fas fa-calculator mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Kuota Porsi Makan</span>
     </label>
     <p style="font-size: 12px;">Silahkan Isi Sesuai Kemampuan Rumah Makan</p>
-    <input style="padding: 5px 40px; margin-bottom:20px;" type="number" name="kuota_porsi" class="form-control rounded-full mt-0 @error('kuota_porsi') is-invalid @enderror" id="kuota_porsi" placeholder="Kuota" required value="{{ old('kuota_porsi') }}">
+    <input style="padding: 5px 10px; margin-bottom:20px;" type="number" name="kuota_porsi" class="form-control rounded-full mt-0 @error('kuota_porsi') is-invalid @enderror" id="kuota_porsi" placeholder="Kuota" required value="{{ old('kuota_porsi') }}">
     @error('kuota_porsi') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
@@ -135,10 +137,10 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="ktp" style="text-align: center">
-        <i class="fas fa-camera mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Foto KTP</span>
+        <i class="fas fa-camera mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Foto KTP</span>
     </label>
     <p style="font-size: 12px;">Kualitas Gambar Minimal 300Dpi, Foto KTP Pemilik</p>
-    <input style="margin-left:125px; padding: 5px 40px; margin-bottom:20px;" type="file" name="ktp" class="form-control rounded-full mt-0 @error('ktp') is-invalid @enderror" id="ktp" placeholder="KTP" required value="{{ old('ktp') }}">
+    <input style="margin-left:50px; padding: 5px 10px; margin-bottom:20px;" type="file" name="ktp" class="form-control rounded-full mt-0 @error('ktp') is-invalid @enderror" id="ktp" placeholder="KTP" required value="{{ old('ktp') }}">
 
     @error('ktp') 
     <div class="invalid-feedback mb-2">
@@ -150,10 +152,10 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="foto_mitra" style="text-align: center">
-        <i class="fas fa-camera mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Foto Pemilik</span>
+        <i class="fas fa-camera mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Foto Pemilik</span>
     </label>
     <p style="font-size: 12px;">Kualitas Gambar Minimal 300Dpi, Foto Selfie</p>
-    <input style="margin-left:125px; padding: 5px 40px; margin-bottom:20px;" type="file" name="foto_mitra" class="form-control rounded-full mt-0 @error('foto_mitra') is-invalid @enderror" id="foto_mitra" placeholder="Foto Pemilik" required value="{{ old('foto_mitra') }}">
+    <input style="margin-left:150px; padding: 5px 10px; margin-bottom:20px;" type="file" name="foto_mitra" class="form-control rounded-full mt-0 @error('foto_mitra') is-invalid @enderror" id="foto_mitra" placeholder="Foto Pemilik" required value="{{ old('foto_mitra') }}">
 
     @error('foto_mitra') 
     <div class="invalid-feedback mb-2">
@@ -165,10 +167,10 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="foto_umkm" style="text-align: center">
-        <i class="fas fa-camera mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Foto Rumah Makan</span>
+        <i class="fas fa-camera mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Foto Rumah Makan</span>
     </label>
     <p style="font-size: 12px;">Kualitas Gambar Minimal 300Dpi, Foto Rumah Makan</p>
-    <input style="margin-left:125px; padding: 5px 40px; margin-bottom:20px;" type="file" name="foto_umkm" class="form-control rounded-full mt-0 @error('foto_umkm') is-invalid @enderror" id="foto_umkm" placeholder="Foto Rumah Makan" required value="{{ old('foto_umkm') }}">
+    <input style="margin-left:50px; padding: 5px 10px; margin-bottom:20px;" type="file" name="foto_umkm" class="form-control rounded-full mt-0 @error('foto_umkm') is-invalid @enderror" id="foto_umkm" placeholder="Foto Rumah Makan" required value="{{ old('foto_umkm') }}">
 
     @error('foto_umkm') 
     <div class="invalid-feedback mb-2">
@@ -180,7 +182,7 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="keterangan_mitra" style="text-align: center">
-        <i class="fas fa-file mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Keterangan Rumah Makan</span>
+        <i class="fas fa-file mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Keterangan Rumah Makan</span>
     </label>
     <p style="font-size: 12px;">Silahkan jelaskan tentang rumah makan Saudara</p>
     {{-- <input style=" padding: 5px 40px; margin-bottom:20px;" type="textarea" name="keterangan_mitra" class="form-control rounded-full mt-0 @error('keterangan_mitra') is-invalid @enderror" id="keterangan_mitra" placeholder="Jelaskan Disini" required value="{{ old('keterangan_mitra') }}"> --}}
