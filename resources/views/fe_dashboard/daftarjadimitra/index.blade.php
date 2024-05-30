@@ -73,22 +73,6 @@
     </label>
     <select style="padding: 5px 20px; margin-bottom:20px;" name="pilihan_kota" class="form-control rounded-full mt-0 @error('pilihan_kota') is-invalid @enderror" id="pilihan_kota" required>
         <option value="">Pilih Kota/Kab</option>
-            <option value="kota_bandung">Kota Bandung</option>
-            <option value="kab_bandung">Kab Bandung</option>        
-    </select>
-    @error('pilihan_kota') 
-    <div class="invalid-feedback mb-2">
-        {{ $message }}
-    </div>
-    @enderror
-</div>
-
-<div class="input-group mb-3" style="margin-top: 15px;">
-    <label class="font-semibold flex items-center" for="kecamatan" style="text-align: center">
-        <i class="fas fa-map-marker-alt mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Kecamatan</span>
-    </label>
-    <select style="padding: 5px 10px; margin-bottom:20px;" name="kecamatan" class="form-control rounded-full mt-0 @error('kecamatan') is-invalid @enderror" id="kecamatan" required>
-        <option value="">Pilih Kecamatan</option>
         <optgroup label="Kota Bandung">
             <option value="Andir">Andir</option>
             <option value="Antapani">Antapani</option>
@@ -121,20 +105,7 @@
             <option value="Sumur Bandung">Sumur Bandung</option>
             <option value="Ujungberung">Ujungberung</option>
         </optgroup>
-    </select>
-    @error('kecamatan') 
-    <div class="invalid-feedback mb-2">
-        {{ $message }}
-    </div>
-    @enderror
-</div>
-
-<div class="input-group mb-3" style="margin-top: 15px;">
-    <label class="font-semibold flex items-center" for="kecamatan" style="text-align: center">
-        <i class="fas fa-map-marker-alt mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Kecamatan</span>
-    </label>
-    <select style="padding: 5px 10px; margin-bottom:20px;" name="kecamatan" class="form-control rounded-full mt-0 @error('kecamatan') is-invalid @enderror" id="kecamatan" required>
-        <option value="">Pilih Kecamatan</option>
+        <option value=""></option>
         <optgroup label="Kabupaten Bandung">
             <option value="Arjasari">Arjasari</option>
             <option value="Baleendah">Baleendah</option>
@@ -173,12 +144,13 @@
             <option value="Soreang">Soreang</option>
         </optgroup>
     </select>
-    @error('kecamatan') 
+    @error('pilihan_kota') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
     </div>
     @enderror
 </div>
+
 
 
 {{-- ================================================================================================== --}}
