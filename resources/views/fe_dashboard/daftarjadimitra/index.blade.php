@@ -43,9 +43,9 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 15px;">
     <label class="font-semibold flex items-center" for="nama_rumahmakan" style="text-align: center">
-        <i class="fas fa-utensils mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Nama Rumah Makan</span>
+        <i class="fas fa-utensils mr-2" style="margin-left: 50px;"></i> <span style="margin-left: 10px;">Nama Rumah Makan</span>
     </label>
-    <input style="padding: 5px 40px; margin-bottom:20px;" type="text" name="nama_rumahmakan" class="form-control rounded-full mt-0 @error('nama_rumahmakan') is-invalid @enderror" id="nama_rumahmakan" placeholder="Nama Rumah Makan" required value="{{ old('nama_rumahmakan') }}">
+    <input style="padding: 5px 10px; margin-bottom:20px;" type="text" name="nama_rumahmakan" class="form-control rounded-full mt-0 @error('nama_rumahmakan') is-invalid @enderror" id="nama_rumahmakan" placeholder="Nama Rumah Makan" required value="{{ old('nama_rumahmakan') }}">
     @error('nama_rumahmakan') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
