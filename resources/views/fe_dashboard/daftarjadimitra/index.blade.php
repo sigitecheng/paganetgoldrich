@@ -155,7 +155,7 @@
         <i class="fas fa-camera mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Foto Pemilik</span>
     </label>
     <p style="font-size: 12px;">Kualitas Gambar Minimal 300Dpi, Foto Selfie</p>
-    <input style="margin-left:150px; padding: 5px 10px; margin-bottom:20px;" type="file" name="foto_mitra" class="form-control rounded-full mt-0 @error('foto_mitra') is-invalid @enderror" id="foto_mitra" placeholder="Foto Pemilik" required value="{{ old('foto_mitra') }}">
+    <input style="margin-left:50px; padding: 5px 10px; margin-bottom:20px;" type="file" name="foto_mitra" class="form-control rounded-full mt-0 @error('foto_mitra') is-invalid @enderror" id="foto_mitra" placeholder="Foto Pemilik" required value="{{ old('foto_mitra') }}">
 
     @error('foto_mitra') 
     <div class="invalid-feedback mb-2">
@@ -204,7 +204,7 @@
 
              
         @include('fe_dashboard.menu.menufooter')
-        {{-- @include('fe_dashboard.menu.enter') --}}
+        @include('fe_dashboard.menu.enter')
 
         @include('fe_dashboard.menu.android')
 
