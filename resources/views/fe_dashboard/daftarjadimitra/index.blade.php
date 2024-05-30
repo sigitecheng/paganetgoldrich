@@ -134,6 +134,21 @@
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
+    <label class="font-semibold flex items-center" for="ktp" style="text-align: center">
+        <i class="fas fa-camera mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Foto KTP</span>
+    </label>
+    <p style="font-size: 12px;">Kualitas Gambar Minimal 300Dpi, Foto KTP Pemilik</p>
+    <input style="margin-left:125px; padding: 5px 40px; margin-bottom:20px;" type="file" name="ktp" class="form-control rounded-full mt-0 @error('ktp') is-invalid @enderror" id="ktp" placeholder="KTP" required value="{{ old('ktp') }}">
+
+    @error('ktp') 
+    <div class="invalid-feedback mb-2">
+        {{ $message }}
+    </div>
+    @enderror
+</div>
+{{-- ================================================================================================== --}}
+{{-- ================================================================================================== --}}
+<div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="foto_mitra" style="text-align: center">
         <i class="fas fa-camera mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Foto Pemilik</span>
     </label>
