@@ -220,7 +220,7 @@ inputPilihanKota.addEventListener("change", function() {
 
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
-<div class="input-group mb-3" style="margin-top: 2px;">
+<div class="telepon input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="nomor_telepon" style="text-align: center">
         <i class="fas fa-phone mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">No Telepon</span>
     </label>
@@ -231,6 +231,33 @@ inputPilihanKota.addEventListener("change", function() {
     </div>
     @enderror
 </div>
+
+
+<script>
+    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+var elemenTelepon = document.querySelector('.telepon.input-group.mb-3');
+
+// Mulai dengan menyembunyikan elemen "Kota/Kab"
+elemenTelepon.style.display = "none";
+
+// Simpan elemen input "Nama Pemilik" ke dalam variabel
+var inputAlamat = document.getElementById("alamat");
+
+// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
+inputAlamat.addEventListener("change", function() {
+    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
+    if (inputAlamat.value.trim() !== "") {
+        // Jika terisi, tampilkan kembali elemen "Kota/Kab"
+        elemenTelepon.style.display = "block";
+    } else {
+        // Jika tidak terisi, sembunyikan kembali elemen "Kota/Kab"
+        elemenTelepon.style.display = "none";
+    }
+});
+
+</script>
+
+
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
