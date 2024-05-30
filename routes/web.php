@@ -51,7 +51,7 @@ Route::resource('/', ProgrammakangratisController::class);
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 // Route::resource('/logins', LoginController::class);
-Route::get('/logins', [LoginController::class, 'index'])->name('logins')->middleware('guest');  
+Route::get('/logins', [LoginController::class, 'index']);  
 Route::post('/logins', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 // ----------------------------------------------------
