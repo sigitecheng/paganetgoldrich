@@ -56,9 +56,9 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="nama_pemilik" style="text-align: center">
-        <i class="fas fa-user mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Nama Pemilik</span>
+        <i class="fas fa-user mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Nama Pemilik</span>
     </label>
-    <input style="padding: 5px 40px; margin-bottom:20px;" type="text" name="nama_pemilik" class="form-control rounded-full mt-0 @error('nama_pemilik') is-invalid @enderror" id="nama_pemilik" placeholder="Nama Pemilik Rumah Makan" required value="{{ old('nama_pemilik') }}">
+    <input style="padding: 5px 10px; margin-bottom:20px;" type="text" name="nama_pemilik" class="form-control rounded-full mt-0 @error('nama_pemilik') is-invalid @enderror" id="nama_pemilik" placeholder="Nama Pemilik Rumah Makan" required value="{{ old('nama_pemilik') }}">
     @error('nama_pemilik') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
@@ -69,9 +69,9 @@
 {{-- ================================================================================================== --}}
 <div class="input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="alamat" style="text-align: center">
-        <i class="fas fa-home mr-2" style="margin-left: 200px;"></i> <span style="margin-left: 10px;">Alamat</span>
+        <i class="fas fa-home mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Alamat</span>
     </label>
-    <input style="padding: 5px 40px; margin-bottom:20px;" type="text" name="alamat" class="form-control rounded-full mt-0 @error('alamat') is-invalid @enderror" id="alamat" placeholder="Alamat" required value="{{ old('alamat') }}">
+    <input style="padding: 5px 10px; margin-bottom:20px;" type="text" name="alamat" class="form-control rounded-full mt-0 @error('alamat') is-invalid @enderror" id="alamat" placeholder="Alamat" required value="{{ old('alamat') }}">
     @error('alamat') 
     <div class="invalid-feedback mb-2">
         {{ $message }}
