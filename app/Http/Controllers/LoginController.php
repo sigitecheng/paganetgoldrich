@@ -12,8 +12,9 @@ class LoginController extends Controller
     public function index()
     {
         //
-        return view('fe_dashboard.login.index',[
+        return view('auth.login',[
             'title' => 'Silahkan Login !',
+            
             // 'title_halaman' => 'Halaman Fundraising',
             // 'data_daftarjadimitra'  => Jadimitra::all(),
         ]); 

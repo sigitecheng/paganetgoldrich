@@ -51,8 +51,8 @@ Route::resource('/', ProgrammakangratisController::class);
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 // Route::resource('/logins', LoginController::class);
-Route::get('/logins', [LoginController::class, 'index']);  
-Route::post('/logins', [LoginController::class, 'authenticate']);
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');  
+Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 // ----------------------------------------------------
 
@@ -75,7 +75,7 @@ Route::resource('/daftarmenu', DaftarmenuController::class);
 // Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-Route::resource('/daftarjadimitra', JadimitraController::class);
+Route::resource('/daftarjadimitra', JadimitraController::class)->middleware('auth');
 Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB

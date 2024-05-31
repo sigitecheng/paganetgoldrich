@@ -302,7 +302,7 @@ inputNomorTelepon.addEventListener("change", function() {
 
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
-<div class="input-group mb-3" style="margin-top: 2px;">
+<div class="berdiri input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="tanggal_berdiri" style="text-align: center">
         <i class="fas fa-edit mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Berdiri</span>
     </label>
@@ -313,9 +313,35 @@ inputNomorTelepon.addEventListener("change", function() {
     </div>
     @enderror
 </div>
+
+
+<script>
+    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+var elemenBerdiri = document.querySelector('.berdiri.input-group.mb-3');
+
+// Mulai dengan menyembunyikan elemen "Kota/Kab"
+elemenBerdiri.style.display = "none";
+
+// Simpan elemen input "Nama Pemilik" ke dalam variabel
+var inputEmail = document.getElementById("email");
+
+// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
+inputEmail.addEventListener("change", function() {
+    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
+    if (inputEmail.value.trim() !== "") {
+        // Jika terisi, tampilkan kembali elemen "Kota/Kab"
+        elemenBerdiri.style.display = "block";
+    } else {
+        // Jika tidak terisi, sembunyikan kembali elemen "Kota/Kab"
+        elemenBerdiri.style.display = "none";
+    }
+});
+
+</script>
+
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
-<div class="input-group mb-3" style="margin-top: 2px;">
+<div class="kuota input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="kuota_porsi" style="text-align: center">
         <i class="fas fa-calculator mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Kuota Porsi Makan</span>
     </label>
@@ -327,9 +353,35 @@ inputNomorTelepon.addEventListener("change", function() {
     </div>
     @enderror
 </div>
+
+
+
+<script>
+    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+var elemenKuota = document.querySelector('.kuota.input-group.mb-3');
+
+// Mulai dengan menyembunyikan elemen "Kota/Kab"
+elemenKuota.style.display = "none";
+
+// Simpan elemen input "Nama Pemilik" ke dalam variabel
+var inputTanggalberdiri = document.getElementById("tanggal_berdiri");
+
+// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
+inputTanggalberdiri.addEventListener("change", function() {
+    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
+    if (inputTanggalberdiri.value.trim() !== "") {
+        // Jika terisi, tampilkan kembali elemen "Kota/Kab"
+        elemenKuota.style.display = "block";
+    } else {
+        // Jika tidak terisi, sembunyikan kembali elemen "Kota/Kab"
+        elemenKuota.style.display = "none";
+    }
+});
+
+</script>
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
-<div class="input-group mb-3" style="margin-top: 2px;">
+<div class="ktp input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="ktp" style="text-align: center">
         <i class="fas fa-camera mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Foto KTP</span>
     </label>
@@ -342,9 +394,35 @@ inputNomorTelepon.addEventListener("change", function() {
     </div>
     @enderror
 </div>
+
+
+<script>
+    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+var elemenKtp = document.querySelector('.ktp.input-group.mb-3');
+
+// Mulai dengan menyembunyikan elemen "Kota/Kab"
+elemenKtp.style.display = "none";
+
+// Simpan elemen input "Nama Pemilik" ke dalam variabel
+var inputKuotaPorsi = document.getElementById("kuota_porsi");
+
+// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
+inputKuotaPorsi.addEventListener("change", function() {
+    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
+    if (inputKuotaPorsi.value.trim() !== "") {
+        // Jika terisi, tampilkan kembali elemen "Kota/Kab"
+        elemenKtp.style.display = "block";
+    } else {
+        // Jika tidak terisi, sembunyikan kembali elemen "Kota/Kab"
+        elemenKtp.style.display = "none";
+    }
+});
+
+</script>
+
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
-<div class="input-group mb-3" style="margin-top: 2px;">
+<div class="fotomitra input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="foto_mitra" style="text-align: center">
         <i class="fas fa-camera mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Foto Pemilik</span>
     </label>
@@ -357,9 +435,34 @@ inputNomorTelepon.addEventListener("change", function() {
     </div>
     @enderror
 </div>
+
+<script>
+    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+var elemenFotomitra = document.querySelector('.fotomitra.input-group.mb-3');
+
+// Mulai dengan menyembunyikan elemen "Kota/Kab"
+elemenFotomitra.style.display = "none";
+
+// Simpan elemen input "Nama Pemilik" ke dalam variabel
+var inputKtp = document.getElementById("ktp");
+
+// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
+inputKtp.addEventListener("change", function() {
+    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
+    if (inputKtp.value.trim() !== "") {
+        // Jika terisi, tampilkan kembali elemen "Kota/Kab"
+        elemenFotomitra.style.display = "block";
+    } else {
+        // Jika tidak terisi, sembunyikan kembali elemen "Kota/Kab"
+        elemenFotomitra.style.display = "none";
+    }
+});
+
+</script>
+
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
-<div class="input-group mb-3" style="margin-top: 2px;">
+<div class="fotorumahmakan input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="foto_umkm" style="text-align: center">
         <i class="fas fa-camera mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Foto Rumah Makan</span>
     </label>
@@ -372,9 +475,34 @@ inputNomorTelepon.addEventListener("change", function() {
     </div>
     @enderror
 </div>
+
+<script>
+    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+var elemenFotorumahmakan = document.querySelector('.fotorumahmakan.input-group.mb-3');
+
+// Mulai dengan menyembunyikan elemen "Kota/Kab"
+elemenFotorumahmakan.style.display = "none";
+
+// Simpan elemen input "Nama Pemilik" ke dalam variabel
+var inputFotomitra = document.getElementById("foto_mitra");
+
+// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
+inputFotomitra.addEventListener("change", function() {
+    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
+    if (inputFotomitra.value.trim() !== "") {
+        // Jika terisi, tampilkan kembali elemen "Kota/Kab"
+        elemenFotorumahmakan.style.display = "block";
+    } else {
+        // Jika tidak terisi, sembunyikan kembali elemen "Kota/Kab"
+        elemenFotorumahmakan.style.display = "none";
+    }
+});
+
+</script>
+
 {{-- ================================================================================================== --}}
 {{-- ================================================================================================== --}}
-<div class="input-group mb-3" style="margin-top: 2px;">
+<div class="deskripsirumahmakan input-group mb-3" style="margin-top: 2px;">
     <label class="font-semibold flex items-center" for="keterangan_mitra" style="text-align: center">
         <i class="fas fa-file mr-2" style="margin-left: 75px;"></i> <span style="margin-left: 10px;">Keterangan Rumah Makan</span>
     </label>
@@ -388,9 +516,35 @@ inputNomorTelepon.addEventListener("change", function() {
     </div>
     @enderror
 </div>
-{{-- ================================================================================================== --}}
 
-                    <button type="submit" class="btn btn-primary mb-4"><i class="fa fa-file"></i> Save Dokumen </button>
+
+<script>
+    // Simpan elemen yang terkait dengan "Kota/Kab" ke dalam variabel
+var elemenDeskripsirumahmakan = document.querySelector('.deskripsirumahmakan.input-group.mb-3');
+
+// Mulai dengan menyembunyikan elemen "Kota/Kab"
+elemenDeskripsirumahmakan.style.display = "none";
+
+// Simpan elemen input "Nama Pemilik" ke dalam variabel
+var inputFotoumkm = document.getElementById("foto_umkm");
+
+// Tambahkan event listener untuk mendeteksi perubahan pada input "Nama Pemilik"
+inputFotoumkm.addEventListener("change", function() {
+    // Periksa apakah nilai input "Nama Pemilik" sudah terisi atau tidak
+    if (inputFotoumkm.value.trim() !== "") {
+        // Jika terisi, tampilkan kembali elemen "Kota/Kab"
+        elemenDeskripsirumahmakan.style.display = "block";
+    } else {
+        // Jika tidak terisi, sembunyikan kembali elemen "Kota/Kab"
+        elemenDeskripsirumahmakan.style.display = "none";
+    }
+});
+
+</script>
+
+ {{-- ================================================================================================== --}}
+
+                    <button type="submit" class="btn btn-primary mb-4" style="display: inline-block; padding: 8px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:200px; background-color: #0c0fbd; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#008000'; this.style.color='#fff';""><i class="fa fa-file"></i> Save Dokumen </button>
                 </form>
             </div>
         </div>
@@ -400,7 +554,7 @@ inputNomorTelepon.addEventListener("change", function() {
         @include('fe_dashboard.menu.menufooter')
         @include('fe_dashboard.menu.enter')
 
-        @include('fe_dashboard.menu.android')
+        {{-- @include('fe_dashboard.menu.android') --}}
 
         
 
