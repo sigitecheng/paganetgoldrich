@@ -76,6 +76,13 @@ Route::resource('/daftarmenu', DaftarmenuController::class);
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/daftarjadimitra', JadimitraController::class)->middleware('auth');
+Route::post('/daftarjadimitra/save', [JadimitraController::class, 'store'])->name('daftarjadimitra.save');
+Route::get('/daftarmitrasuccess', function () {
+    return view('fe_dashboard.daftarjadimitra.success',[
+        'title' => 'success',
+    ]);
+});
+// Route::post('/daftarjadimitra/store', JadimitraController::class)->middleware('auth');
 Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
@@ -87,8 +94,8 @@ Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'pa
 //     return view('welcome');
 // });
 // Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 // });
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
@@ -112,7 +119,7 @@ require __DIR__.'/auth.php';
 
 
 // Route::get('/dashboard', function () {
-//     return view('admin_dashboard.be_dashboard.dashboard.index',[
+    //     return view('admin_dashboard.be_dashboard.dashboard.index',[
 //         'title' => 'Admin Dashboard',
 //         'title_halaman' => 'Halaman Dashboard',
 

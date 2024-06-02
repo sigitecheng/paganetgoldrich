@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('jadimitras', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_rumahmakan');
-            $table->string('nama_pemilik');
+            $table->integer('user_id');
+            $table->string('nama_rumahmakan')->nullable();
+            $table->string('nama_pemilik')->nullable();
             $table->string('pilihan_kota')->nullable();
-            $table->string('kecamatan')->nullable();
+            // $table->string('kecamatan')->nullable();
             $table->text('alamat')->nullable();
             $table->string('nomor_telepon')->nullable();
             $table->string('email')->nullable();

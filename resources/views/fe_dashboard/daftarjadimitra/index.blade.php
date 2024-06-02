@@ -37,7 +37,7 @@
         </div>
         <div class="flex flex-col justify-content-center align-items-center gap-2 px-2" style="text-align: center;">
             <div class="w-full flex p-[14px] gap-3 rounded-2xl bg-white" style="background-image: linear-gradient(to bottom, rgb(141, 214, 238), rgb(172, 188, 209)); margin-top:5px;">
-                <form method="post" action="/daftarjadimitra/create" enctype="multipart/form-data" class="w-full">
+                <form method="post" action="/daftarjadimitra/save" enctype="multipart/form-data" class="w-full">
                     @csrf
 
 {{-- ================================================================================================== --}}
