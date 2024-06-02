@@ -10,6 +10,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammakangratisController;
 use App\Http\Controllers\TentangkamiController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Programmakangratis;
@@ -54,6 +55,17 @@ Route::resource('/', ProgrammakangratisController::class);
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');  
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
+
+// ----------------------------------------------------
+// Route::resource('/logins', LoginController::class);
+Route::get('/daftar', [RegisterController::class, 'index']); 
+Route::post('/send-otp', [RegisterController::class, 'sendotp'])->name('daftarsendotp');
+Route::post('/input_otp', [RegisterController::class, 'inputotp'])->name('verifyotpform');
+
+// Route::get('/daftarsendotp', [RegisterController::class, 'daftarsendotp'])->name('verify.otp');  
+// Route::get('/daftarverifyotp', [RegisterController::class, 'verifyOTPForm'])->name('verifyOTPForm');  
+// Route::post('/login', [LoginController::class, 'authenticate']);
+// Route::post('/logout', [LoginController::class, 'logout']);
 // ----------------------------------------------------
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB

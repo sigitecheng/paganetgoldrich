@@ -28,9 +28,9 @@
             
                 {{-- Check for success message --}}
                 @if(session()->has('success'))
-                    <div class="alert alert-success alert-dismissible fade show col-lg-12" role="alert" style="margin-top: 75px: text-align:center">
+                    <div class="alert alert-success alert-dismissible fade show col-lg-12 font-semibold" role="alert" style="margin-top: 100px: text-align:center">
                         <div class="alert alert-success alert-dismissible fade show col-lg-12 font-semibold text-center" role="alert" style="background-color: #28a745; color: #fff; font-weight: 600; padding: 0.35em 0.5em; border-radius: 0.25rem; ">
-                            <strong>{{ session('success') }}</strong>
+                            <strong class="font-semibold">{{ session('success') }}</strong>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     </div>

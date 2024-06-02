@@ -88,10 +88,10 @@
                                   {{-- <input type="submit" class="btn solid" /> --}}
                                     <button type="submit" style="margin-top:10px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:250px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">Login</button>
                                     <div style="text-align: right; margin-bottom: 10px;"> 
-                                      <a href="{{ route('password.request') }}"> <!-- Mengarahkan ke halaman forgot password -->
+                                      {{-- <a href="{{ route('password.request') }}"> <!-- Mengarahkan ke halaman forgot password -->
                                           <small class="text-theme" style="color: white; margin-bottom:10x;"><strong>Forgot password?</strong></small>
-                                      </a>
-                                      <a href="{{ route('password.request') }}" style="margin-left: 25px; color:white; margin-right:15px;"> <!-- Mengarahkan ke halaman forgot password -->
+                                      </a> --}}
+                                      <a href="/daftar" style="margin-left: 25px; color:white; margin-right:15px;"> <!-- Mengarahkan ke halaman forgot password -->
                                           <small class="text-theme"><strong>Register Here?</strong></small>
                                       </a>
                                   </div>

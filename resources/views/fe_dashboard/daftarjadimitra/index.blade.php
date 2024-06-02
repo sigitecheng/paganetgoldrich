@@ -37,7 +37,7 @@
         </div>
         <div class="flex flex-col justify-content-center align-items-center gap-2 px-2" style="text-align: center;">
             <div class="w-full flex p-[14px] gap-3 rounded-2xl bg-white" style="background-image: linear-gradient(to bottom, rgb(141, 214, 238), rgb(172, 188, 209)); margin-top:5px;">
-                <form method="post" action="/daftarjadimitra/save" enctype="multipart/form-data" class="w-full">
+                <form method="post" action="/daftarjadimitra/save" enctype="multipart/form-data" class="w-full" id="jadimitra">
                     @csrf
 
 {{-- ================================================================================================== --}}
@@ -544,8 +544,36 @@ inputFotoumkm.addEventListener("change", function() {
 
  {{-- ================================================================================================== --}}
 
-                    <button type="submit" class="btn btn-primary mb-4" style="display: inline-block; padding: 8px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:200px; background-color: #0c0fbd; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#008000'; this.style.color='#fff';""><i class="fa fa-file"></i> Save Dokumen </button>
+                    <button type="submit" class="btn btn-primary mb-4" id="saveButton" style="margin-top:25px; display: inline-block; padding: 8px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:200px; background-color: #0c0fbd; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#008000'; this.style.color='#fff';""><i class="fa fa-file"></i> Save Dokumen </button>
+
                 </form>
+
+                <script>
+                    // Ambil referensi ke elemen-elemen form
+                    const form = document.getElementById('jadimitra');
+                    const saveButton = document.getElementById('saveButton');
+            
+                    // Tambahkan event listener untuk mendeteksi perubahan pada isian form
+                    form.addEventListener('change', function() {
+                        // Cek apakah semua isian form telah diisi
+                        const allFieldsFilled = [...form.elements].every(element => element.value.trim() !== '');
+            
+                        // Aktifkan/tidak tombol Save Dokumen berdasarkan status isian form
+                        if (allFieldsFilled) {
+                            saveButton.classList.remove('disabled');
+                        } else {
+                            saveButton.classList.add('disabled');
+                        }
+                    });
+            
+                    // Tambahkan event listener untuk mencegah klik pada tombol Save Dokumen jika form belum diisi
+                    saveButton.addEventListener('click', function(event) {
+                        if (saveButton.classList.contains('disabled')) {
+                            event.preventDefault(); // Mencegah aksi default dari tombol
+                            alert('Please fill in all fields before saving the document.');
+                        }
+                    });
+                </script>
             </div>
         </div>
         
