@@ -57,7 +57,7 @@
                             @enderror
                         </div> --}}
                         
-                        <div>
+                        <div style="margin-top: 25px;">
                             <label class="font-semibold" for="name"><i class="fas fa-user mr-2" style="margin-right: 5px; text-align:left;"></i> Nama Lengkap</label>
                             <br>
                             <input id="name" style="padding: 5px 40px; margin-bottom:10px" type="text" name="name" class="form-control rounded-full mt-0 @error('name') is-invalid @enderror" placeholder="Nama Lengkap" required value="{{ old('name') }}">
@@ -102,6 +102,7 @@
                         </div>
                         
                         <button type="submit" style="margin-top:10px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:250px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">Sign Up</button>
+                    
                     </form>
                     
                     
