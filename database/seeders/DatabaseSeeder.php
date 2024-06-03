@@ -213,7 +213,7 @@ class DatabaseSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-         User::factory(7)->create();
+        //  User::factory(7)->create();
     
     }
 }

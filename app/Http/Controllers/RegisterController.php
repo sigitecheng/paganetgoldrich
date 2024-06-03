@@ -2,12 +2,19 @@
 
 namespace App\Http\Controllers;
 
-// use Illuminate\Http\Request;
-// use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
-use Illuminate\Http\Request;
+
+// namespace App\Http\Controllers;
+
+// use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
+// use App\Models\User;
+// use Illuminate\Support\Facades\Hash;
+
+// use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
@@ -97,6 +104,42 @@ class RegisterController extends Controller
     }
 }
 
+// ========================== KONSEP BARU TANPA OTP ===================================================
+public function newregisters(Request $request)
+    {
+        // MENAMPILKAN DATA ATAU MENANGKAP DATA YANG DIKIRIMKAN DARI FORM REGISTRATION
+
+        // return $request->all();
+
+        //$request->validate([
+        $validateData = $request->validate([
+            'name' => 'required|max:255',
+            // 'username' => ['required', 'min:3', 'max:255', 'unique:users'],
+            'email' => 'required|email:dns|unique:users',
+            'password' => 'required|min:5|max:255',
+            'username' => 'required'
+        ]);
+
+        // $validateData['password'] = bcrypt($validateData['password']); CARA PERTAMA UNTUK PENGAMANAN PASSWORD 
+        $validateData['password'] = Hash::make($validateData['password']); // JANGAN LUPA PANGGIL DULU KELAS HASH NYA 
+
+        User::create($validateData);
+
+        //    $request->session()->flash CARA PERTAMA 
+
+        return redirect('/successregister')->with('success', 'Registrasi Berhasil');
+    }
+
+    public function success()
+    {
+        //
+        return view('fe_dashboard.pendaftaranusers.success',[
+            'title' => 'Registration successful!',
+            
+            // 'title_halaman' => 'Halaman Fundraising',
+            // 'data_daftarjadimitra'  => Jadimitra::all(),
+        ]); 
+    }
 
 
 }

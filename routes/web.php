@@ -43,6 +43,15 @@ Route::get('/comingsoon', function () {
 //     ]);
 // });
 
+// ==========================================================
+Route::get('/registers', function () {
+    return view('fe_dashboard.pendaftaranusers.index', [
+        'title' => 'Registrasi !',
+    ]);
+});
+Route::post('/newregisters', [RegisterController::class, 'newregisters']);
+Route::get('/successregister', [RegisterController::class, 'success']);
+
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/', ProgrammakangratisController::class);
@@ -91,7 +100,7 @@ Route::resource('/daftarjadimitra', JadimitraController::class)->middleware('aut
 Route::post('/daftarjadimitra/save', [JadimitraController::class, 'store'])->name('daftarjadimitra.save');
 Route::get('/daftarmitrasuccess', function () {
     return view('fe_dashboard.daftarjadimitra.success',[
-        'title' => 'success',
+        'title' => 'Registration Successful!',
     ]);
 });
 // Route::post('/daftarjadimitra/store', JadimitraController::class)->middleware('auth');

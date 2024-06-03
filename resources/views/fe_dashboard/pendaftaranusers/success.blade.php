@@ -51,8 +51,13 @@
             
                
                <div style="width: 50%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                   <img src="assets/css/fe_css/images/comingsoon/success.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+                   <img src="assets/css/fe_css/images/tentangkami/registrasi.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
+
+               <a href="/dashboard">
+                   <button type="submit" style="margin-left:200px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width:250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;">Click Here</button>
+                </a>
+                    
    
         </div>
          

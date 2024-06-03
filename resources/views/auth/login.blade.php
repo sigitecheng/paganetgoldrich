@@ -64,7 +64,7 @@
                                 <div class="input-group mb-3" style="margin-top: 15px;">
                                     <label class="font-semibold" for=""><i class="fas fa-envelope" style="margin-right: 10px;"></i> Email</label>
                                     <br>
-                                    <input style="padding: 5px 40px; margin-bottom:20px;" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="" required value="{{ old('email') }}">
+                                    <input style="padding: 5px 40px; margin-bottom:20px;" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="Email" required value="{{ old('email') }}">
                                     @error('email') 
                                     <div class="invalid-feedback mb-2">
                                         {{ $message }}
@@ -75,7 +75,7 @@
                                 <div class="input-group mb-3">
                                     <label class="font-semibold" for="" style="margin-left: 10px;"><i class="fas fa-key" style="margin-right: 10px;"></i>Password</label>
                                     <br>
-                                    <input style="padding: 5px 40px; margin-bottom:10px" type="text" name="password" class="form-control rounded-full mt-0 @error('password') is-invalid @enderror" id="password" placeholder="" required value="{{ old('password') }}">
+                                    <input style="padding: 5px 40px; margin-bottom:10px" type="text" name="password" class="form-control rounded-full mt-0 @error('password') is-invalid @enderror" id="password" placeholder="Password" required value="{{ old('password') }}">
                                     @error('password') 
                                     <div class="invalid-feedback mb-2">
                                         {{ $message }}
@@ -91,7 +91,7 @@
                                       {{-- <a href="{{ route('password.request') }}"> <!-- Mengarahkan ke halaman forgot password -->
                                           <small class="text-theme" style="color: white; margin-bottom:10x;"><strong>Forgot password?</strong></small>
                                       </a> --}}
-                                      <a href="/daftar" style="margin-left: 25px; color:white; margin-right:15px;"> <!-- Mengarahkan ke halaman forgot password -->
+                                      <a href="/registers" style="margin-left: 25px; color:white; margin-right:15px;"> <!-- Mengarahkan ke halaman forgot password -->
                                           <small class="text-theme"><strong>Register Here?</strong></small>
                                       </a>
                                   </div>
