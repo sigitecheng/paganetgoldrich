@@ -1,8 +1,8 @@
 @include('fe_dashboard.menu.header')
 <body class="font-poppins text-[#292E4B] bg-[#7ca4ce]">
-    <section class="max-w-[640px] w-full min-h-screen mx-auto flex 45ex-col bg-white overflow-x-hidden pb-[134px]">
+    <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
   
-        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radiu45 0 0 50px 50px; overflow: hidden;" class="header">
+        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
              
             
             {{-- <nav class="pt-5 px-3 flex justify-between items-center">
@@ -26,7 +26,7 @@
                    <h4 class="font-extrabold text-xl leading-[36px] text-white text-center" style="font-size: 14px">Form Register !</h4>
                </div>
                
-               <div style="width: 45%; height: fit-content; overflow: hidden; margin-top: 10px; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+               <div style="width: 35%; height: fit-content; overflow: hidden; margin-top: 10px; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
                    <img src="assets/css/fe_css/images/register/register.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
    
