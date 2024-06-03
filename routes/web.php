@@ -97,12 +97,13 @@ Route::resource('/daftarmenu', DaftarmenuController::class);
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/daftarjadimitra', JadimitraController::class)->middleware('auth');
-Route::post('/daftarjadimitra/save', [JadimitraController::class, 'store'])->name('daftarjadimitra.save');
+Route::post('/daftarjadimitra/save', [JadimitraController::class, 'store'])->name('daftarjadimitra.save')->middleware('auth');
 Route::get('/daftarmitrasuccess', function () {
     return view('fe_dashboard.daftarjadimitra.success',[
         'title' => 'Registration Successful!',
     ]);
-});
+})->middleware('auth');
+
 // Route::post('/daftarjadimitra/store', JadimitraController::class)->middleware('auth');
 Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 

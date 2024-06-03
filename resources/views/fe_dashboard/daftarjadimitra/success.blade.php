@@ -53,8 +53,53 @@
                <div style="width: 50%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
                    <img src="assets/css/fe_css/images/comingsoon/success.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
-   
-        </div>
+
+                    <div class="div">
+                        <!-- Button untuk membuka modal -->
+                            <button id="openModalBtn" style="margin-left: 75px; margin-bottom: 10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width: 250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align: center;">
+                                <i class="fas fa-warning" style="margin-right: 5px;"></i> Informasi Teknis
+                            </button>
+
+                            <!-- The Modal -->
+                            <div id="infoModal" class="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+                            <!-- Modal content -->
+                                <div class="modal-content" style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; border-radius: 10px;">
+                                    <span class="close" style="color: #aaa; float: right; font-size: 28px; font-weight: bold;">&times;</span>
+                                    <p>"Berkas Anda sedang dalam proses. Kami akan melakukan review terhadap pengajuan Saudara dalam waktu paling lambat 7 hari kerja. Mohon tunggu untuk informasi lebih lanjut.</p>
+                                </div>
+                            </div>
+
+                            <script>
+                                                                    // Mendapatkan elemen-elemen yang diperlukan
+                                    var modal = document.getElementById("infoModal");
+                                    var openModalBtn = document.getElementById("openModalBtn");
+                                    var closeModal = document.getElementsByClassName("close")[0];
+
+                                    // Ketika tombol diklik, tampilkan modal
+                                    openModalBtn.onclick = function() {
+                                    modal.style.display = "block";
+                                    }
+
+                                    // Ketika tombol close di klik, sembunyikan modal
+                                    closeModal.onclick = function() {
+                                    modal.style.display = "none";
+                                    }
+
+                                    // Ketika user mengklik di luar modal, sembunyikan modal
+                                    window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                    }
+
+                            </script>
+
+                        
+                        <a href="#">
+                            <button type="submit" style=" margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width:250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;"><i class="fas fa-file" style="margin-right: 5px;"></i>Berkas Anda</button>
+                        </a>
+                    </div>               
+            </div>
          
          
             
