@@ -570,7 +570,7 @@ inputFotoumkm.addEventListener("change", function() {
                     saveButton.addEventListener('click', function(event) {
                         if (saveButton.classList.contains('disabled')) {
                             event.preventDefault(); // Mencegah aksi default dari tombol
-                            alert('<strong style="font-size:12px; color:black; background: blue;"> Harap mengisi semua kolom formulir dengan lengkap dan benar. </strong>');
+                            alert('Harap mengisi semua kolom formulir dengan lengkap dan benar.');
                         }
                     });
                 </script>
