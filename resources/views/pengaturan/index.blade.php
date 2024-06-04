@@ -8,7 +8,7 @@
              <nav class="pt-5 px-3 flex justify-between items-center">
                 
                 @if($data_jadimitra->isEmpty())
-                <p style="margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #f5f0f0; border-radius: 9999px; width:150px; background-color: #f70b0b; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;">Anda belum bergabung sebagai Mitra</p>
+                <p style="margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 12px; color: #f5f0f0; border-radius: 9999px; width:300px; background-color: #f70b0b; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;">Anda belum bergabung sebagai Mitra</p>
             @else
                 @foreach ($data_jadimitra as $data)
                     <button type="submit" style="margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #f5f0f0; border-radius: 9999px; width:150px; background-color: #0b0bf7; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;">
