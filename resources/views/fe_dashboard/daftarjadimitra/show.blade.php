@@ -114,7 +114,7 @@
             <div style="margin-top:10px; display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(89, 163, 219), rgb(55, 89, 241));">
                 <h2 class="font-bold" style="margin-left: 10px; font-size:14px; margin-top:5px; text-align:center; font-size:12px"><i class="fas fa-file" style="margin-left: 10px;"></i> Foto KTP</h2>
                 <div class="aspect-[61/30] rounded-2xl bg-[#D9D9D9] overflow-hidden">
-                    <img src="{{ Storage::url($data->ktp) }}" class="w-full h-full object-cover" alt="KTP" style="object-fit: cover;">
+                    <img src="{{ $data->ktp }}" class="w-full h-full object-cover" alt="KTP" style="object-fit: cover;">
                     <!-- Add this line to print the URL -->
                     <p>{{ Storage::url($data->ktp) }}</p>
                 </div>
