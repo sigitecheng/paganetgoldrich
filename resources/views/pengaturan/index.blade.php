@@ -55,9 +55,22 @@
 
                     <div class="div">
                         <!-- Button untuk membuka modal -->
-                            <button id="openModalBtn" style="margin-left: 75px; margin-bottom: 10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width: 250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align: center;">
-                                <i class="fas fa-warning" style="margin-right: 5px;"></i> Informasi Teknis
-                            </button>
+                         
+                                @if($data_jadimitra->isEmpty())
+                            
+                            <a href="/daftarjadimitra">
+                                <button style="margin-left: 75px; margin-bottom: 10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width: 250px; background-color: #15e70e; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align: center;">
+                                    <i class="fas fa-warning" style="margin-right: 5px;"></i> Daftar Jadi Mitra
+                                </button>
+                            </a>
+                            
+                                @else
+                                
+                                <button id="openModalBtn" style="margin-left: 75px; margin-bottom: 10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width: 250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align: center;">
+                                    <i class="fas fa-warning" style="margin-right: 5px;"></i> Informasi Teknis
+                                </button>
+                            @endif    
+                        
 
                             <!-- The Modal -->
                             <div id="infoModal" class="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
