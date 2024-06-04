@@ -116,7 +116,7 @@
                 <div class="aspect-[61/30] rounded-2xl bg-[#D9D9D9] overflow-hidden">
                     <img src="{{ $data->ktp }}" class="w-full h-full object-cover" alt="KTP" style="object-fit: cover;">
                     <!-- Add this line to print the URL -->
-                    <p>{{ Storage::url($data->ktp) }}</p>
+                    {{-- <p>{{ Storage::url($data->ktp) }}</p> --}}
                 </div>
                 
                 {{-- <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px; color:white; margin-top:5px; margin-bottom:10px; margin-right:10px;">Keterangan : <br>{{ $data->deskripsi}}</p> --}}
@@ -132,7 +132,7 @@
             <div style="margin-top:10px; display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(89, 163, 219), rgb(55, 89, 241));">
                 <h2 class="font-bold" style="margin-left: 10px; font-size:14px; margin-top:5px; text-align:center; font-size:12px"><i class="fas fa-file" style="margin-left: 10px;"></i> Foto Rumah Makan</h2>
                 <div class="aspect-[61/30] rounded-2xl bg-[#D9D9D9] overflow-hidden">
-                    <img src="{{ Storage::url($data->foto_umkm) }}" class="w-full h-full object-cover" alt="foto_mitra" style="object-fit: cover;">
+                    <img src="{{ Storage::url($data->foto_umkm) }}" class="w-full h-full object-cover" alt="foto_rumahmakan" style="object-fit: cover;">
                 </div>
                 {{-- <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px; color:white; margin-top:5px; margin-bottom:10px; margin-right:10px;">Keterangan : <br>{{ $data->deskripsi}}</p> --}}
             </div>
