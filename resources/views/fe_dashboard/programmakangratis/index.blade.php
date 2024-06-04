@@ -5,14 +5,14 @@
             <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
                 <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
                     
-                    <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
+                    <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2abaeb, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
             
             <nav class="pt-5 px-3 flex justify-between items-center">
              
              <a href="/tentangkami">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img src="/assets/css/fe_css/images/icons/menuandroid/apphome.png" alt="icon">
+                        <img style="color: white; border: 2px solid; border-radius: 100%" src="/assets/css/fe_css/images/icons/menuandroid/androidtentangkami.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
@@ -23,8 +23,8 @@
              
              <a href="/lokasimakangratis">
                  <div class="flex items-center gap-[10px]">
-                     <div class="w-10 h-10 flex shrink-0">
-                        <img src="/assets/css/fe_css/images/icons/menuandroid/applokasimakangratis.png" alt="icon">
+                     <div class="w-10 h-10 flex shrink-0 text-white">
+                        <img style="color: white; border: 2px solid; border-radius: 100%" src="/assets/css/fe_css/images/icons/menuandroid/androidlokasi.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
@@ -36,7 +36,7 @@
              <a href="/daftarumkm">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img src="/assets/css/fe_css/images/icons/menuandroid/appdaftarumkm.png" alt="icon">
+                        <img style="color: white; border: 2px solid; border-radius: 100%" src="/assets/css/fe_css/images/icons/menuandroid/androiddaftarmitra.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
