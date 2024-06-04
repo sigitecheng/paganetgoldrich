@@ -129,7 +129,7 @@
             <div class="px-4 flex justify-between items-center">
                 <h2 class="font-bold text-sm">HaiuCare Indonesia <br>Penggalangan Dana Untuk Sesama</h2>
                 <a href="/daftarmitra" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
-                    Daftar Mitra
+                    <i class="fas fa-file" style="margin-right: 5px;"></i> Daftar Mitra
                   </a>
                   
                   
@@ -210,7 +210,7 @@
         <div class="px-4 flex justify-between items-center mb-4">
             <h2 class="font-bold text-sm">Program <br>Makan Gratis</h2>
             <a href="/comingsoon" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
-                Ajukan Lokasi
+               <i class="fas fa-utensil-spoon" style="margin-right: 5px;"></i> Ajukan Lokasi
               </a>
             
               
@@ -258,6 +258,15 @@
                                 <img src="assets/css/fe_css/images/icons/daftarjadimitra.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
                             <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Daftar Jadi Mitra</span>
+                        </a>
+                    </div>
+
+                    <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
+                        <a href="/lokasipengajuan" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
+                            <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
+                                <img src="assets/css/fe_css/images/icons/lokasipengajuan.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
+                            </div>
+                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Lokasi Pengajuan</span>
                         </a>
                     </div>
                     
