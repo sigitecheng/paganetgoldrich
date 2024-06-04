@@ -42,5 +42,11 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    public function jadimitra()
+    {
+        return $this->hasMany(Jadimitra::class);
+    }
+
+
 
 }

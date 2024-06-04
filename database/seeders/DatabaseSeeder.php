@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
                 'username' => 'iqlima Nuri',
                 'is_admin' => 'super_admin',
                 'email' => 'sigitseptiadi1@gmail.com',
-                'password' => bcrypt('098890')
+                'password' => bcrypt('adminadmin')
             ]);
             
             User::create([

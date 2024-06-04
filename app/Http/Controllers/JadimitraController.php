@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Jadimitra;
+use App\Models\User;
 use App\Http\Requests\JadimitraRequest;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
 
 use App\Http\Requests\StoreJadimitraRequest;
 use App\Http\Requests\UpdateJadimitraRequest;
@@ -24,7 +25,7 @@ class JadimitraController extends Controller
         ]); 
     }
     
- 
+    
     public function store(Request $request)
     {
         // Validasi data
@@ -36,6 +37,7 @@ class JadimitraController extends Controller
             'nomor_telepon'       => 'required',
             'email'               => 'required',
             'tanggal_berdiri'     => 'required',
+            'active'              => 'required',
             'kuota_porsi'         => 'required',
             'ktp'                 => 'required|image', // Menambahkan validasi bahwa ktp harus berupa gambar
             'foto_mitra'          => 'required|image', // Menambahkan validasi bahwa foto_mitra harus berupa gambar
@@ -65,5 +67,37 @@ class JadimitraController extends Controller
 
         // Redirect ke halaman sukses
         return redirect('/daftarmitrasuccess')->with('success', 'Berkas Saudara Berhasil di Upload!');
+    }   
+
+    public function mitrasuccess()
+    {
+        //
+        return view('fe_dashboard.daftarjadimitra.success',[
+            'title' => 'Registrations Successful !',
+            // 'title_halaman' => 'Halaman Fundraising',
+            // 'data_daftarjadimitra'  => Jadimitra::all(),
+            $data_daftarjadimitra = Jadimitra::where('user_id', Auth::id())->get(),
+            
+            'data_jadimitra' => $data_daftarjadimitra,
+        ]); 
+    }
+
+    public function showmitrasuccess($data)
+    {
+        //
+        $datas = Jadimitra::where('nama_rumahmakan', $data)->first();
+        return view('fe_dashboard.daftarjadimitra.show', [
+            'title'             => 'Berkas Anda ',
+            // 'title_halaman'     => 'View Data',
+            'data'    => $datas,
+            'user'        => User::all(),
+        ]);
     }
 }
+
+
+// Route::get('/daftarmitrasuccess', function () {
+//     return view('fe_dashboard.daftarjadimitra.success',[
+//         'title' => 'Registration Successful!',
+//     ]);
+// })->middleware('auth');

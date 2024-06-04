@@ -4,22 +4,21 @@
   
         <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
              
-{{--             
+            
              <nav class="pt-5 px-3 flex justify-between items-center">
-                <a href="/">
-                    <div class="flex items-center gap-[10px]">
-                        <div class="w-10 h-10 flex shrink-0">
-                           <img src="assets/css/fe_css/images/icons/menuandroid/menuback.png" alt="icon">
-                       </div>
-                       <div class="flex flex-col text-white">
-                           <p class="text-xs leading-[18px]">Location</p>
-                           <p class="font-semibold text-sm">HaiuCare Bangun Indonesia</p>
-                       </div>
-                   </div>
-               </a>   
                 
-                
-               </nav>  --}}
+                @if($data_jadimitra->isEmpty())
+                <p style="margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #f5f0f0; border-radius: 9999px; width:150px; background-color: #f70b0b; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;">Anda belum bergabung sebagai Mitra</p>
+            @else
+                @foreach ($data_jadimitra as $data)
+                    <button type="submit" style="margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #f5f0f0; border-radius: 9999px; width:150px; background-color: #0b0bf7; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;">
+                        <i class="fas fa-spinner fa-spin" style="margin-right: 5px"></i>
+                        {{ $data->active}}
+                    </button>
+                @endforeach
+            @endif
+            
+               </nav> 
    
                <div class="mt-[10px] z-10">
                 {{-- Uncomment to show welcome message --}}
@@ -51,7 +50,7 @@
             
                
                <div style="width: 50%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                   <img src="assets/css/fe_css/images/comingsoon/success.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+                   <img src="assets/css/fe_css/images/tentangkami/pengaturanakun.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
 
                     <div class="div">
@@ -100,6 +99,20 @@
                             <button type="submit" style=" margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width:250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;"><i class="fas fa-file" style="margin-right: 5px;"></i>Berkas Anda</button>
                         </a>
                         @endforeach
+
+                        
+                    </div>               
+                    <div class="div">
+
+                        {{-- @foreach ($data_jadimitra as $data) --}}
+                            
+                        <a href="">
+                            <button type="submit" style="margin-left:75px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width:250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;"><i class="fas fa-user" style="margin-right: 5px;"></i> Profile</button>
+                        </a>
+                        {{-- @endforea/ch --}}
+                        <a href="">
+                            <button type="submit" style=" margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width:250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;"><i class="fas fa-utensil-spoon" style="margin-right: 5px;"></i> Daftar Menu</button>
+                        </a>
                     </div>               
             </div>
          

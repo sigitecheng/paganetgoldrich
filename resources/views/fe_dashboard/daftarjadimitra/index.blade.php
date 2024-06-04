@@ -542,13 +542,21 @@ inputFotoumkm.addEventListener("change", function() {
 
 </script>
 
+<div>
+    <input type="hidden" id="active" name="active" value="in progress" class="form-control rounded-full mt-0 @error('active') is-invalid @enderror" required>
+</div>
+
+{{-- <input type="hidden" id="active" value="in progress" style="padding: 5px 40px; margin-bottom:10px" type="text" name="active" class="form-control rounded-full mt-0 @error('active') is-invalid @enderror" required value="{{ old('active') }}"> --}}
+                        
+                           
+
  {{-- ================================================================================================== --}}
 
                     <button type="submit" class="btn btn-primary mb-4" id="saveButton" style="margin-top:25px; display: inline-block; padding: 8px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:200px; background-color: #0c0fbd; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#008000'; this.style.color='#fff';""><i class="fa fa-file"></i> Save Dokumen </button>
 
                 </form>
 
-                <script>
+                {{-- <script>
                     // Ambil referensi ke elemen-elemen form
                     const form = document.getElementById('jadimitra');
                     const saveButton = document.getElementById('saveButton');
@@ -573,7 +581,7 @@ inputFotoumkm.addEventListener("change", function() {
                             alert('Harap mengisi semua kolom formulir dengan lengkap dan benar.');
                         }
                     });
-                </script>
+                </script> --}}
             </div>
         </div>
         

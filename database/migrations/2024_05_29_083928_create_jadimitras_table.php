@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('jadimitras', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
+            $table->foreignId('user_id');
             $table->string('nama_rumahmakan')->nullable();
             $table->string('nama_pemilik')->nullable();
             $table->string('pilihan_kota')->nullable();
@@ -21,6 +21,7 @@ return new class extends Migration
             $table->text('alamat')->nullable();
             $table->string('nomor_telepon')->nullable();
             $table->string('email')->nullable();
+            $table->string('active')->nullable()->default('in progress');
             $table->date('tanggal_berdiri')->nullable();
             $table->bigInteger('kuota_porsi')->nullable();
             $table->string('ktp')->nullable();

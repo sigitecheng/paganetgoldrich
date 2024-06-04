@@ -10,6 +10,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgrammakangratisController;
 use App\Http\Controllers\TentangkamiController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PengaturanController;
 use App\Http\Controllers\RegisterController;
 use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
@@ -98,17 +99,24 @@ Route::resource('/daftarmenu', DaftarmenuController::class);
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::resource('/daftarjadimitra', JadimitraController::class)->middleware('auth');
 Route::post('/daftarjadimitra/save', [JadimitraController::class, 'store'])->name('daftarjadimitra.save')->middleware('auth');
-Route::get('/daftarmitrasuccess', function () {
-    return view('fe_dashboard.daftarjadimitra.success',[
-        'title' => 'Registration Successful!',
-    ]);
-})->middleware('auth');
+Route::get('/daftarmitrasuccess', [JadimitraController::class, 'mitrasuccess'])->middleware('auth');
+Route::get('/showmitrasuccess/{user}', [JadimitraController::class, 'showmitrasuccess'])->middleware('auth');
+
+// Route::get('/daftarmitrasuccess', function () {
+//     return view('fe_dashboard.daftarjadimitra.success',[
+//         'title' => 'Registration Successful!',
+//     ]);
+// })->middleware('auth');
 
 // Route::post('/daftarjadimitra/store', JadimitraController::class)->middleware('auth');
 Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'paymentmakan'])->name('paymentmakan');
+
+// -===============================================================================================
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::get('/pengaturan', [PengaturanController::class, 'index'])->middleware('auth');
 
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 
