@@ -111,7 +111,7 @@
                         </a>
                         {{-- @endforea/ch --}}
                         <a href="">
-                            <button type="submit" style=" margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width:250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;"><i class="fas fa-utensil-spoon" style="margin-right: 5px;"></i> Daftar Menu</button>
+                            <button type="submit" style="margin-left:75px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #0a0a0a; border-radius: 9999px; width:250px; background-color: #efeff3; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff'; text-align:center;"><i class="fas fa-utensil-spoon" style="margin-right: 5px;"></i> Daftar Menu</button>
                         </a>
                     </div>               
             </div>
