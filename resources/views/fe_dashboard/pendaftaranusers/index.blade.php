@@ -94,6 +94,7 @@
                             {{-- <label class="font-semibold" for="username"><i class="fas fa-user mr-2" style="margin-right: 5px;"></i> Nama Lengkap</label> --}}
                             <br>
                             <input type="hidden" id="username" value="newusername" style="padding: 5px 40px; margin-bottom:10px" type="text" name="username" class="form-control rounded-full mt-0 @error('username') is-invalid @enderror" required value="{{ old('username') }}">
+                        
                             {{-- @error('username') 
                             <div class="invalid-feedback mb-2">
                                 {{ $message }}

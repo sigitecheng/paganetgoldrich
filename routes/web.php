@@ -12,6 +12,7 @@ use App\Http\Controllers\TentangkamiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PengaturanController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\UserController;
 use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Programmakangratis;
@@ -117,6 +118,10 @@ Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'pa
 // -===============================================================================================
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 Route::get('/pengaturan', [PengaturanController::class, 'index'])->middleware('auth');
+
+// -===============================================================================================
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+Route::get('/profile/{name}', [UserController::class, 'index'])->middleware('auth');
 
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 

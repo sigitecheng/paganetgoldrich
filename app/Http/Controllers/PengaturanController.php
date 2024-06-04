@@ -20,6 +20,12 @@ class PengaturanController extends Controller
             $data_daftarjadimitra = Jadimitra::where('user_id', Auth::id())->get(),
             
             'data_jadimitra' => $data_daftarjadimitra,
+
+            $data_userss = User::where('id', Auth::id())->get(),
+            
+            'data_users' => $data_userss,
+
+            // 'data_users'    => User::all()
         ]);
     }
 }
