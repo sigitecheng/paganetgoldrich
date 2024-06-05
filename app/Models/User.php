@@ -47,6 +47,12 @@ class User extends Authenticatable
         return $this->hasMany(Jadimitra::class);
     }
 
+    public function fundraiser()
+    {
+        return $this->hasOne(Fundraiser::class);
+        // MEMAMAKAI HAS ONE KARENA 1 USERS HANYA BISA MENJADI 1 FUNDRAISER
+    }
+
 
     public function lokasipengajuan()
     {
