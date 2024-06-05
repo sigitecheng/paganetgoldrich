@@ -34,7 +34,7 @@ class Fundraising extends Model
 
     public function fundraising_phase()
     {
-        return $this->hasMany(Fundraising_phase::class);
+        return $this->hasMany(Fundraising_phases::class);
     }
 
     public function withdrawals()
