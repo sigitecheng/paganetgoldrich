@@ -209,7 +209,7 @@
 
         <div class="px-4 flex justify-between items-center mb-4">
             <h2 class="font-bold text-sm">Program <br>Makan Gratis</h2>
-            <a href="/comingsoon" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
+            <a href="/lokasipengajuan" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                <i class="fas fa-utensil-spoon" style="margin-right: 5px;"></i> Ajukan Lokasi
               </a>
             

@@ -18,6 +18,7 @@ use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Programmakangratis;
 use App\Models\Lokasimakangratis;
+use App\Models\Lokasipengajuan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -126,7 +127,9 @@ Route::get('/profile/{name}', [UserController::class, 'index'])->middleware('aut
 
 // -===============================================================================================
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-Route::get('/lokasipengajuan', [LokasipengajuanController::class, 'index'])->middleware('auth');
+Route::get('/lokasipengajuan', [LokasipengajuanController::class, 'index']);
+Route::get('/lokasipengajuannew', [LokasipengajuanController::class, 'newcreate'])->middleware('auth');
+Route::post('/lokasipengajuansubmit', [Lokasipengajuan::class, 'save'])->middleware('auth');
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 
 // Route::get('/', function () {

@@ -6,6 +6,7 @@ use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Tentangkami;
 use App\Models\Lokasimakangratis;
+use App\Models\Lokasipengajuan;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -214,6 +215,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //  User::factory(7)->create();
+        //  Lokasipengajuan::factory(1)->create();
     
     }
 }

@@ -16,6 +16,27 @@
                     <p class="font-semibold text-sm text-white">#makangratis</p>
                 </div>
 
+                @if(session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show col-lg-12 font-semibold" role="alert" style="margin-top: 100px: text-align:center">
+                    <div class="alert alert-success alert-dismissible fade show col-lg-12 font-semibold text-center" role="alert" style="background-color: #28a745; color: #fff; font-weight: 600; padding: 0.35em 0.5em; border-radius: 0.25rem; ">
+                        <strong class="font-semibold">{{ session('success') }}</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            {{-- Check for delete message --}}
+            @elseif(session()->has('delete'))
+                <div class="alert alert-danger alert-dismissible fade show col-lg-12" role="alert">
+                    <strong>{{ session('delete') }}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {{-- Check for update message --}}
+            @elseif(session()->has('update'))
+                <div class="alert alert-warning alert-dismissible fade show col-lg-12" role="alert">
+                    <strong>{{ session('update') }}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+
             </nav>
 
                <div class="mt-[0px] z-10">
@@ -27,13 +48,14 @@
                <div style="width: 45%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
                    <img src="/assets/css/fe_css/images/tentangkami/pengajuanlokasibaru.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
-
-               <div style="margin-top: 0.5rem; margin-bottom: 1rem;">
-                <div style="text-align: center;">
-                    <button style="padding: 8px 12px; border-radius: 9999px; background-color: silver; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s; border: none;">
-                        <i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i>Ajukan Lokasi
-                    </button>
-                </div>
+                    <a href="/lokasipengajuannew">
+                        <div style="margin-top: 0.5rem; margin-bottom: 1rem;">
+                            <div style="text-align: center;">
+                                <button style="padding: 8px 12px; border-radius: 9999px; background-color: silver; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s; border: none;">
+                                    <i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i>Ajukan Lokasi
+                                </button>
+                            </div>
+                        </a>
                 
               </div>
             

@@ -48,5 +48,11 @@ class User extends Authenticatable
     }
 
 
+    public function lokasipengajuan()
+    {
+        return $this->hasMany(Lokasipengajuan::class);
+    }
+
+
 
 }

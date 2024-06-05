@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('lokasipengajuans', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
+            $table->string('namalengkap');
+            $table->string('lokasi');
+            $table->text('keteranganlokasi');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
