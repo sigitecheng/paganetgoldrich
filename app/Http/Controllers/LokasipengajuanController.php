@@ -16,6 +16,9 @@ class LokasipengajuanController extends Controller
         //
         return view('fe_dashboard.lokasipengajuan.index',[
             'title' => 'Daftar Lokasi Pengajuan',
+
+            // $totalCileunyi = Lokasipengajuan::where('lokasi' === 'Cileunyi')->count(),
+            // 'data_cileunyi' => $totalCileunyi,
          
         ]); 
     }

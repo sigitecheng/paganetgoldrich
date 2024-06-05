@@ -43,12 +43,12 @@
                      
                      
                      {{-- =========================================================================== --}}
-                     <div style="margin-bottom: 10px;">
-                         <label class="font-semibold"><i class="fas fa-user mr-2" style="margin-right: 5px;"></i> Nama Lengkap</label>
+                     <div style="margin-bottom: 0px;">
+                         {{-- <label class="font-semibold"><i class="fas fa-user mr-2" style="margin-right: 5px;"></i> Nama Lengkap</label> --}}
                          <br>
 
                          @foreach ($data_lokasipengajuan as $data)
-                                 <p style="padding: 5px 40px; margin-bottom:10px" type="text"  class="form-control rounded-full mt-0 }}">{{ $data->user->name}}</p>
+                                 <input name="user_id"  value="{{$data->user->id}}" style="padding: 5px 40px; margin-bottom:10px" type="hidden"  class="form-control rounded-full mt-0 }}">
                         @endforeach
 
                      </div>

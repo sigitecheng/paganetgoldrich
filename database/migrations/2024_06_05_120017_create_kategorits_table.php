@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lokasipengajuans', function (Blueprint $table) {
+        Schema::create('kategorits', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
-            // $table->string('namalengkap');
-            $table->string('lokasi');
-            $table->text('keteranganlokasi');
-            $table->softDeletes();
+            $table->string('nama');
+            $table->string('slug')->unique();
+            $table->string('icon')->nullable();
+            $table->softDeletes(); // DATA TIDAK AKAN TERHAPUS 100 PERSEN BAHKAN TETAP ADA 
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('lokasipengajuans');
+        Schema::dropIfExists('kategorits');
     }
 };

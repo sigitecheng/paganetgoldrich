@@ -48,14 +48,14 @@
                <div style="width: 45%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
                    <img src="/assets/css/fe_css/images/tentangkami/pengajuanlokasibaru.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
-                    <a href="/lokasipengajuannew">
+                    {{-- <a href="/lokasipengajuannew"> --}}
                         <div style="margin-top: 0.5rem; margin-bottom: 1rem;">
                             <div style="text-align: center;">
                                 <button style="padding: 8px 12px; border-radius: 9999px; background-color: silver; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s; border: none;">
                                     <i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i>Ajukan Lokasi
                                 </button>
                             </div>
-                        </a>
+                        {{-- </a> --}}
                 
               </div>
             
@@ -75,7 +75,7 @@
                         <a href="">
                             <p class="font-bold text-white border-spacing-5" style="font-size: 17px;">Wilayah Sekitar Cileunyi, Kab Bandung <span style="text-align:center; margin-left:20px; margin-bottom:10px; display: inline-block; padding: 5px 10px; font-weight: bold; font-size: 15px; color: #f5f0f0; border-radius: 9999px; width:100px; background-color: #09e71b; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';"><i class="fas fa-file"></i> Data</span></p>
                         </a>
-                        <p class="font-semibold line-clamp-1 hover:line-clamp-none text-green-300" style="font-size: 17px; color: white"><i class="fas fa-users" style="margin-right: 10px;"></i> <span style="color:rgb(6, 45, 200); margin-right:10px;">2325</span>Participant</p>
+                        <p class="font-semibold line-clamp-1 hover:line-clamp-none text-green-300" style="font-size: 17px; color: white"><i class="fas fa-users" style="margin-right: 10px;"></i> <span style="color:rgb(6, 45, 200); margin-right:10px;"></span>Participant</p>
                         
                         <a href="https://www.google.co.id/maps/search/Sicepat+Bandung+Cileunyi+Cileunyi/@-6.9385406,107.7183637,14z/data=!3m1!4b1?entry=ttu">
                             <p class="font-semibold line-clamp-1 hover:line-clamp-none text-green-300 underline" style="font-size: 17px; color: blue; "><i class="fas fa-map-marker-alt" style="margin-right: 10px; color:rgb(6, 45, 200)"></i> Maps</p>

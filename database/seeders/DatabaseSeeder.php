@@ -215,7 +215,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //  User::factory(7)->create();
-        //  Lokasipengajuan::factory(1)->create();
+         Lokasipengajuan::factory(900)->create();
     
     }
 }

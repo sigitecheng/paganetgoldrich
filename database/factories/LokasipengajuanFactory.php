@@ -17,8 +17,8 @@ class LokasipengajuanFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => mt_rand(1,2),
-            'namalengkap' => $this->faker->name,
+            'user_id' => mt_rand(1,3),
+            // 'namalengkap' => $this->faker->name,
             'lokasi' => $this->faker->randomElement(['Cileunyi', 'Kopo', 'Lembang', 'Bandung Barat']),
             'keteranganlokasi' => $this->faker->paragraph,
             //
