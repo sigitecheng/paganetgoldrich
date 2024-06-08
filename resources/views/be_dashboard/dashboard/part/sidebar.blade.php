@@ -26,8 +26,14 @@
 
 
                             <li class="parent">
+                                <a href="/" class=""><i class="fab fa-ravelry mr-2"> </i>
+                                    <span class="none">Program Makan Gratis</span>
+                                </a>
+                            </li>
+
+                            <li class="parent">
                                 <a href="/admindashboard" class=""><i class="fab fa-ravelry mr-2"> </i>
-                                    <span class="none">Dashboard </span>
+                                    <span class="none">Dashboard Admin</span>
                                 </a>
                             </li>
 
