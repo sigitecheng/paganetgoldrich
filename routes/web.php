@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminDashboard;
 use App\Http\Controllers\DaftarmenuController;
 use App\Http\Controllers\DaftarmitrarumahmakannController;
 use App\Http\Controllers\JadimitraController;
@@ -12,6 +13,7 @@ use App\Http\Controllers\TentangkamiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PengaturanController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LokasipengajuanController;
 use App\Models\Daftarmenu;
@@ -34,113 +36,135 @@ use Illuminate\Support\Facades\Route;
 
 
 // ==========================================================
+// |||||||||||||||||| ROUTE UNTUK COMING SOON |||||||||||||||||||||||||||||||||||
 Route::get('/comingsoon', function () {
     return view('comingsoon', [
         'title' => 'Coming Soon',
-    ]);
+        ]);
 });
+// --------------------------------------------------------------------------------------------------------------------------------
+
 
 // ==========================================================
-// Route::get('/dashboard', function () {
-//     return view('fe_dashboard.programmakangratis.index', [
-//         'title' => 'Selamat Datang',
-//     ]);
-// });
+// |||||||||||||||||| ROUTE UNTUK COMING SOON |||||||||||||||||||||||||||||||||||
+Route::get('/404', function () {
+    return view('404', [
+        'title' => 'Sistem Dalam Pembangunan !',
+        ]);
+});
+// --------------------------------------------------------------------------------------------------------------------------------
+
 
 // ==========================================================
+// |||||||||||||||||| ROUTE UNTUK USERS ADMINISTRASI |||||||||||||||||||||||||||||||||||
 Route::get('/registers', function () {
     return view('fe_dashboard.pendaftaranusers.index', [
         'title' => 'Registrasi !',
-    ]);
-});
+        ]);
+        });
 Route::post('/newregisters', [RegisterController::class, 'newregisters']);
 Route::get('/successregister', [RegisterController::class, 'success']);
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// ----------------------------------------------------
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-Route::resource('/', ProgrammakangratisController::class);
-// Route::resource('/dashboard', ProgrammakangratisController::class);
-// ----------------------------------------------------
-
-// ----------------------------------------------------
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-// Route::resource('/logins', LoginController::class);
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');  
-Route::post('/login', [LoginController::class, 'authenticate']);
-Route::post('/logout', [LoginController::class, 'logout']);
 
 // ----------------------------------------------------
 // Route::resource('/logins', LoginController::class);
 Route::get('/daftar', [RegisterController::class, 'index']); 
 Route::post('/send-otp', [RegisterController::class, 'sendotp'])->name('daftarsendotp');
 Route::post('/input_otp', [RegisterController::class, 'inputotp'])->name('verifyotpform');
+        
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// Route::get('/daftarsendotp', [RegisterController::class, 'daftarsendotp'])->name('verify.otp');  
-// Route::get('/daftarverifyotp', [RegisterController::class, 'verifyOTPForm'])->name('verifyOTPForm');  
-// Route::post('/login', [LoginController::class, 'authenticate']);
-// Route::post('/logout', [LoginController::class, 'logout']);
-// ----------------------------------------------------
 
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK AKSES LOGIN PENGGUNA |||||||||||||||||||||||||||||||||||
+// Route::resource('/logins', LoginController::class);
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');  
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+// --------------------------------------------------------------------------------------------------------------------------------
+
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK USERS DASHBOARD PROGRAM MAKAN GRATIS |||||||||||||||||||||||||||||||||||
+Route::resource('/', ProgrammakangratisController::class);
+// Route::resource('/dashboard', ProgrammakangratisController::class);
+// --------------------------------------------------------------------------------------------------------------------------------
+
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK AKSES TENTANG KAMI |||||||||||||||||||||||||||||||||||
+Route::get('/admindashboard', [AdminDashboardController::class, 'index'])->middleware('auth');
+// --------------------------------------------------------------------------------------------------------------------------------
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK AKSES TENTANG KAMI |||||||||||||||||||||||||||||||||||
 Route::resource('/tentangkami', TentangkamiController::class);
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA DAFTAR MITRA |||||||||||||||||||||||||||||||||||
 Route::resource('/daftarumkm', DaftarmitrarumahmakannController::class);
 Route::get('/daftarumkm/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show'])->name('daftarumkm');
 Route::get('/daftarmitra', [DaftarmitrarumahmakannController::class, 'daftarmitra'])->name('daftarmitra');
 Route::get('/daftarmitra/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'showdaftarmitra'])->name('daftarmitra');
 // Route::get('/daftarumkm/{namarumahmakan}', 'DaftarmitrarumahmakannController@showdaftarmitra')->name('daftarmitra');
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA LOKASI MAKAN GRATIS |||||||||||||||||||||||||||||||||||
 Route::resource('/lokasimakangratis', LokasimakangratisController::class);
 Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA DAFTAR MENU |||||||||||||||||||||||||||||||||||
 Route::resource('/daftarmenu', DaftarmenuController::class);
 // Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA JADI MITRA DAN DAFTAR MITRA |||||||||||||||||||||||||||||||||||
 Route::resource('/daftarjadimitra', JadimitraController::class)->middleware('auth');
 Route::post('/daftarjadimitra/save', [JadimitraController::class, 'store'])->name('daftarjadimitra.save')->middleware('auth');
 Route::get('/daftarmitrasuccess', [JadimitraController::class, 'mitrasuccess'])->middleware('auth');
 Route::get('/showmitrasuccess/{user}', [JadimitraController::class, 'showmitrasuccess'])->middleware('auth');
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// Route::get('/daftarmitrasuccess', function () {
-//     return view('fe_dashboard.daftarjadimitra.success',[
-//         'title' => 'Registration Successful!',
-//     ]);
-// })->middleware('auth');
 
-// Route::post('/daftarjadimitra/store', JadimitraController::class)->middleware('auth');
-Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
-
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA PEMBAYARAN PAYMENT GATEWAY |||||||||||||||||||||||||||||||||||
 Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'paymentmakan'])->name('paymentmakan');
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// -===============================================================================================
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA PENGATURAN  |||||||||||||||||||||||||||||||||||
 Route::get('/pengaturan', [PengaturanController::class, 'index'])->middleware('auth');
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// -===============================================================================================
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
-Route::get('/profile/{name}', [UserController::class, 'index'])->middleware('auth');
 
-// -===============================================================================================
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA PENGATURAN  |||||||||||||||||||||||||||||||||||
+Route::get('/halamandatausers', [UserController::class, 'index'])->middleware('auth');
+// --------------------------------------------------------------------------------------------------------------------------------
+
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA LOKASI PENGAJUAN MAKAN GRATIS  |||||||||||||||||||||||||||||||||||
 Route::get('/lokasipengajuan', [LokasipengajuanController::class, 'index']);
 Route::get('/lokasipengajuannew', [LokasipengajuanController::class, 'newcreate'])->middleware('auth');
 Route::post('/lokasipengajuansubmit', [Lokasipengajuan::class, 'save'])->middleware('auth');
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
+// --------------------------------------------------------------------------------------------------------------------------------
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-// Route::middleware('auth')->group(function () {
-    //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
-// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA LOKASI PAYMENT GATEWAY  |||||||||||||||||||||||||||||||||||
 Route::get('/paymentgateway/mitra/{kota}', [PaymentgatewayController::class, 'paymentmakan'])->name('paymentmakan');
 
 Route::get('/dashboard', function () {
@@ -153,16 +177,32 @@ Route::get('/dashboard', function () {
 
 
 require __DIR__.'/auth.php';
+// ===============================================================================================
+
+
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
+// Route::get('/profile/{name}', [UserController::class, 'index'])->middleware('auth');
+
+
+// Route::get('/', function () {
+    //     return view('welcome');
+// });
+// Route::middleware('auth')->group(function () {
+    //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// });
+// ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 
 
 // Route::get('/masuk', function () {
-//         return view('masuk');
+    //         return view('masuk');
 //     });
 
 
 // Route::get('/dashboard', function () {
     //     return view('admin_dashboard.be_dashboard.dashboard.index',[
-//         'title' => 'Admin Dashboard',
+        //         'title' => 'Admin Dashboard',
 //         'title_halaman' => 'Halaman Dashboard',
 
 //         'data_users' => User::all()
@@ -188,6 +228,9 @@ require __DIR__.'/auth.php';
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
 // Route::resource('/fundraiser', FundraiserController::class)->middleware('auth');
+
+// Route::post('/daftarjadimitra/store', JadimitraController::class)->middleware('auth');
+// Route::get('/lokasimakangratis/{alamat}', [LokasimakangratisController::class, 'show'])->name('lokasimakangratis');
 
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
@@ -230,7 +273,25 @@ require __DIR__.'/auth.php';
 // Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 // Route::post('/register', [RegisterController::class, 'store']);
 
+// Route::get('/daftarsendotp', [RegisterController::class, 'daftarsendotp'])->name('verify.otp');  
+// Route::get('/daftarverifyotp', [RegisterController::class, 'verifyOTPForm'])->name('verifyOTPForm');  
+// Route::post('/login', [LoginController::class, 'authenticate']);
+// Route::post('/logout', [LoginController::class, 'logout']);
+// ----------------------------------------------------
 
+
+// ==========================================================
+// Route::get('/dashboard', function () {
+//     return view('fe_dashboard.programmakangratis.index', [
+    //         'title' => 'Selamat Datang',
+//     ]);
+// });
+
+// Route::get('/daftarmitrasuccess', function () {
+//     return view('fe_dashboard.daftarjadimitra.success',[
+    //         'title' => 'Registration Successful!',
+    //     ]);
+// })->middleware('auth');
 
 
 

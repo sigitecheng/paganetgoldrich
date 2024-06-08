@@ -11,15 +11,29 @@ class UserController extends Controller
 {
     //
 
-    public function index($data)
+    public function index()
     {
         //
-        $datas = User::where('name', $data)->first();
-        return view('pengaturan.users.index', [
-            'title'             => 'Akun Anda ',
-            // 'title_halaman'     => 'View Data',
-            'data'    => $datas,
+     
+        return view('be_dashboard.halamanusers.index', [
+            'title'             => 'Data Users & Admin ',
+            'title_data'             => 'Data Users & Admin ',
+            'title_halamandata'     => 'Data Users',
+            'data_users'    => User::all()
             // 'user'        => User::all(),
-        ]);
+            ]);
     }
+    // public function index($data)
+    // {
+    //     //
+    //     $datas = User::where('name', $data)->first();
+    //     return view('pengaturan.users.index', [
+    //         'title'             => 'Akun Anda ',
+    //         // 'title_halaman'     => 'View Data',
+    //         'data'    => $datas,
+    //         // 'user'        => User::all(),
+    //         ]);
+    // }
+
+
 }
