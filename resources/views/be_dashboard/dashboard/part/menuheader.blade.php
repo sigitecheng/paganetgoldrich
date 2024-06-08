@@ -87,51 +87,6 @@
                     <!--Notication icon-->
 
                     <!--Inbox icon-->
-                    <span class="menu-icon inbox">
-                        <a class="" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-envelope"></i>
-                            <span class="badge badge-danger">4</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-left mt-10 animated zoomInDown" aria-labelledby="dropdownMenuLink3">
-                            <a class="dropdown-item" href="#"><strong>Unread messages</strong></a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <div class="media">
-                                    <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg" width="50px" height="50px" alt="Generic placeholder image">
-                                    <div class="media-body">
-                                        <h6 class="mt-0"><strong>Adam Abdulrahman</strong></h6>
-                                        <p>How are you?</p>
-                                        <small class="text-success">09:23am</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <div class="media">
-                                    <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg" width="50px" height="50px" alt="Generic placeholder image">
-                                    <div class="media-body">
-                                        <h6 class="mt-0"><strong>Adam Abdulrahman</strong></h6>
-                                        <p>How are you?</p>
-                                        <small class="text-success">09:23am</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                <div class="media">
-                                    <img class="align-self-center mr-3 rounded-circle" src="assets/img/profile.jpg" width="50px" height="50px" alt="Generic placeholder image">
-                                    <div class="media-body">
-                                        <h6 class="mt-0"><strong>Adam Abdulrahman</strong></h6>
-                                        <p>How are you?</p>
-                                        <small class="text-success">09:23am</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-center link-all" href="#">View all messages</a>
-                        </div>
-                    </span>
-                    <!--Inbox icon-->
                     <span class="menu-icon">
                         <i class="fa fa-th-large"></i>
                     </span>
@@ -140,29 +95,13 @@
 
                 <!--Search box and avatar-->
                 <div class="col-sm-8 col-4 text-right flex-header-menu justify-content-end">
-                    <div class="search-rounded mr-3">
-                        <input type="text" class="form-control search-box" placeholder="Enter keywords.." />
-                    </div>
+                 
                     
-                    <div class="mr-4">
-                        <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/img/profile.jpg" alt="Adam" class="rounded-circle" width="40px" height="40px">
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right mt-13" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#"><i class="fa fa-user pr-2"></i> Profile</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"><i class="fa fa-th-list pr-2"></i> Tasks</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"><i class="fa fa-book pr-2"></i> Projects</a>
-                            
-                            
-                        </div>
-                    </div>
                     <div class="div">
                         @auth
                             <form action="/logout" method="post">
                                 @csrf
-                                <button class="btn btn-outline-danger rounded-circle" style="padding: 10px; font-size: 16px;">
+                                <button class="btn btn-outline-danger" style="padding: 10px; font-size: 16px;">
                                     <i class="fas fa-sign-out-alt"></i>
                                 </button>
                             </form>
