@@ -37,6 +37,72 @@
                                 </a>
                             </li>
 
+                            
+                            <li class="parent">
+                                <a href="#" onclick="toggle_menu('tables_menu1'); return false" class=""><i class="fab fa-ravelry mr-2"></i>
+                                    <span class="none">Backend Database Haiu<i class="fa fa-angle-down pull-right align-bottom"></i></span>
+                                </a>
+                                <ul class="children" id="tables_menu1">
+                                    <li class="child">
+                                        <a href="/halamandatausers" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-users mr-2"></i>Data Users
+                                        </a>
+                                    </li> 
+                                    
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-file mr-2"></i>Berkas Daftar Mitra
+                                        </a>
+                                    </li> 
+
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-edit mr-2"></i>Approved Mitra
+                                        </a>
+                                    </li> 
+                                    
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-warning mr-2"></i>Rejected Mitra 
+                                        </a>
+                                    </li> 
+
+
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-map-marker-alt mr-2"></i>Lokasi Pengajuan 
+                                        </a>
+                                    </li>
+                                  
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-map-marker-alt mr-2"></i>Email  
+                                        </a>
+                                    </li>
+                                  
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-map-marker-alt mr-2"></i>Berita  
+                                        </a>
+                                    </li>
+
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-map-marker-alt mr-2"></i>Donatur Lepas 
+                                        </a>
+                                    </li>
+
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-map-marker-alt mr-2"></i>Donatur Tetap 
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            
+                            
+                            
 
                             <li class="parent">
                                 <a href="#" onclick="toggle_menu('tables'); return false" class=""><i class="fab fa-ravelry mr-2"></i>
@@ -54,65 +120,53 @@
                                         </a>
                                     </li> 
 
-                                    <li class="child">
-                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
-                                                <i class="fas fa-cogs mr-2"></i>Layanan
-                                        </a>
-                                    </li>
-
-                                    <li class="child">
-                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
-                                                <i class="fas fa-donate mr-2"></i>Donasi
-                                        </a>
-                                    </li>
-
-                                    <li class="child">
-                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
-                                                <i class="fas fa-folder mr-2"></i>Project
-                                        </a>
-                                    </li>
-
+                                   
                                 </ul>
                             </li>
-                            
-                          
+
                             <li class="parent">
-                                <a href="#" onclick="toggle_menu('tables_menu1'); return false" class=""><i class="fab fa-ravelry mr-2"></i>
-                                    <span class="none">Backend Database Haiu<i class="fa fa-angle-down pull-right align-bottom"></i></span>
+                                <a href="#" onclick="toggle_menu('laporankeuangan'); return false" class=""><i class="fab fa-ravelry mr-2"></i>
+                                    <span class="none">Laporan Keuangan<i class="fa fa-angle-down pull-right align-bottom"></i></span>
                                 </a>
-                                <ul class="children" id="tables_menu1">
+                                <ul class="children" id="laporankeuangan">
                                     <li class="child">
                                         <a href="/halamandatausers" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
                                                 <i class="fas fa-users mr-2"></i>Data Users
                                         </a>
                                     </li> 
                                     <li class="child">
-                                        <a href="/adminberanda/tentangkami" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
-                                                <i class="fas fa-info-circle mr-2"></i>Tentang
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-utensil-spoon mr-2"></i>Daftar Mitra
                                         </a>
                                     </li> 
 
                                     <li class="child">
-                                        <a href="/adminberanda/layanankami" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
-                                                <i class="fas fa-cogs mr-2"></i>Layanan
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-map-marker-alt mr-2"></i>Lokasi Pengajuan 
                                         </a>
                                     </li>
-
+                                 
                                     <li class="child">
-                                        <a href="/adminberanda/donasi" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
-                                                <i class="fas fa-donate mr-2"></i>Donasi
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-map-marker-alt mr-2"></i>Email 
                                         </a>
                                     </li>
-
+                                    
                                     <li class="child">
-                                        <a href="/adminberanda/projectkami" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
-                                                <i class="fas fa-folder mr-2"></i>Project
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-map-marker-alt mr-2"></i>Berita 
                                         </a>
                                     </li>
+                                    
+                                  
 
+                                    
                                 </ul>
                             </li>
                             
+
+                            
+                          
                           
 
                             <li class="parent">
@@ -326,10 +380,10 @@
 
 
                             <li class="parent">
-                                <a href="#" onclick="toggle_menu('charts1'); return false" class=""><i class="fa fa-money-bill mr-2"></i>
+                                <a href="#" onclick="toggle_menu('menulorankeuangan'); return false" class=""><i class="fa fa-money-bill mr-2"></i>
                                     <span class="none">Laporan Keuangan <i class="fa fa-angle-down pull-right align-bottom"></i></span>
                                 </a>
-                                <ul class="children" id="charts1">
+                                <ul class="children" id="menulaporanangan">
                                     <li class="child">
                                         <a href="/laporankeuangan" class="ml-4 btn btn-sn button-custom  mb-2 rounded mr-4" style="text-align: left;">
                                             <i class="fa fa-file-archive mr-2"></i> Laba Rugi        
