@@ -18,7 +18,7 @@ class UserController extends Controller
         return view('be_dashboard.halamanusers.index', [
             'title'             => 'Data Users & Admin ',
             'title_data'             => 'Data Users & Admin ',
-            'title_halamandata'     => 'Data Users',
+            // 'title_halamandata'     => 'Data Users',
             'data_users'    => User::all()
             // 'user'        => User::all(),
             ]);
