@@ -12,7 +12,7 @@
              <a href="/tentangkami">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img style="color: white; border: 2px solid; border-radius: 100%" src="/assets/css/fe_css/images/icons/menuandroid/androidtentangkami.png" alt="icon">
+                        <img src="/assets/css/fe_css/images/tentangkami/haiutentangkami.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
@@ -24,7 +24,7 @@
              <a href="/lokasimakangratis">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0 text-white">
-                        <img style="color: white; border: 2px solid; border-radius: 100%" src="/assets/css/fe_css/images/icons/menuandroid/androidlokasi.png" alt="icon">
+                        <img src="/assets/css/fe_css/images/tentangkami/haiulokasimakangratis.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
@@ -36,7 +36,7 @@
              <a href="/daftarumkm">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img style="color: white; border: 2px solid; border-radius: 100%" src="/assets/css/fe_css/images/icons/menuandroid/androiddaftarmitra.png" alt="icon">
+                        <img src="/assets/css/fe_css/images/tentangkami/haiudaftarmitra.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
