@@ -64,17 +64,17 @@
                                         </td>
                                         
                                         <td class="align-middle text-center">
-                                            <a href="">
+                                            <a href="/404">
                                                 <button class="btn-outline-theme btn-round">
                                                     <i class="fas fa-eye"></i>
                                                 </button>
                                             </a>
-                                            <a href="">
+                                            <a href="/404">
                                                 <button class="btn-outline-success btn-round">
                                                     <i class="fas fa-edit"></i>
                                                 </button>
                                             </a>
-                                            <a href="">
+                                            <a href="/404">
                                                 <button class="btn-outline-danger btn-round">
                                                     <i class="fas fa-trash"></i>
                                                 </button>
