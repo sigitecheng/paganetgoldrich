@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
+use App\Models\Jadimitra;
 use App\Models\Tentangkami;
 use App\Models\Lokasimakangratis;
 use App\Models\Lokasipengajuan;
@@ -26,6 +27,22 @@ class DatabaseSeeder extends Seeder
             // ]);
 
 
+            User::create([
+                'name'  => 'Ini Adalah Admin',
+                'username' => 'adminku',
+                'is_admin' => 'super_admin',
+                'email' => 'adminsigimatika1@gmail.com',
+                'password' => bcrypt('adminadmin')
+            ]);
+
+            User::create([
+                'name'  => 'Ini Adalah Admin',
+                'username' => 'adminku',
+                'is_admin' => 'super_admin',
+                'email' => 'adminsigimatika2@gmail.com',
+                'password' => bcrypt('adminadmin')
+            ]);
+            
             User::create([
                 'name'  => 'Sigit Septiadi',
                 'username' => 'iqlima Nuri',
@@ -216,6 +233,7 @@ class DatabaseSeeder extends Seeder
 
         //  User::factory(7)->create();
          Lokasipengajuan::factory(900)->create();
+         Jadimitra::factory(1)->create();
     
     }
 }
