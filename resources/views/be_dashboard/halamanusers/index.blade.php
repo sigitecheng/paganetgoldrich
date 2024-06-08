@@ -12,8 +12,7 @@
         
             <!--Content right-->
             <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
-                <h5 class="mb-0" ><strong>Tables</strong></h5>
-                <span class="text-secondary">Dashboard <i class="fa fa-angle-right"></i> Basic tables</span>
+                <h5 class="mb-0" ><strong>Dashboard | {{ $data_halamanusers}} </strong></h5>
 
 
                   <!--Products summary-->
@@ -22,10 +21,10 @@
                     <div class="product-list">
                         
                         <div class="row mb-0 px-3 pt-3">
-                            <div class="col-sm-8 pt-2"><h6 class="mb-4 bc-header">Recent Sales</h6></div>
+                            <div class="font-bold col-sm-8 pt-2"><h6 class="mb-4 bc-header"><i class="fas fa-book mr-2"></i>{{ $data_halamanusers}}</h6></div>
                             <div class="col-sm-4 text-right pb-3">
                                 <div class="pull-right mr-3 btn-order-bulk">
-                                    <button class="btn btn-theme btn-round">View all</button>
+                                    <button class="btn btn-theme btn-round"><i class="fas fa-edit mr-2"></i>Create New</button>
                                 </div>
 
                                 <div class="clearfix"></div>
@@ -37,146 +36,66 @@
                             <table class="table mt-0" id="productList">
                                 <thead>
                                     <tr>
-                                        <th>Product</th>
-                                        <th>Customer</th>
-                                        <th>Categories</th>
-                                        <th>Popularity</th>
-                                        <th>Amount</th>
+                                        <th class="text-center">No</th>
+                                        <th class="text-center">Nama Lengkap</th>
+                                        <th class="text-center">Username</th>
+                                        <th class="text-center">Telepon</th>
+                                        <th class="text-center">Email</th>
+                                        <th class="text-center">Avatar</th>
+                                        <th class="text-center">Is Admin</th>
+                                        <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
+
+                                @foreach ($data_users as $data)
+                                    
                                 <tbody>
                                     <tr>
-                                        <td class="align-middle">IphoneX</td>
-                                        <td class="align-middle">
+                                        <td class="align-middle text-center">{{ $loop->iteration}}</td>
+                                        <td class="align-middle text-center">{{$data->name}}</td>
+                                        <td class="align-middle text-center">{{$data->username}}</td>
+                                        <td class="align-middle text-center">{{$data->phone_number}}</td>
+                                        <td class="align-middle text-center">{{$data->email}}</td>
+                                        <td class="align-middle text-center">{{$data->avatar}}</td>
+                                        <td class="align-middle text-center">
+                                            <button class="btn-outline-theme btn-round">
+                                                {{$data->is_admin}}
+                                            </button>
+                                        </td>
+                                        
+                                        <td class="align-middle text-center">
+                                            <a href="">
+                                                <button class="btn-outline-theme btn-round">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                            </a>
+                                            <a href="">
+                                                <button class="btn-outline-success btn-round">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                            </a>
+                                            <a href="">
+                                                <button class="btn-outline-danger btn-round">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </a>
+                                        </td>
+                                        
+                                        
+
+                                                                                {{-- <td class="align-middle">
                                             <div class="customers">
                                                 <span class="customer-circle" style="background-image: url('assets/img/client-img4.png')"></span>
                                                 <span class="customer-circle" style="background-image: url('assets/img/client-img5.png')"></span>
                                                 <span class="customer-circle" style="background-image: url('assets/img/client-img3.png')"></span>
                                                 <span class="customer-circle end text-light text-center pt-2">+8</span>
                                             </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn-outline-theme btn-round">
-                                                mobile
-                                            </button>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="progress" style="height: 5px;">
-                                                <div class="progress-bar bg-theme" role="progressbar" aria-valuenow="85" style="width: 85%"  aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>$ 4,500</td>
+                                        </td> --}}
+
                                     </tr>
-                                    <tr>
-                                        <td class="align-middle">One Plus</td>
-                                        <td class="align-middle">
-                                            <div class="customers">
-                                                <span class="customer-circle" style="background-image: url('assets/img/client-img2.png')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/client-img5.png')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/jd-150.png')"></span>
-                                                <span class="customer-circle end text-light text-center pt-2">+4</span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn-outline-theme btn-round">
-                                                mobile
-                                            </button>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="progress" style="height: 5px;">
-                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" style="width: 55%"  aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>$ 650</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">Samsumg S7</td>
-                                        <td class="align-middle">
-                                            <div class="customers">
-                                                <span class="customer-circle" style="background-image: url('assets/img/client-img2.png')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/client-img5.png')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/jd-150.png')"></span>
-                                                <span class="customer-circle end text-light text-center pt-2">+5</span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn-outline-theme btn-round">
-                                                mobile
-                                            </button>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="progress" style="height: 5px;">
-                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="40" style="width: 40%"  aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>$ 1,200</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">Techno</td>
-                                        <td class="align-middle">
-                                            <div class="customers">
-                                                <span class="customer-circle" style="background-image: url('assets/img/client-img3.png')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/client-img4.png')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/jd-150.png')"></span>
-                                                <span class="customer-circle end text-light text-center pt-2">+4</span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn-outline-theme btn-round">
-                                                mobile
-                                            </button>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="progress" style="height: 5px;">
-                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" style="width: 40%"  aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>$ 1,200</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">Sony Xperia</td>
-                                        <td class="align-middle">
-                                            <div class="customers">
-                                                <span class="customer-circle" style="background-image: url('assets/img/profile.jpg')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/client-img5.png')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/jd-150.png')"></span>
-                                                <span class="customer-circle end text-light text-center pt-2">+4</span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn-outline-theme btn-round">
-                                                mobile
-                                            </button>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="progress" style="height: 5px;">
-                                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" style="width: 60%"  aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>$ 3,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">HTC</td>
-                                        <td class="align-middle">
-                                            <div class="customers">
-                                                <span class="customer-circle" style="background-image: url('assets/img/profile.jpg')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/client-img5.png')"></span>
-                                                <span class="customer-circle" style="background-image: url('assets/img/jd-150.png')"></span>
-                                                <span class="customer-circle end text-light text-center pt-2">+18</span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn-outline-theme btn-round">
-                                                mobile
-                                            </button>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="progress" style="height: 5px;">
-                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" style="width: 40%"  aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>$ 1,200</td>
-                                    </tr>
+                                    
+                                    @endforeach
+                                    
                             </table>
                         </div>
                     </div>

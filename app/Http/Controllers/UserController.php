@@ -19,7 +19,8 @@ class UserController extends Controller
             'title'             => 'Data Users & Admin ',
             'title_data'             => 'Data Users & Admin ',
             // 'title_halamandata'     => 'Data Users',
-            'data_users'    => User::all()
+            'data_users'    => User::all(),
+            'data_halamanusers' => 'Data Users & Admin'
             // 'user'        => User::all(),
             ]);
     }
