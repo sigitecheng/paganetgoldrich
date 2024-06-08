@@ -35,6 +35,7 @@ class DatabaseSeeder extends Seeder
                 'password' => bcrypt('adminadmin')
             ]);
 
+
             User::create([
                 'name'  => 'Ini Adalah Admin',
                 'username' => 'adminku',
@@ -232,8 +233,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //  User::factory(7)->create();
-         Lokasipengajuan::factory(900)->create();
+         Lokasipengajuan::factory(100)->create();
          Jadimitra::factory(1)->create();
+        //  User::factory(100)->create();
     
     }
 }

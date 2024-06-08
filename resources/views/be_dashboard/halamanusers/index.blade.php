@@ -97,11 +97,30 @@
                                     @endforeach
                                     
                             </table>
-                        </div>
-                    </div>
-                    <!--/Recent sales-->
-                </div>
-                <!--Product summary-->
+
+
+                            </div>
+                            </div>
+                            <!--/Recent sales-->
+                            </div>
+                            <div class="pagination-container" style="margin-top: 20px; display: flex; justify-content: center;">
+                                <ul class="pagination" style="display: flex; padding-left: 0; list-style: none;">
+                                    <li class="page-item {{ $data_users->onFirstPage() ? 'disabled' : '' }}" style="margin-right: 5px;">
+                                        <a class="page-link" href="{{ $data_users->previousPageUrl() }}" style="position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #007bff; background-color: #fff; border: 1px solid #dee2e6;">Previous</a>
+                                    </li>
+                            
+                                    @foreach ($data_users->getUrlRange($data_users->currentPage() - 0, $data_users->currentPage() + 2) as $page => $url)
+                                        <li class="page-item {{ $page == $data_users->currentPage() ? 'active' : '' }}" style="margin-right: 5px;">
+                                            <a class="page-link" href="{{ $url }}" style="position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #007bff; background-color: #fff; border: 1px solid #dee2e6;">{{ $page }}</a>
+                                        </li>
+                                    @endforeach
+                            
+                                    <li class="page-item {{ $data_users->hasMorePages() ? '' : 'disabled' }}" style="margin-right: 5px;">
+                                        <a class="page-link" href="{{ $data_users->nextPageUrl() }}" style="position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #007bff; background-color: #fff; border: 1px solid #dee2e6;">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+                                            <!--Product summary-->
 
                 
                 
