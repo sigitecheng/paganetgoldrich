@@ -2,440 +2,445 @@
 @include('be_dashboard.dashboard.part.menuheader')
 @include('be_dashboard.dashboard.part.sidebar')
 
-<!--Content right-->
-<div class="col-sm-9 col-xs-12 content pt-3 pl-0">
-    {{-- <h5 class="mb-3 mt-3" ><i class='fa fa-map-signs'></i> <strong>Halaman | {{ $title_dashboard }}</strong></h5> --}}
-    <hr>
-       
-    <button class="btn btn-dark btn-block mb-4">
-        <h6 class="mt-0 mb-2"><i class="fa fa-database mr-2"></i><strong> {{ $title_data}}</strong></h6>
-    </button>
     
-    
+    <!--Page Wrapper-->
 
-    
-{{-- ============================== HALAMAN DATABASE PROJECT SUB BIDANG PEKERJAAN =========================== --}}
-                <!--Dashboard widget-->
+    {{-- <div class="container-fluid"> --}}
 
-                  <!--Custom cards section-->
-                  <div class="row">
-                    <!--Visitors statistics card-->
-                    <div class="col-sm-4 custom-card">
-                        <div class="mt-1 mb-3 button-container p-3 bg-white border shadow lh-sm">
-                            <div class="text-center mb-3">
-                                <i class="fas fa-users"></i>
-                                <h5 class="mb-0 mt-2"><small>Users</small></h5>
-                                {{-- <h2>{{ $datausers }}</h2> --}}
-                            </div>
-
-                            <svg viewBox="0 0 36 25" class="circular-chart blue">
-                                <path class="circle-bg"
-                                d="M18 2.0845
-                                    a 7.9567 7.9567 0 0 1 0 15.9134
-                                    a 7.9567 7.9567 0 0 1 0 -15.9134"
-                                />
-                                <path class="circle"
-                                stroke-dasharray="40, 60"
-                                d="M18 2.0845
-                                    a 7.9567 7.9567 0 0 1 0 15.9134
-                                    a 7.9567 7.9567 0 0 1 0 -15.9134"
-                                />
-                                <text x="18" y="12.00" class="percentage">&#xf0c0;</text>
-                            </svg>
-                            <div class="row mx-2">
-                                <div class="col-sm-6 col-12">
-                                    <h5>123</h5>
-                                    <span class="text-muted small"><strong>Male visitors</strong></span>
-                                </div>
-                                <div class="col-sm-6 col-12 text-right">
-                                    <h5>345</h5>
-                                    <span class="text-muted small"><strong>Female visitors</strong></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Visitors statistics card-->
-
-                    <!--Transaction statistics card-->
-                    <div class="col-sm-4 custom-card">
-                        <div class="mt-1 mb-3 button-container p-3 bg-white border shadow lh-sm">
-                            <div class="text-center mb-3">
-                                <i class="fas fa-exchange-alt"></i>
-                                <h5 class="mb-0 mt-2"><small>Transactions</small></h5>
-                                {{-- <h2>{{ $datapost }}</h2> --}}
-                            </div>
-                            
-                            <svg viewBox="0 0 36 25" class="circular-chart blue">
-                                <path class="circle-bg"
-                                d="M18 2.0845
-                                    a 7.9567 7.9567 0 0 1 0 15.9134
-                                    a 7.9567 7.9567 0 0 1 0 -15.9134"
-                                />
-                                <path class="circle"
-                                stroke-dasharray="40, 60"
-                                d="M18 2.0845
-                                    a 7.9567 7.9567 0 0 1 0 15.9134
-                                    a 7.9567 7.9567 0 0 1 0 -15.9134"
-                                />
-                                <text x="18" y="12.00" class="percentage">&#xf1ed;</text>
-                            </svg>
-
-                            <div class="row mx-2">
-                                <div class="col-sm-6 col-12">
-                                    <h5>15,300</h5>
-                                    <span class="text-muted small"><strong>Payments done</strong></span>
-                                </div>
-                                <div class="col-sm-6 col-12 text-right">
-                                    <h5>67</h5>
-                                    <span class="text-muted small"><strong>Payments due</strong></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Transaction statistics card-->
-
-                    <!--Tasks statistics card-->
-                    <div class="col-sm-4 custom-card">
-                        <div class="mt-1 mb-3 button-container p-3 bg-white border shadow lh-sm">
-                            <div class="text-center mb-3">
-                                <i class="fas fa-users"></i>
-                                <h5 class="mb-0 mt-2"><small>PIC</small></h5>
-                                {{-- <h2>{{$datapenanggungjawab}}</h2> --}}
-                            </div>
-
-                            <svg viewBox="0 0 36 25" class="circular-chart blue">
-                                <path class="circle-bg"
-                                d="M18 2.0845
-                                    a 7.9567 7.9567 0 0 1 0 15.9134
-                                    a 7.9567 7.9567 0 0 1 0 -15.9134"
-                                />
-                                <path class="circle"
-                                stroke-dasharray="40, 60"
-                                d="M18 2.0845
-                                    a 7.9567 7.9567 0 0 1 0 15.9134
-                                    a 7.9567 7.9567 0 0 1 0 -15.9134"
-                                />
-                                <text x="18" y="12.00" class="percentage">&#xf0ae;</text>
-                            </svg>
-
-                            <div class="row mx-2">
-                                <div class="col-sm-6 col-12">
-                                    <h5>490</h5>
-                                    <span class="text-muted small"><strong>Completed</strong></span>
-                                </div>
-                                <div class="col-sm-6 col-12 text-right">
-                                    <h5>95</h5>
-                                    <span class="text-muted small"><strong>Pending</strong></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Transaction statistics card-->
-                </div>
-                <!--Custom cards Section-->
-
-
-
+        
+            <!--Content right-->
+            <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
+                <h5 class="mb-0" ><strong>Tables</strong></h5>
+                <span class="text-secondary">Dashboard <i class="fa fa-angle-right"></i> Basic tables</span>
                 
-{{-- -------------------------------------------------------- --}}
-   <!--Content right-->
-   <div class="col-sm-12 col-xs-12 content pl-0">
-    
-    <div class="row mt-3">
-        <div class="col-sm-12">
-            <!--Inverse table-->
-                    <div class="mb-3 p-3 button-container bg-white border shadow-sm rounded" style="border-radius: 10px;">
-                        <h6><i class="fab fa-superpowers mr-2"></i>Data Project HaiuCare Bangun Indonesia </h6>
-                        {{-- <p class="mb-2">Add class <code>table-dark</code></p> --}}
-                        <hr> 
-                        <table class="table table-dark" id="project_table">
+                <div class="row mt-3">
+                    <div class="col-sm-6">
+                        <!--Basic Table-->
+                        <div class="mt-1 mb-3 p-3 button-container bg-white shadow-sm border">
+                            <h6>Basic table</h6>
+                            <p class="mb-2">Add class <code>table</code></p>
+                            
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Profile</th>
+                                            <th>VatNo.</th>
+                                            <th>Created</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Clarke</td>
+                                            <td>44475531</td>
+                                            <td>12 May 2017</td>
+                                            <td><label class="badge badge-danger badge-pill">Pending</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salah</td>
+                                            <td>40975532</td>
+                                            <td>15 May 2017</td>
+                                            <td><label class="badge badge-warning badge-pill">In progress</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mane</td>
+                                            <td>40075533</td>
+                                            <td>14 May 2017</td>
+                                            <td><label class="badge badge-info badge-pill">Fixed</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Peter</td>
+                                            <td>34475534</td>
+                                            <td>16 May 2017</td>
+                                            <td><label class="badge badge-success badge-pill">Completed</label></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--/Basic Table-->
+
+                    </div>
+                    
+                    
+                    <div class="col-sm-6">
+                        <!--Hoverable Table-->
+                        <div class="mt-1 mb-3 p-3 button-container  bg-white shadow-sm border">
+                            <h6>Hoverable table</h6>
+                            <p class="mb-2">Add class <code>table-hover</code></p>
+
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Profile</th>
+                                            <th>VatNo.</th>
+                                            <th>Created</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Clarke</td>
+                                            <td>44475531</td>
+                                            <td>12 May 2017</td>
+                                            <td><label class="badge badge-danger badge-pill">Pending</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salah</td>
+                                            <td>40975532</td>
+                                            <td>15 May 2017</td>
+                                            <td><label class="badge badge-warning badge-pill">In progress</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mane</td>
+                                            <td>40075533</td>
+                                            <td>14 May 2017</td>
+                                            <td><label class="badge badge-info badge-pill">Fixed</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Peter</td>
+                                            <td>34475534</td>
+                                            <td>16 May 2017</td>
+                                            <td><label class="badge badge-success badge-pill">Completed</label></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--/Hoverable Table-->
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-sm-12">
+                        <!--Striped table-->
+                        <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm">
+                            <h6 class="mb-2">Striped tables</h6>
+                            <p class="mb-2">Add class <code>table-striped</code></p>
+                            
+                            <table class="table table-striped" id="project_table">
                                 <thead>
                                     <tr>
-                                        <th class="text-center" style="width: 50px;">No</th>
-                                        <th class="text-center" style="width: 150px;">Project</th>
-                                        <th class="text-center" style="width: 25px;">Progress</th>
-                                        <th class="text-center" style="width: 25px;">Start date</th>
-                                        <th class="text-center" style="width: 25px;">Due date</th>
-                                        <th class="text-center" style="width: 25px;">Anggaran</th>
+                                        <th>Project id</th>
+                                        <th>Project name</th>
+                                        <th>Progress</th>
+                                        <th>Start date</th>
+                                        <th>Due date</th>
+                                        <th>Status</th>
                                     </tr>
                                 </thead>
-                                {{-- @foreach($dataposts as $data) --}}
                                 <tbody>
                                     <tr>
-                                        {{-- <td></td> --}}
-                                        {{-- <td class="text-center">{{ $loop->iteration }}</td> --}}
-                                        {{-- <td>{{$data->title }}</td> --}}
-                                        <td class="text-center">
-                                            {{-- @if (is_object($data) && isset($data->datapekerjaanstatus)) --}}
-    {{-- @php
-        $progressPercentage = 0;
-        $progressColor = 'bg-danger';
-
-        switch ($data->datapekerjaanstatus->nama_status) {
-            case 'Selesai':
-                $progressPercentage = 100;
-                $progressColor = 'bg-success';
-                break;
-            case 'Pending':
-                $progressPercentage = 50;
-                $progressColor = 'bg-warning';
-                break;
-            case 'Tertunda':
-                $progressColor = 'bg-danger';
-                break;
-            case 'Sedang Berjalan':
-                $progressPercentage = 100;
-                $progressColor = 'bg-primary';
-                break;
-            default:
-                $progressPercentage = 0;
-        }
-    @endphp --}}
-
-    <i class="fas 
-        {{-- @if ($data->datapekerjaanstatus->nama_status == 'Selesai')
-            fa-check-circle text-success
-        @elseif ($data->datapekerjaanstatus->nama_status == 'Pending')
-            fa-exclamation-circle text-warning
-        @elseif ($data->datapekerjaanstatus->nama_status == 'Tertunda')
-            fa-clock text-danger
-        @elseif ($data->datapekerjaanstatus->nama_status == 'Sedang Berjalan')
-            fa-spinner text-primary
-        @endif --}}
-    "></i>
-    {{-- {{ $data->datapekerjaanstatus->nama_status }} --}}
-
-    <div class="progress mt-3" style="height: 7px;">
-        {{-- <div class="progress-bar {{ $progressColor }}" role="progressbar" aria-valuenow="{{ $progressPercentage }}" style="width: {{ $progressPercentage }}%" aria-valuemin="0" aria-valuemax="100"></div> --}}
-    </div>
-{{-- @endif --}}
-
-                                        {{-- </td> --}}
-                                        {{-- <td class="text-center">{{ $data->tanggal_mulai }}</td> --}}
-                                        {{-- <td class="text-center">{{ $data->tanggal_selesai }}</td> --}}
-                                        {{-- <td class="text-left">Rp. {{ $data->anggaran}}</td> --}}
-                                    </tr>   
+                                        <td>00</td>
+                                        <td>Design and Wireframes</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" style="width: 40%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>12 May 2017</td>
+                                        <td>13 Feb, 2018</td>
+                                        <td><label class="badge badge-danger badge-pill">Pending</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Web design</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" style="width: 100%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>13 Feb, 2018</td>
+                                        <td>10 June, 2018</td>
+                                        <td><span class="badge badge-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>App development</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" style="width: 55%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>03 July, 2018</td>
+                                        <td>09 November, 2018</td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>App prototyping</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" style="width: 80%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>31 January, 2018</td>
+                                        <td>02 September, 2018</td>
+                                        <td><span class="badge badge-danger">Suspended</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>Web development</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" style="width: 50%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>23 October, 2018</td>
+                                        <td>15 December, 2018</td>
+                                        <td><span class="badge badge-info">Negotiations</span></td>
+                                    </tr>
                                 </tbody>
-                                {{-- @endforeach --}}
                             </table>
-                            <hr>
-
-                            <div class="pagination-container" style="display: flex; justify-content: space-between;">
-                                <div class="pagination-info">
-                                    {{-- Data ke <span><strong> {{ $dataposts->firstItem() }} </strong></span> Sampai <span><strong> {{ $dataposts->lastItem() }} </strong></span> dari total <strong><span> {{ $dataposts->total() }} </strong></span> data --}}
-                                </div>
-                                <div class="pagination-links">
-                                    {{-- {{ $dataposts->links() }} --}}
-                                </div>
-                            </div>
-                                                                              
                         </div>
-            <!--/Inverse table-->
-    <!--Main Content-->
-    </div>
-</div>
+                        <!--/Striped table-->
 
-{{-- -------------------------------------------------------- --}}
+                        <!--Bordered table-->
+                        <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm">
+                            <h6 class="mb-2">Striped tables</h6>
+                            <p class="mb-2">Add class <code>table-bordered</code></p>
+                            
+                            <table class="table table-bordered" id="project_table">
+                                <thead>
+                                    <tr>
+                                        <th>Project id</th>
+                                        <th>Project name</th>
+                                        <th>Progress</th>
+                                        <th>Start date</th>
+                                        <th>Due date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>00</td>
+                                        <td>Design and Wireframes</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" style="width: 40%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>12 May 2017</td>
+                                        <td>13 Feb, 2018</td>
+                                        <td><label class="badge badge-danger badge-pill">Pending</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Web design</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" style="width: 100%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>13 Feb, 2018</td>
+                                        <td>10 June, 2018</td>
+                                        <td><span class="badge badge-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>App development</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" style="width: 55%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>03 July, 2018</td>
+                                        <td>09 November, 2018</td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>App prototyping</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" style="width: 80%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>31 January, 2018</td>
+                                        <td>02 September, 2018</td>
+                                        <td><span class="badge badge-danger">Suspended</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>Web development</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" style="width: 50%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>23 October, 2018</td>
+                                        <td>15 December, 2018</td>
+                                        <td><span class="badge badge-info">Negotiations</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/Bordered table-->
 
-<button class="btn btn-dark btn-block mb-4">
-    <h6 class="mt-0 mb-2"><i class="fa fa-database mr-2"></i><strong> Daftar Project HaiuCare Indonesia </strong></h6>
-</button>
-                <!--Dashboard widget-->
-                <div class="mt-1 mb-3 button-container">
+                        <!--Inverse table-->
+                        <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm">
+                            <h6 class="mb-2">Striped tables</h6>
+                            <p class="mb-2">Add class <code>table-dark</code></p>
+                            
+                            <table class="table table-dark" id="project_table">
+                                <thead>
+                                    <tr>
+                                        <th>User</th>
+                                        <th>Project name</th>
+                                        <th>Progress</th>
+                                        <th>Start date</th>
+                                        <th>Due date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/img/client-img5.png" class="rounded" alt="">
+                                        </td>
+                                        <td>Design and Wireframes</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" style="width: 40%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>12 May 2017</td>
+                                        <td>13 Feb, 2018</td>
+                                        <td><label class="badge badge-danger badge-pill">Pending</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/img/client-img4.png" class="rounded" alt=""></td>
+                                        <td>Web design</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" style="width: 100%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>13 Feb, 2018</td>
+                                        <td>10 June, 2018</td>
+                                        <td><span class="badge badge-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/img/client-img2.png" class="rounded" alt="">
+                                        </td>
+                                        <td>App development</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" style="width: 55%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>03 July, 2018</td>
+                                        <td>09 November, 2018</td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/img/client-img3.png" class="rounded" alt="">
+                                        </td>
+                                        <td>App prototyping</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" style="width: 80%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>31 January, 2018</td>
+                                        <td>02 September, 2018</td>
+                                        <td><span class="badge badge-danger">Suspended</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/img/client-img2.png" class="rounded" alt="">
+                                        </td>
+                                        <td>Web development</td>
+                                        <td>
+                                            <div class="progress mt-3" style="height: 7px;">
+                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50" style="width: 50%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td>23 October, 2018</td>
+                                        <td>15 December, 2018</td>
+                                        <td><span class="badge badge-info">Negotiations</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/Inverse table-->
 
-                    <div class="row pl-0">
-
-                        {{-- ------------------------------------------------------ --}}
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
-                            <div class="bg-white border shadow">
-                                <div class="p-2 text-center">
-                                    <h5 class="mb-0 mt-2 text-theme mb-2">
-                                        <small><strong><i class="fas fa-hammer mr-2"></i>INFRASTRUKTUR</strong></small>
-                                    </h5>
-                                    <table class="table text-center">
+                        <!--Contextual classes table-->
+                        <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm">
+                            <h6 class="mb-2">Table with contextual classes</h6>
+                            <p class="mb-2">Add class <code>table-*color*</code></p>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
                                         <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-money-bill mr-2"></i>Terkumpul</td></button>
-                                            {{-- <td><h4><span class="badge badge-primary p-2">Rp.<span> {{ $totalanggaraninfrastruktur }}</span></span></h4></td> --}}
+                                            <th>#</th>
+                                            <th>First name</th>
+                                            <th>Product</th>
+                                            <th>Amount</th>
+                                            <th>Deadline</th>
                                         </tr>
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-handshake mr-2"></i>Tersalurkan</td></button>
-                                            <td><h4><span class="badge badge-success p-2">Rp.<span> 1.355.232.675,-</span></span></h4></td>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-info">
+                                            <td>1</td>
+                                            <td>Herman Beck</td>
+                                            <td>Photoshop</td>
+                                            <td>$ 77.99</td>
+                                            <td>May 15, 2015</td>
                                         </tr>
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-handshake mr-2"></i>Kebutuhan</td></button>
-                                            <td><h4><span class="badge badge-secondary p-2">Rp.<span> 1.355.232.675,-</span></span></h4></td>
+                                        <tr class="table-warning">
+                                            <td>2</td>
+                                            <td>Messsy Adam</td>
+                                            <td>Flash</td>
+                                            <td>$245.30</td>
+                                            <td>July 1, 2015</td>
                                         </tr>
-                                    </table>
-                                    <hr>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="">
-                                            <button class="btn btn-outline-primary mb-2 mr-2">
-                                                <i class="fas fa-eye mr-2"></i>Details
-                                            </button>
-                                        </a>
-                                    </div>
-                                    
-                                </div>       
-                                                         
-                                <div class="align-bottom">
-                                    {{-- <span id="incomeBar"></span> --}}
-                                </div>
+                                        <tr class="table-danger">
+                                            <td>3</td>
+                                            <td>John Richards</td>
+                                            <td>Premeire</td>
+                                            <td>$138.00</td>
+                                            <td>Apr 12, 2015</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <td>4</td>
+                                            <td>Peter Meggik</td>
+                                            <td>After effects</td>
+                                            <td>$ 77.99</td>
+                                            <td>May 15, 2015</td>
+                                        </tr>
+                                        <tr class="table-primary">
+                                            <td>5</td>
+                                            <td>Edward</td>
+                                            <td>Illustrator</td>
+                                            <td>$ 160.25</td>
+                                            <td>May 03, 2015</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </div>   
+                        </div>
+                        <!--/Contextual classes  table-->
 
-
-                        {{-- ------------------------------------------------------ --}}
-
-                        {{-- ------------------------------------------------------ --}}
-                        {{-- <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
-                            <div class="bg-white border shadow">
-                                <div class="p-2 text-center">
-                                    <h5 class="mb-0 mt-2 text-theme mb-2">
-                                        <small><strong><i class="fas fa-book mr-2"></i>PENDIDIKAN</strong></small>
-                                    </h5>
-                                    <table class="table text-center">
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-money-bill mr-2"></i>Terkumpul</td></button>
-                                            <td><h4><span class="badge badge-primary p-2">Rp. <span>{{ $totalanggaranpendidikan}}</span></span></h4></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-handshake mr-2"></i>Tersalurkan</td></button>
-                                            <td><h4><span class="badge badge-success p-2">Rp.<span> 1.355.232.675,-</span></span></h4></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-handshake mr-2"></i>Kebutuhan</td></button>
-                                            <td><h4><span class="badge badge-secondary p-2">Rp.<span> 1.355.232.675,-</span></span></h4></td>
-                                        </tr>
-                                    </table>
-                                    <hr>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="">
-                                            <button class="btn btn-outline-primary mb-2 mr-2">
-                                                <i class="fas fa-eye mr-2"></i>Details
-                                            </button>
-                                        </a>
-                                    </div>
-                                    
-                                </div>       
-                                                         
-                                <div class="align-bottom">
-                                    <span id="incomeBar"></span>
-                                </div>
-                            </div>
-                        </div>    --}}
-
-
-                        {{-- ------------------------------------------------------ --}}
-                        {{-- ------------------------------------------------------ --}}
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
-                            <div class="bg-white border shadow">
-                                <div class="p-2 text-center">
-                                    <h5 class="mb-0 mt-2 text-theme mb-2">
-                                        <small><strong><i class="fas fa-hospital mr-2"></i>KESEHATAN</strong></small>
-                                    </h5>
-                                    <table class="table text-center">
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-money-bill mr-2"></i>Terkumpul</td></button>
-                                            {{-- <td><h4><span class="badge badge-primary p-2">Rp. <span> {{ $totalanggarankesehatan }}</span></span></h4></td> --}}
-                                        </tr>
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-handshake mr-2"></i>Tersalurkan</td></button>
-                                            <td><h4><span class="badge badge-success p-2">Rp.<span> 1.355.232.675,-</span></span></h4></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-handshake mr-2"></i>Kebutuhan</td></button>
-                                            <td><h4><span class="badge badge-secondary p-2">Rp.<span> 1.355.232.675,-</span></span></h4></td>
-                                        </tr>
-                                    </table>
-                                    <hr>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="">
-                                            <button class="btn btn-outline-primary mb-2 mr-2">
-                                                <i class="fas fa-eye mr-2"></i>Details
-                                            </button>
-                                        </a>
-                                    </div>
-                                    
-                                </div>       
-                                                         
-                                <div class="align-bottom">
-                                    {{-- <span id="incomeBar"></span> --}}
-                                </div>
-                            </div>
-                        </div>   
-
-
-                        {{-- ------------------------------------------------------ --}}
-                        {{-- ------------------------------------------------------ --}}
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
-                            <div class="bg-white border shadow">
-                                <div class="p-2 text-center">
-                                    <h5 class="mb-0 mt-2 text-theme mb-2">
-                                        <small><strong><i class="fas fa-utensils mr-2"></i>MAKANAN</strong></small>
-                                    </h5>
-                                    <table class="table text-center">
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-money-bill mr-2"></i>Terkumpul</td></button>
-                                            {{-- <td><h4><span class="badge badge-primary p-2">Rp. <span> {{ $totalanggaranmakanan }}</span></span></h4></td> --}}
-                                        </tr>
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-handshake mr-2"></i>Tersalurkan</td></button>
-                                            <td><h4><span class="badge badge-success p-2">Rp.<span> 1.355.232.675,-</span></span></h4></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="btn btn-outline-primary"><i class="fas fa-handshake mr-2"></i>Kebutuhan</td></button>
-                                            <td><h4><span class="badge badge-secondary p-2">Rp.<span> 1.355.232.675,-</span></span></h4></td>
-                                        </tr>
-                                    </table>
-                                    <hr>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="">
-                                            <button class="btn btn-outline-primary mb-2 mr-2">
-                                                <i class="fas fa-eye mr-2"></i>Details
-                                            </button>
-                                        </a>
-                                    </div>
-                                    
-                                </div>       
-                                                         
-                                <div class="align-bottom">
-                                    {{-- <span id="incomeBar"></span> --}}
-                                </div>
-                            </div>
-                        </div>   
-                        {{-- ------------------------------------------------------ --}}
-                    </div>  
+                    </div>
                 </div>
-                <!--/Dashboard widget-->
 
-
-{{-- ================================ AKHIR HALAMAN DASHBOARD DATABASE PROJEK PEKERJAAN ===========================  --}}
-<button class="btn btn-dark btn-block mb-4">
-    <h6 class="mt-0 mb-2"><i class="fa fa-database mr-2"></i><strong>Chart Data HaiuCare Indonesia </strong></h6>
-</button>
-
-<div class="row mt-3">
-    <div class="col-sm-6">
-        <!--Line Chart-->
-        <div class="mt-1 mb-3 p-3 button-container bg-white shadow-sm border">
-            <h6 class="mb-2">Chart Project</h6>
-            
-            <div id="lineChartFlot" style="width: 100%; height:350px"></div>
+                <!--Footer-->
+             
+                @include('be_dashboard.dashboard.part.menufooter')
+                <!--Footer-->
+                
+                </div>
         </div>
-        <!--/Line Chart-->
 
-    </div>
+        <!--Main Content-->
+        
+        </div>
+        
+        @include('be_dashboard.dashboard.part.footer')
     
-    
-    <div class="col-sm-6">
-        <!--Area Chart-->
-        <div class="mt-1 mb-3 p-3 button-container bg-white shadow-sm border">
-            <h6>Realtime Chart</h6>
-
-            <div id="realTimeChartFlot" style="width: 100%; height:350px"></div>
-        </div>
-        <!--/Area Table-->
-        </div>
-    </div>
-
-    @include('be_dashboard.dashboard.part.menufooter')

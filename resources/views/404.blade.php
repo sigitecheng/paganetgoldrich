@@ -12,7 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Favicon Icon-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="/assets/css/fe_css/images/icons/menuandroid/logohaiufull.jpg">
+
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="/assets/backend/css/bootstrap.min.css">
     <!--Custom style.css-->
