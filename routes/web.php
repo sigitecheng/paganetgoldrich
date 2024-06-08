@@ -47,9 +47,24 @@ Route::get('/comingsoon', function () {
 
 // ==========================================================
 // |||||||||||||||||| ROUTE UNTUK COMING SOON |||||||||||||||||||||||||||||||||||
+Route::get('/paymentgateways', function () {
+    return view('fe_dashboard.paymentgateway.lokasicileunyi.newindeks', [
+        'title' => 'Donasi Makan Gratis',
+        ]);
+});
+// --------------------------------------------------------------------------------------------------------------------------------
+
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK COMING SOON |||||||||||||||||||||||||||||||||||
 Route::get('/404', function () {
     return view('404', [
-        'title' => 'Sistem Dalam Pembangunan !',
+        'title' => 'Under Construction !',
+        ]);
+});
+Route::get('/404S', function () {
+    return view('404S', [
+        'title' => 'Under Construction !',
         ]);
 });
 // --------------------------------------------------------------------------------------------------------------------------------

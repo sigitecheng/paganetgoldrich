@@ -11,54 +11,8 @@
         <div class="header flex flex-col overflow-hidden h-[220px] relative"> --}}
             <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
                 <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden">
-                    <div class="header flex flex-col bg-[#56BBC5] overflow-hidden h-[350px] relative -mb-[92px]">
-                        <nav class="pt-5 px-3 flex justify-between items-center relative z-20">
-                            <div class="flex items-center gap-[10px]">
-                                <a href="javascript:history.back()" class="w-10 h-10 flex shrink-0">
-                                    <img src="/assets/css/fe_css/images/icons/menuandroid/homehaiu.png" alt="icon">
-                                </a>
-                            </div>
-                            <div class="flex flex-col items-center text-center">
-                                {{-- <p class="text-xs leading-[18px] text-white">Details</p> --}}
-                                <p class="font-semibold text-sm text-white">#makangratis</p>
-                            </div>
-                            <a href="" class="w-10 h-10 flex shrink-0">
-                                <img src="/assets/css/fe_css/images/icons/menuandroid/apphome.png" alt="icon">
-                            </a>
-                        </nav>
-
-                        <div class="w-full h-full absolute bg-white overflow-hidden">
-                            <div class="w-full h-[900px] bg-gradient-to-b from-black/90 to-[#080925]/0 absolute z-10"></div>
-                            <img src="{{ asset($data->daftarmitrarumahmakann->gambar) }}" class="w-full h-full object-cover" alt="">
-                            {{-- <img src="{{ asset('/public/assets/css/fe_css/images/daftarmitrarumahmakan/' . $data->gambar)}}" class="w-full h-full object-cover" alt="cover"> --}}
-                        </div>
-                        </div>
-
-                        <div class="flex flex-col z-30">
-                            <div id="status" style="
-                            width: 100%;
-                            height: 92px;
-                            background-color: #2c15ff;
-                            background-image: linear-gradient(to bottom, #58c0e9, #1d06e7);
-                            border-top-left-radius: 40px;
-                            border-top-right-radius: 40px;
-                            padding-top: 0.75rem; /* Sesuaikan dengan kebutuhan Anda */
-                            padding-bottom: 3.125rem; /* Sesuaikan dengan kebutuhan Anda */
-                            display: flex;
-                            gap: 0.5rem; /* Sesuaikan dengan kebutuhan Anda */
-                            justify-content: center;
-                            align-items: center;
-                            margin-bottom: -2.375rem; /* Sesuaikan dengan kebutuhan Anda */
-                            ">
-                                <div class="w-[30px] h-[30px] flex shrink-0">
-                                    <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" alt="icon" style="filter: invert(100%);">
-                                </div>
-                                <p class="font-semibold text-sm text-white">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</p>
-                        {{-- <div class="w-full h-full absolute bg-white overflow-hidden">
-                            <div class="w-full h-[266px] bg-gradient-to-b from-black/90 to-[#080925]/0 absolute z-10"></div>
-                            <img src="{{ asset($data->daftarmitrarumahmakann->gambar)}}" class="w-full h-full object-cover" alt="cover">
-                        </div> --}}
-                    </div>
+                    {{-- <div class="header flex flex-col bg-[#56BBC5] overflow-hidden h-[350px] relative -mb-[92px]"> --}}
+                        
                     
                     <div class="flex flex-col z-30">
                         {{-- <div id="status" class="w-full h-[92px] bg-[#FF7815] rounded-t-[40px] pt-3 pb-[50px] flex gap-2 justify-center items-center -mb-[38px]">
@@ -66,8 +20,9 @@
                                 <img src="assets/images/icons/lovely.svg" alt="icon">
                             </div>
                             
-                            <p class="font-semibold text-sm text-white">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</p>
-                        </div> --}}
+                            {{-- <p class="font-semibold text-sm text-white">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</p> --}}
+                        </div> 
+                        {{-- --}} 
                         {{-- @endforeach --}}
         </div>
 
@@ -86,12 +41,12 @@
                             <a href="/daftarmenu">
                                 <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Daftar Menu Makanan : <span style="display: inline-block; padding: 2px 18px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:100px; background-color: #babd0c; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#000000';" onmouseout="this.style.backgroundColor='#00000'; this.style.color='#fff';">Click Here</span></p> 
                             </a>
-                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Nama Pemilik : <span style="font-size: 14px; color: white;">{{ $data->daftarmitrarumahmakann->nama_pemilik}}</span></p> 
-                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Rumah Makan : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</span></p> 
-                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Alamat : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->alamat_rumahmakan}}</span></p> 
-                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Telepon : <span style="font-size: 14px; color: white;">{{ $data->daftarmitrarumahmakann->telepon}}</span></p> 
-                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Email : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->email}}</span></p> 
-                            <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; text-align:justify;">Keterangan : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->deskripsi}}</span></p> 
+                            {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Nama Pemilik : <span style="font-size: 14px; color: white;">{{ $data->daftarmitrarumahmakann->nama_pemilik}}</span></p>  --}}
+                            {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Rumah Makan : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</span></p>  --}}
+                            {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Alamat : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->alamat_rumahmakan}}</span></p>  --}}
+                            {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Telepon : <span style="font-size: 14px; color: white;">{{ $data->daftarmitrarumahmakann->telepon}}</span></p>  --}}
+                            {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Email : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->email}}</span></p>  --}}
+                            {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; text-align:justify;">Keterangan : <span style="font-size: 14px; color: black;">{{ $data->daftarmitrarumahmakann->deskripsi}}</span></p>  --}}
                         </div>
                     </div>
                 
@@ -121,66 +76,66 @@
                 
                 <div class="grid grid-cols-2 w-fit mx-auto justify-center gap-[30px]">
                     
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 10.000</span>
                     </a>
                     
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 20.000</span>
                     </a>
                     
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 30.000</span>
                     </a>
                     
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 40.000</span>
                     </a>
                     
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 50.000</span>
                     </a>
                     
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 60.000</span>
                     </a>
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 70.000</span>
                     </a>
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 80.000</span>
                     </a>
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 90.000</span>
                     </a>
-                    <a href="/404" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="/404S" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
