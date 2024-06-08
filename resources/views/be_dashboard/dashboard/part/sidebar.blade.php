@@ -40,7 +40,7 @@
                             
                             <li class="parent">
                                 <a href="#" onclick="toggle_menu('tables_menu1'); return false" class=""><i class="fab fa-ravelry mr-2"></i>
-                                    <span class="none">Backend Databaseu<i class="fa fa-angle-down pull-right align-bottom"></i></span>
+                                    <span class="none">Backend Database<i class="fa fa-angle-down pull-right align-bottom"></i></span>
                                 </a>
                                 <ul class="children" id="tables_menu1">
                                     <li class="child">
