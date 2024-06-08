@@ -50,7 +50,7 @@
                                     </li> 
                                     
                                     <li class="child">
-                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                        <a href="/halamandatadaftarmitra" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
                                                 <i class="fas fa-file mr-2"></i>Berkas Daftar Mitra
                                         </a>
                                     </li> 

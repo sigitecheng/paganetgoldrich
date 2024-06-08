@@ -93,6 +93,17 @@ class JadimitraController extends Controller
             'user'        => User::all(),
         ]);
     }
+
+    public function alldata()
+    {
+        //
+        return view('be_dashboard.daftarberkasmitra.index',[
+            'title' => 'Data Daftar Jadi Mitra',
+            'data_halamanjadimitra' => 'Data Berkas Daftar Pengajuan Mitra',
+            // 'title_halaman' => 'Halaman Fundraising',
+            'data_daftarjadimitra'  => Jadimitra::paginate(10),
+        ]); 
+    }
 }
 
 

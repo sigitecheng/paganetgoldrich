@@ -148,6 +148,9 @@ Route::resource('/daftarjadimitra', JadimitraController::class)->middleware('aut
 Route::post('/daftarjadimitra/save', [JadimitraController::class, 'store'])->name('daftarjadimitra.save')->middleware('auth');
 Route::get('/daftarmitrasuccess', [JadimitraController::class, 'mitrasuccess'])->middleware('auth');
 Route::get('/showmitrasuccess/{user}', [JadimitraController::class, 'showmitrasuccess'])->middleware('auth');
+Route::get('/halamandatadaftarmitra', [JadimitraController::class, 'alldata'])->middleware('auth');
+
+
 // --------------------------------------------------------------------------------------------------------------------------------
 
 
