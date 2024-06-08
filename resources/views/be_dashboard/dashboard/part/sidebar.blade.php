@@ -32,7 +32,7 @@
                             </li>
 
                             <li class="parent">
-                                <a href="/admindashboard" class=""><i class="fab fa-ravelry mr-2"> </i>
+                                <a href="/404" class=""><i class="fab fa-ravelry mr-2"> </i>
                                     <span class="none">Dashboard Admin</span>
                                 </a>
                             </li>
