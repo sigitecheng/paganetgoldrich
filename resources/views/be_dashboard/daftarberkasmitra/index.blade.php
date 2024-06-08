@@ -31,9 +31,9 @@
                             </div>
                         </div>
                         
-                        <div class="table-responsive product-list">
-                            
-                            <table class="table mt-0" id="productList">
+                        <div class="table-responsive product-list" style="overflow-x: auto;">
+
+                            <table class="table mt-0" id="productList" style="width: 100%;">
                                 <thead>
                                     <tr>
                                         <th class="text-center" style="width: 50px;">No</th>
@@ -54,41 +54,40 @@
                                         <th class="text-center" style="width: 150px;">Aksi</th>
                                     </tr>
                                 </thead>
-
+                        
                                 @foreach ($data_daftarjadimitra as $data)
-                                    
                                 <tbody>
                                     <tr>
-                                        <td class="align-middle text-center" style="width: 50px;">{{ $loop->iteration}}</td>
-                                        <td class="align-middle text-center" style="width: 150px;">{{$data->user->name}}</td>
-                                        <td class="align-middle text-center" style="width: 200px;">{{$data->nama_rumahmakan}}</td>
-                                        <td class="align-middle text-center" style="width: 200px;">{{$data->nama_pemilik}}</td>
-                                        <td class="align-middle text-center" style="width: 100px;">{{$data->pilihan_kota}}</td>
-                                        <td class="align-middle text-center" style="width: 250px;">{{$data->alamat}}</td>
-                                        <td class="align-middle text-center" style="width: 100px;">{{$data->nomor_telepon}}</td>
-                                        <td class="align-middle text-center" style="width: 100px;">{{$data->email}}</td>
+                                        <td class="align-middle text-center" style="width: 50px;">{{ $loop->iteration }}</td>
+                                        <td class="align-middle text-center" style="width: 150px;">{{ $data->user->name }}</td>
+                                        <td class="align-middle text-center" style="width: 200px;">{{ $data->nama_rumahmakan }}</td>
+                                        <td class="align-middle text-center" style="width: 200px;">{{ $data->nama_pemilik }}</td>
+                                        <td class="align-middle text-center" style="width: 100px;">{{ $data->pilihan_kota }}</td>
+                                        <td class="align-middle text-center" style="width: 250px;">{{ $data->alamat }}</td>
+                                        <td class="align-middle text-center" style="width: 100px;">{{ $data->nomor_telepon }}</td>
+                                        <td class="align-middle text-center" style="width: 100px;">{{ $data->email }}</td>
                                         <td class="align-middle text-center" style="width: 75px;">
                                             <button class="btn-outline-theme btn-round">
-                                                {{$data->active}}
+                                                {{ $data->active }}
                                             </button>
                                         </td>
-
-                                        <td class="align-middle text-center" style="width: 100px;">{{$data->tanggal_berdiri}}</td>
-                                        <td class="align-middle text-center" style="width: 50px;">{{$data->kuota_porsi}}</td>
-                                        <td class="align-middle text-center">
+                        
+                                        <td class="align-middle text-center" style="width: 100px;">{{ $data->tanggal_berdiri }}</td>
+                                        <td class="align-middle text-center" style="width: 50px;">{{ $data->kuota_porsi }}</td>
+                                        <td class="align-middle text-center" style="width: 300px;">
                                             <img src="{{ $data->ktp }}" alt="" style="width: 100px; height: 100px;">
-                                            </td>
-                                        
-                                        <td class="align-middle text-center">
-                                            <img src="{{ $data->foto_mitra}}" alt="" style="width: 100px; height: 100px;">
                                         </td>
-                                        
-                                        <td class="align-middle text-center">
-                                            <img src="{{ $data->foto_umkm}}" alt="" style="width: 100px; height: 100px;">
-                                            </td>
-                                        
-                                            <td class="align-middle text-center">Halo</td>
-                                            
+                        
+                                        <td class="align-middle text-center" style="width: 300px;">
+                                            <img src="{{ $data->foto_mitra }}" alt="" style="width: 100px; height: 100px;">
+                                        </td>
+                        
+                                        <td class="align-middle text-center" style="width: 300px;">
+                                            <img src="{{ $data->foto_umkm }}" alt="" style="width: 100px; height: 100px;">
+                                        </td>
+                        
+                                        <td class="align-middle text-center" style="width: 50px;">Halo</td>
+                        
                                         <td class="align-middle text-center" style="width: 150px;">
                                             <a href="/404">
                                                 <button class="btn-outline-theme btn-round">
@@ -98,7 +97,7 @@
                                             <a href="/404">
                                                 <button class="btn-outline-success btn-round">
                                                     <i class="fas fa-edit"></i>
-                                                    </button>
+                                                </button>
                                             </a>
                                             <a href="/404">
                                                 <button class="btn-outline-danger btn-round">
@@ -106,16 +105,13 @@
                                                 </button>
                                             </a>
                                         </td>
-
                                     </tr>
-                                    
-                                    @endforeach
-                                    
+                                </tbody>
+                                @endforeach
+                        
                             </table>
-
-
-                            </div>
-                            </div>
+                        </div>
+                             </div>
                             <!--/Recent sales-->
                             </div>
                             <div class="pagination-container" style="margin-top: 20px; display: flex; justify-content: center;">
