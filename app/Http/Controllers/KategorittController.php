@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kategorit;
 use Illuminate\Http\Request;
 
 class KategorittController extends Controller
@@ -12,6 +13,13 @@ class KategorittController extends Controller
     public function index()
     {
         //
+        return view('be_dashboard.daftarkategori.index',[
+            'title' => 'Data Kategori Donasi',
+            'data_halamankategori' => 'Data Donasi Kategori',
+
+            'data_kategori' => Kategorit::all()
+
+        ]);
     }
 
     /**
@@ -32,7 +40,7 @@ class KategorittController extends Controller
 
     /**
      * Display the specified resource.
-     */
+     *
     public function show(string $id)
     {
         //

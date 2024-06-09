@@ -14,6 +14,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PengaturanController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminDashboardController;
+use App\Http\Controllers\KategorittController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LokasipengajuanController;
 use App\Models\Daftarmenu;
@@ -169,6 +170,12 @@ Route::get('/pengaturan', [PengaturanController::class, 'index'])->middleware('a
 // ==========================================================
 // |||||||||||||||||| ROUTE UNTUK DATA PENGATURAN  |||||||||||||||||||||||||||||||||||
 Route::get('/halamandatausers', [UserController::class, 'index'])->middleware('auth');
+// --------------------------------------------------------------------------------------------------------------------------------
+
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK DATA PENGATURAN  |||||||||||||||||||||||||||||||||||
+Route::get('/halamandatakategori', [KategorittController::class, 'index'])->middleware('auth');
 // --------------------------------------------------------------------------------------------------------------------------------
 
 

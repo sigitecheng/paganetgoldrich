@@ -151,6 +151,45 @@
                                 </ul>
                             </li>
                             
+                            <li class="parent">
+                                <a href="" onclick="toggle_menu('kategorionasi'); return false" class=""><i class="fab fa-ravelry mr-2"></i>
+                                    <span class="none">donasi Kategori <i class="fa fa-angle-down pull-right align-bottom"></i></span>
+                                </a>
+                                <ul class="children" id="kategorionasi">
+                                  
+                                    <li class="child">
+                                        <a href="/halamandatakategori" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-database mr-2"></i>All Data 
+                                        </a>
+                                    </li>
+
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-utensil-spoon mr-2"></i>Makan Gratis 
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-hammer mr-2"></i>Infrastruktur
+                                        </a>
+                                    </li>
+
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-stethoscope mr-2"></i>Kesehatan
+                                        </a>
+                                    </li>
+
+                                    <li class="child">
+                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-book mr-2"></i>Pendidikan
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            
 
                             
                             

@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Jadimitra;
+use App\Models\Kategorit;
 use App\Models\Tentangkami;
 use App\Models\Lokasimakangratis;
 use App\Models\Lokasipengajuan;
@@ -26,6 +27,23 @@ class DatabaseSeeder extends Seeder
             //     'email' => 'test@example.com',
             // ]);
 
+
+            Kategorit::create([
+                'name'  => 'Makanan',
+                'slug' => '-makanan',
+            ]);
+            Kategorit::create([
+                'name'  => 'Kesehatan',
+                'slug' => '-kesehatan',
+            ]);
+            Kategorit::create([
+                'name'  => 'Pendidikan',
+                'slug' => '-pendidikan',
+            ]);
+            Kategorit::create([
+                'name'  => 'Infrastruktur',
+                'slug' => '-infrastrukturs',
+            ]);
 
             User::create([
                 'name'  => 'Ini Adalah Admin',
