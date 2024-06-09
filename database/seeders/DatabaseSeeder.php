@@ -29,19 +29,19 @@ class DatabaseSeeder extends Seeder
 
 
             Kategorit::create([
-                'name'  => 'Makanan',
+                'nama'  => 'Makanan',
                 'slug' => '-makanan',
             ]);
             Kategorit::create([
-                'name'  => 'Kesehatan',
+                'nama'  => 'Kesehatan',
                 'slug' => '-kesehatan',
             ]);
             Kategorit::create([
-                'name'  => 'Pendidikan',
+                'nama'  => 'Pendidikan',
                 'slug' => '-pendidikan',
             ]);
             Kategorit::create([
-                'name'  => 'Infrastruktur',
+                'nama'  => 'Infrastruktur',
                 'slug' => '-infrastrukturs',
             ]);
 
