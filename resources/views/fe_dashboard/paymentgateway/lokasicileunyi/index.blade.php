@@ -121,7 +121,7 @@
                 
                 <div class="grid grid-cols-2 w-fit mx-auto justify-center gap-[30px]">
                     {{-- Rp. 10 Rebu --}}
-                    <a href="/https://app.midtrans.com/payment-links/1717859553840" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717859553840" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
@@ -129,59 +129,59 @@
                     </a>
                     
                     {{-- Rp. 20 Rebu --}}
-                    <a href="/https://app.midtrans.com/payment-links/1717859795456" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717859795456" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 20.000</span>
                     </a>
                     {{-- Rp. 30 Rebu --}}
-                    <a href="/https://app.midtrans.com/payment-links/1717859890820" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717859890820" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 30.000</span>
                     </a>
                     {{-- Rp. 40 Rebu --}}
-                    <a href="/https://app.midtrans.com/payment-links/1717859970519" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717859970519" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 40.000</span>
                     </a>
                     
-                    <a href="/https://app.midtrans.com/payment-links/1717860037226" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717860037226" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 50.000</span>
                     </a>
                     
-                    <a href="/https://app.midtrans.com/payment-links/1717860094045" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717860094045" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 60.000</span>
                     </a>
-                    <a href="/https://app.midtrans.com/payment-links/1717860154828" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717860154828" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 70.000</span>
                     </a>
-                    <a href="/https://app.midtrans.com/payment-links/1717860211055" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717860211055" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 80.000</span>
                     </a>
-                    <a href="/https://app.midtrans.com/payment-links/1717860272840" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717860272840" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
                         <span class="font-bold text-lg" style="display: inline-block; padding: 2px 22px; font-weight: bold; font-size: 12px; color: #fff; border-radius: 9999px; width:130px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s; text-align:center;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#4f40d9'; this.style.color='#fff';">Rp 90.000</span>
                     </a>
-                    <a href="/https://app.midtrans.com/payment-links/1717860325538" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
+                    <a href="https://app.midtrans.com/payment-links/1717860325538" class="w-[150px] flex flex-col gap-4 p-4 rounded-[30px] border border-[#E8E9EE] items-center">
                         <div class="w-10 h-10 flex shrink-0 overflow-hidden">
                             <img src="/assets/css/fe_css/images/icons/menuandroid/appdonasi.png" alt="icon">
                         </div>
