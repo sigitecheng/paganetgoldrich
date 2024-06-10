@@ -74,7 +74,7 @@ class LokasipengajuanController extends Controller
             'title_data'             => 'Data Lokasi Pengajuan ',
             // 'title_halamandata'     => 'Data Users',
             'data_lokasipengajuan'    => Lokasipengajuan::paginate(15),
-            'data_halamanusers' => 'Data Lokasi Pengajuan'
+            'data_halaman' => 'Data Lokasi Pengajuan'
             // 'user'        => User::all(),
             ]);
     }

@@ -252,7 +252,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //  User::factory(7)->create();
-         Lokasipengajuan::factory(100)->create();
+         Lokasipengajuan::factory(500)->create();
          Jadimitra::factory(1)->create();
          Donatur::factory(50)->create();
         //  User::factory(100)->create();
