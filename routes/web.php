@@ -190,6 +190,7 @@ Route::get('/lokasipengajuan', [LokasipengajuanController::class, 'index']);
 Route::get('/lokasipengajuanall', [LokasipengajuanController::class, 'alldata']);
 Route::get('/lokasipengajuannew', [LokasipengajuanController::class, 'newcreate'])->middleware('auth');
 Route::post('/lokasipengajuansubmit', [Lokasipengajuan::class, 'save'])->middleware('auth');
+Route::post('/destroylokasipengajuan', [Lokasipengajuan::class, 'destroy'])->middleware('auth');
 // Route::get('/lokasipengajuan', [Lokasipengajuan::class, 'lokasipengajuanalldata'])->middleware('auth');
 // Route::get('/daftarumkm/details/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'show']);
 // --------------------------------------------------------------------------------------------------------------------------------

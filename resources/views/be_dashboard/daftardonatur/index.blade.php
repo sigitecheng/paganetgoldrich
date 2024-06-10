@@ -12,7 +12,7 @@
         
             <!--Content right-->
             <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
-                <h5 class="mb-0" ><strong>Dashboard | {{ $data_halaman}} </strong></h5>
+                <h5 class="mb-0" ><strong>Dashboard | {{ $title_datahalaman}} </strong></h5>
 
 
                   <!--Products summary-->

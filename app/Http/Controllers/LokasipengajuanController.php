@@ -79,5 +79,14 @@ class LokasipengajuanController extends Controller
             ]);
     }
 
+    public function destroy($data)
+    {
+        $lokasipengajuan = Lokasipengajuan::where('id', $data)->firstOrFail(); // Mencari berita berdasarkan judul
+    
+        $lokasipengajuan->delete(); // Menghapus berita dari database
+    
+        return redirect('/lokasipengajuanall')->with('delete', 'Lokasi Pengajuan has been deleted successfully!');
+    }
+
 
 }

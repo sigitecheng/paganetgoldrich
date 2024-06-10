@@ -14,7 +14,27 @@
             <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
                 <h5 class="mb-0" ><strong>Dashboard | {{ $data_halaman}} </strong></h5>
 
-
+                @if(session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show col-lg-12 mt-2" role="alert">
+                    <strong>{{ session('success') }}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                  @else
+                      @if(session()->has('delete'))
+                          <div class="alert alert-danger alert-dismissible fade show col-lg-12 mt-2" role="alert">
+                              <strong>{{ session('delete') }}</strong> {{-- Perubahan dari session('success') menjadi session('delete') --}}
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                          @else
+                              @if(session()->has('update'))
+                              <div class="alert alert-warning alert-dismissible fade show col-lg-12 mt-2" role="alert">
+                                  <strong>{{ session('update') }}</strong> {{-- Perubahan dari session('success') menjadi session('delete') --}}
+                                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+                          @endif
+                      @endif
+                  @endif
+            
                   <!--Products summary-->
                 <div class="mt-4 mb-4 bg-white border shadow lh-sm">
                     <!--Recent Sales-->
@@ -39,6 +59,7 @@
                                         <th class="text-center">No</th>
                                         <th class="text-center">Nama Lengkap</th>
                                         <th class="text-center">Lokasi</th>
+                                        <th class="text-center">Aksi</th>
                                         {{-- <th class="text-center">Keterangan</th> --}}
                                     </tr>
                                 </thead>
@@ -68,7 +89,15 @@
                                                     <i class="fas fa-edit"></i>
                                                 </button>
                                             </a>
-                                            <a href="/404">
+
+                                            {{-- <form action="/destroylokasipengajuan" method="post">
+                                                @csrf
+                                                <button class="btn btn-outline-danger" style="padding: 10px; font-size: 16px;">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </form> --}}
+                                            
+                                            <a href="/destroylokasipengajuan" method="post">
                                                 <button class="btn-outline-danger btn-round">
                                                     <i class="fas fa-trash"></i>
                                                 </button>
