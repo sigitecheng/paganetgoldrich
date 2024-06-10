@@ -8,6 +8,7 @@
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    {{-- <link href="/assets/css/fe_css/output.css" rel="stylesheet"> --}}
     <!--Meta Responsive tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

@@ -25,6 +25,34 @@ class DaftarmitrarumahmakannController extends Controller
         ]); 
     }
 
+    public function alldatadaftarmitra()
+    {
+        //
+        return view('be_dashboard.daftarmitraumkm.alldata',[
+            'title' => 'Show All Data',
+            'title_data'             => 'Data Daftar Mitra Rumah Makan ',
+            // 'title_halamandata'     => 'Data Users',
+            'data_daftarmitrarumahmakan'    => Daftarmitrarumahmakann::paginate(10),
+            'data_halamandaftarmitra' => 'Data Daftar Mitra Rumah Makan'
+
+        ]); 
+    }
+
+    public function approvedmitra()
+    {
+        //
+        return view('be_dashboard.daftarmitraumkm.approvedmitra',[
+            'title' => 'Approved Mitra',
+            'title_data'             => 'Data Approved Mitra ',
+            // 'title_halamandata'     => 'Data Users',
+            // 'data_daftarmitrarumahmakan'    => Daftarmitrarumahmakann::where('Status' === 'Approved')->get()->paginate(7),
+            'data_daftarmitrarumahmakan' => Daftarmitrarumahmakann::where('Status', 'Approved')->paginate(7),
+
+            'data_halamandaftarmitra' => 'Data Approved Mitra'
+
+        ]); 
+    }
+
     public function daftarmitra()
     {
         //

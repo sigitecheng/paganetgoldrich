@@ -48,6 +48,12 @@
                                                 <i class="fas fa-users mr-2"></i>Data Users
                                         </a>
                                     </li> 
+
+                                    <li class="child">
+                                        <a href="/alldatadaftarmitra" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                                <i class="fas fa-edit mr-2"></i>All Data Daftar Mitra
+                                        </a>
+                                    </li> 
                                     
                                     <li class="child">
                                         <a href="/halamandatadaftarmitra" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
@@ -55,8 +61,9 @@
                                         </a>
                                     </li> 
 
+
                                     <li class="child">
-                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                        <a href="/approvedmitra" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
                                                 <i class="fas fa-edit mr-2"></i>Approved Mitra
                                         </a>
                                     </li> 
