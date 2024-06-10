@@ -153,7 +153,7 @@
                             
                             <li class="parent">
                                 <a href="" onclick="toggle_menu('kategorionasi'); return false" class=""><i class="fab fa-ravelry mr-2"></i>
-                                    <span class="none">donasi Kategori <i class="fa fa-angle-down pull-right align-bottom"></i></span>
+                                    <span class="none">Donasi Kategori <i class="fa fa-angle-down pull-right align-bottom"></i></span>
                                 </a>
                                 <ul class="children" id="kategorionasi">
                                   
