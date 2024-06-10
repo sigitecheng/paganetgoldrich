@@ -12,7 +12,7 @@
         
             <!--Content right-->
             <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
-                <h5 class="mb-0" ><strong>Dashboard | {{ $title_datahalaman}} </strong></h5>
+                <h5 class="mb-0" ><strong>Dashboard | {{ $title_data}} </strong></h5>
 
 
                   <!--Products summary-->
@@ -32,7 +32,6 @@
                         </div>
                         
                         <div class="table-responsive product-list">
-                            
                             <table class="table mt-0" id="productList">
                                 <thead>
                                     <tr>

@@ -64,7 +64,7 @@
                                                 <span class="customer-circle" style="background-image: url('assets/img/client-img4.png')"></span>
                                                 <span class="customer-circle" style="background-image: url('assets/img/client-img5.png')"></span>
                                                 <span class="customer-circle" style="background-image: url('assets/img/client-img3.png')"></span>
-                                                <span class="customer-circle end text-light text-center pt-2">+99</span>
+                                                <span class="customer-circle end text-light text-center pt-2">+9</span>
                                                 </div>
                                                 </td>
                                                 <td class="align-middle">
