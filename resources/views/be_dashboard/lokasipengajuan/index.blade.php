@@ -1,1 +1,1 @@
-halo ini adalah data donatur
+halo ini adalah data lokasi pengajuan 

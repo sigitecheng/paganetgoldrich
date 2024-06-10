@@ -103,6 +103,7 @@
                             </div>
                             <!--/Recent sales-->
                             </div>
+                            
                             <div class="pagination-container" style="margin-top: 20px; display: flex; justify-content: center;">
                                 <ul class="pagination" style="display: flex; padding-left: 0; list-style: none;">
                                     <li class="page-item {{ $data_users->onFirstPage() ? 'disabled' : '' }}" style="margin-right: 5px;">

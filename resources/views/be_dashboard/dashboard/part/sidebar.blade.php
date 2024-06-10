@@ -76,7 +76,7 @@
 
 
                                     <li class="child">
-                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                        <a href="/lokasipengajuanall" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
                                                 <i class="fas fa-map-marker-alt mr-2"></i>Lokasi Pengajuan 
                                         </a>
                                     </li>

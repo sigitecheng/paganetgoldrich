@@ -68,13 +68,15 @@ class LokasipengajuanController extends Controller
     public function alldata()
     {
         //
-        return view('be_dashboard.lokasipengajuan.index',[
-            'title' => 'Daftar Para Donatur',
-
-            // $totalCileunyi = Lokasipengajuan::where('lokasi' === 'Cileunyi')->count(),
-            // 'data_cileunyi' => $totalCileunyi,
-         
-        ]); 
+     
+        return view('be_dashboard.lokasipengajuan.index', [
+            'title'             => 'Lokasi Pengajuan ',
+            'title_data'             => 'Data Lokasi Pengajuan ',
+            // 'title_halamandata'     => 'Data Users',
+            'data_lokasipengajuan'    => Lokasipengajuan::paginate(15),
+            'data_halamanusers' => 'Data Lokasi Pengajuan'
+            // 'user'        => User::all(),
+            ]);
     }
 
 
