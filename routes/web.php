@@ -127,6 +127,7 @@ Route::get('/daftarmitra', [DaftarmitrarumahmakannController::class, 'daftarmitr
 Route::get('/daftarmitra/{namarumahmakan}', [DaftarmitrarumahmakannController::class, 'showdaftarmitra'])->name('daftarmitra');
 Route::get('/alldatadaftarmitra', [DaftarmitrarumahmakannController::class, 'alldatadaftarmitra'])->name('alldatadaftarmitra');
 Route::get('/approvedmitra', [DaftarmitrarumahmakannController::class, 'approvedmitra'])->name('approvedmitra');
+Route::get('/rejectedmitra', [DaftarmitrarumahmakannController::class, 'rejectedmitra'])->name('rejectedmitra');
 // Route::get('/daftarumkm/{namarumahmakan}', 'DaftarmitrarumahmakannController@showdaftarmitra')->name('daftarmitra');
 // --------------------------------------------------------------------------------------------------------------------------------
 

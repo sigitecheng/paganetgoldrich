@@ -52,6 +52,21 @@ class DaftarmitrarumahmakannController extends Controller
 
         ]); 
     }
+    
+    public function rejectedmitra()
+    {
+        //
+        return view('be_dashboard.daftarmitraumkm.rejectedmitra',[
+            'title' => 'Rejected Mitra',
+            'title_data'             => 'Data Rejected Mitra ',
+            // 'title_halamandata'     => 'Data Users',
+            // 'data_daftarmitrarumahmakan'    => Daftarmitrarumahmakann::where('Status' === 'Approved')->get()->paginate(7),
+            'data_daftarmitrarumahmakan' => Daftarmitrarumahmakann::where('Status', 'Delay')->paginate(7),
+
+            'data_halamandaftarmitra' => 'Data Rejected Mitra'
+
+        ]); 
+    }
 
     public function daftarmitra()
     {

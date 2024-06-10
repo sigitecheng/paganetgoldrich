@@ -24,7 +24,7 @@
                             <div class="font-bold col-sm-8 pt-2"><h6 class="mb-4 bc-header"><i class="fas fa-book mr-2"></i>{{ $data_halamandaftarmitra}} </h6></div>
                             <div class="col-sm-4 text-right pb-3">
                                 <div class="pull-right mr-3 btn-order-bulk">
-                                    <button class="btn btn-success btn-round"><i class="fas fa-sign mr-2"></i>Approved</button>
+                                    <button class="btn btn-danger btn-round"><i class="fas fa-sign mr-2"></i>Rejected </button>
                                     <a href="">
                                         <button class="btn btn-theme btn-round"><i class="fas fa-edit mr-2"></i>Create New</button>
                                         </a>

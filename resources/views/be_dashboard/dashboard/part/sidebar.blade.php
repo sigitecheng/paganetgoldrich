@@ -69,7 +69,7 @@
                                     </li> 
                                     
                                     <li class="child">
-                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                        <a href="/rejectedmitra" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
                                                 <i class="fas fa-warning mr-2"></i>Rejected Mitra 
                                         </a>
                                     </li> 
