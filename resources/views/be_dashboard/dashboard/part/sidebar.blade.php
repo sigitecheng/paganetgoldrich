@@ -94,7 +94,7 @@
                                     </li>
 
                                     <li class="child">
-                                        <a href="/404" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
+                                        <a href="/daftardonatur" class="ml-4 btn btn-sn button-custom mb-2 rounded mr-4" style="text-align: left;">
                                                 <i class="fas fa-users mr-2"></i>Donatur Lepas 
                                         </a>
                                     </li>

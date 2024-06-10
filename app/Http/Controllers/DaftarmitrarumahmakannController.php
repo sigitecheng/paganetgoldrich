@@ -61,7 +61,7 @@ class DaftarmitrarumahmakannController extends Controller
             'title_data'             => 'Data Rejected Mitra ',
             // 'title_halamandata'     => 'Data Users',
             // 'data_daftarmitrarumahmakan'    => Daftarmitrarumahmakann::where('Status' === 'Approved')->get()->paginate(7),
-            'data_daftarmitrarumahmakan' => Daftarmitrarumahmakann::where('Status', 'Delay')->paginate(7),
+            'data_daftarmitrarumahmakan' => Daftarmitrarumahmakann::where('Status', 'Rejected')->paginate(7),
 
             'data_halamandaftarmitra' => 'Data Rejected Mitra'
 

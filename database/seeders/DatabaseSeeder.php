@@ -10,6 +10,7 @@ use App\Models\Tentangkami;
 use App\Models\Lokasimakangratis;
 use App\Models\Lokasipengajuan;
 use App\Models\User;
+use App\Models\Donatur;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -253,6 +254,7 @@ class DatabaseSeeder extends Seeder
         //  User::factory(7)->create();
          Lokasipengajuan::factory(100)->create();
          Jadimitra::factory(1)->create();
+         Donatur::factory(50)->create();
         //  User::factory(100)->create();
     
     }

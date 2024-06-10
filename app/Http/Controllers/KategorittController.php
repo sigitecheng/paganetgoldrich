@@ -25,9 +25,17 @@ class KategorittController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function createkategori()
     {
         //
+
+        return view('be_dashboard.daftarkategori.create',[
+            'title' => 'Create Kategori',
+            'data_halaman' => 'Form Create Kategori',
+
+            // 'data_kategori' => Kategorit::all()
+
+        ]);
     }
 
     /**

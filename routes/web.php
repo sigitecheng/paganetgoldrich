@@ -17,6 +17,7 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\KategorittController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LokasipengajuanController;
+use App\Http\Controllers\DonaturController;
 use App\Models\Daftarmenu;
 use App\Models\Daftarmitrarumahmakann;
 use App\Models\Programmakangratis;
@@ -179,6 +180,7 @@ Route::get('/halamandatausers', [UserController::class, 'index'])->middleware('a
 // ==========================================================
 // |||||||||||||||||| ROUTE UNTUK DATA PENGATURAN  |||||||||||||||||||||||||||||||||||
 Route::get('/halamandatakategori', [KategorittController::class, 'index'])->middleware('auth');
+Route::get('/createkategori', [KategorittController::class, 'createkategori'])->middleware('auth');
 // --------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -251,7 +253,7 @@ require __DIR__.'/auth.php';
 
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
-// Route::resource('/donatur', DonaturController::class)->middleware('auth');
+Route::get('/daftardonatur', [DonaturController::class, 'index'])->middleware('auth');
 
 // ----------------------------------------------------
 // ROUTE UNTUK PANGAMBILAN DATA KATEGORI 

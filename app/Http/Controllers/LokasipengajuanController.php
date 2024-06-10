@@ -63,6 +63,19 @@ class LokasipengajuanController extends Controller
 
         // Redirect ke halaman sukses
         return redirect('/lokasipengajuan')->with('success', 'Submit Berhasil !');
-    }   
+    } 
+
+    public function alldata()
+    {
+        //
+        return view('be_dashboard.lokasipengajuan.index',[
+            'title' => 'Daftar Para Donatur',
+
+            // $totalCileunyi = Lokasipengajuan::where('lokasi' === 'Cileunyi')->count(),
+            // 'data_cileunyi' => $totalCileunyi,
+         
+        ]); 
+    }
+
 
 }
