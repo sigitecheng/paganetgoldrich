@@ -230,6 +230,14 @@ Route::get('/programkesehatan', function () {
         ]);
         });
 
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK USERS ADMINISTRASI |||||||||||||||||||||||||||||||||||
+Route::get('/programpendidikan', function () {
+    return view('fe_dashboard.a_programkami.programpendidikan.index', [
+        'title' => 'Program Pendidikan',
+        ]);
+        });
+
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 // Route::get('/profile/{name}', [UserController::class, 'index'])->middleware('auth');
 
