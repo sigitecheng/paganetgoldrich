@@ -59,10 +59,10 @@
              
                  @if(auth()->check()) 
                             <!-- Jika pengguna sudah login -->
-                            <h1 class="font-semibold text-2xl leading-[36px] text-white text-center" style="font-size: 16px;">Anda Adalah <span class="font-bold" style="color:white"> {{ auth()->user()->is_admin }}</span></h1>
+                            <h1 class="font-semibold leading-[36px] text-white text-center" style="font-size: 18px;">Anda Adalah <span class="font-bold" style="color:white"> {{ auth()->user()->is_admin }}</span></h1>
                         @else
                             <!-- Jika pengguna belum login -->
-                            <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">Program Makan Gratis<br></h1>
+                            <h1 class="font-extrabold leading-[36px] text-white text-center" style="font-size: 18px;">Program Makan Gratis<br></h1>
                         @endif
 
             </div>
