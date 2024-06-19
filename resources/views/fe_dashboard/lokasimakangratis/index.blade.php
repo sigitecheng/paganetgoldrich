@@ -2,7 +2,7 @@
 
 <body class="font-poppins text-[#292E4B] bg-[#7ca4ce]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
-        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
+        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2abaeb, #1539b1);  border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
 
 {{-- <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-slate-100 overflow-x-hidden pb-4">
@@ -38,20 +38,20 @@
             @foreach ($data_lokasimakangratis as $data)
                 
             <div class="card">
-                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl bg-white" style="background-image: linear-gradient(to bottom, rgb(148, 225, 250), rgb(190, 192, 206)); margin-top:5px;">
+                <div class="w-full flex items-center p-[14px] gap-3 rounded-2xl bg-white" style="background-image: linear-gradient(to bottom, #2abaeb, #1539b1);  margin-top:5px;">
                     <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden" style="margin-right: 15px;">
                         <img src="{{ $data->daftarmitrarumahmakann->gambar}}" class="w-full h-full object-cover" alt="{{ $data->daftarmitrarumahmakann->gambar }}">
                     </div>
                     <div class="flex flex-col gap-1">
                         {{-- <p class="font-bold text-blue-800 border-spacing-2" style="font-size: 14px; color : blue; ">{{ $data->kota }}, Kota Bandung, Jawa Barat</p> --}}
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Rumah Makan : <span style="font-size: 14px; color: red ">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</span></p> 
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Alamat : <span style="font-size: 14px; color: blueviolet;">{{ $data->alamat}}</span></p> 
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Kota : <span style="font-size: 14px; color:black ;">{{ $data->kota}}</span></p> 
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Kontak : <span style="font-size: 14px; color:green">{{ $data->daftarmitrarumahmakann->telepon}}</span></p> 
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Jam Operational : <span style="font-size: 14px; color:black">{{ $data->jam_operasional}}</span></p> 
+                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-home"></i> Rumah Makan : <span style="font-size: 14px; color: white ">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</span></p> 
+                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-road"></i> Alamat : <span style="font-size: 14px; color: white;">{{ $data->alamat}}</span></p> 
+                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-city"></i> Kota : <span style="font-size: 14px; color:white ;">{{ $data->kota}}</span></p> 
+                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-phone"></i> Kontak : <span style="font-size: 14px; color:white">{{ $data->daftarmitrarumahmakann->telepon}}</span></p> 
+                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-calendar"></i> Jam Operational : <span style="font-size: 14px; color:white">{{ $data->jam_operasional}}</span></p> 
                         {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Deskripsi : <span class="font-bold text-stone-800">{{ $data->deskripsi}}</span></p>  --}}
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px;">Kuota : <span style="font-size: 14px; color: blue; border: black">{{ $data->kuota}} </span><span style="font-size: 14px">Porsi</span></p> 
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; text-align:justify">Keterangan : <span style="font-size: 14px; color: black; border: black">{{ $data->deskripsi}} </span><span style="font-size: 14px">Porsi</span></p> 
+                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-file"></i> Kuota : <span style="font-size: 14px; color: white; border: black">{{ $data->kuota}} </span><span style="font-size: 14px">Porsi</span></p> 
+                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; text-align:justify; color:white"><i class="fas fa-newspaper"></i> Keterangan : <span style="font-size: 14px; color: white; border: black">{{ $data->deskripsi}} </span><span style="font-size: 14px">Porsi</span></p> 
                         {{-- <span style="background-color: rgb(36, 36, 179); color: white; padding: 2px 10px; border-radius: 5px; font-size:12px;">Show Details</span> --}}
                         <a href="/daftarumkm/{{ $data->namarumahmakan}}">
                             <span style="background-color: rgb(31, 211, 40); color: white; padding: 2px 10px; border-radius: 5px; font-size:12px; cursor: pointer;">Show Details Lokasi</span>
