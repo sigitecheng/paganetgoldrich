@@ -238,6 +238,14 @@ Route::get('/programpendidikan', function () {
         ]);
         });
 
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK USERS ADMINISTRASI |||||||||||||||||||||||||||||||||||
+Route::get('/programinfra', function () {
+    return view('fe_dashboard.a_programkami.programinfra.index', [
+        'title' => 'Program Infrastruktur',
+        ]);
+        });
+
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 // Route::get('/profile/{name}', [UserController::class, 'index'])->middleware('auth');
 

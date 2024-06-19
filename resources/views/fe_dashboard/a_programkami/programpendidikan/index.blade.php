@@ -32,13 +32,13 @@
                 </div>
             </a>   
              
-             <a href="/comingsoon">
+             <a href="/haiucaresprogramkami">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
                         <img src="/assets/css/fe_css/images/tentangkami/listumkm.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
-                        <p class="font-semibold text-sm" style="color: #000000">List Mitra</p>
+                        <p class="font-semibold text-sm" style="color: #000000">Program Kami</p>
                     </div>
                 </div>
             </a>   
