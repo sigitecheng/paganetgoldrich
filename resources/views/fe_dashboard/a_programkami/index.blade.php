@@ -52,7 +52,7 @@
                             <h1 class="font-semibold leading-[36px] text-center" style="font-size: 18px; color:#000000;">Selamat Datang ! <span class="font-bold" style="color:white"> {{ auth()->user()->name }}</span></h1>
                         @else
                             <!-- Jika pengguna belum login -->
-                            <h1 class="font-extrabold leading-[36px] text-white text-center" style="font-size: 18px; color:#000000">HaiuCare Bangun Indonesia<br></h1>
+                            <h1 class="font-extrabold leading-[36px] text-white text-center" style="font-size: 18px; color:#000000">Haiu Care Indonesia<br></h1>
                         @endif
              
                  @if(auth()->check()) 
