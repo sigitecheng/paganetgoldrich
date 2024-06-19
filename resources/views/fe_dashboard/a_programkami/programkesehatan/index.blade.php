@@ -5,7 +5,7 @@
             <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
                 <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
                     
-                    <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2abaeb, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
+                    <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #f1f5f7, #d2d9f3); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
             
             <nav class="pt-5 px-3 flex justify-between items-center">
              
@@ -16,31 +16,29 @@
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                        <p class="font-semibold text-sm">Tentang Kami</p>
+                        <p class="font-semibold text-sm" style="color: #000000">Tentang Kami</p>
                     </div>
                 </div>
             </a>   
              
-             <a href="/lokasimakangratis">
+             <a href="/comingssoon">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0 text-white">
                         <img src="/assets/css/fe_css/images/tentangkami/tempatmakangratis.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
-                        {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                        <p class="font-semibold text-sm">Lokasi Makan Gratis</p>
+                        <p class="font-semibold text-sm" style="color: black" >Lokasi Rumah Sakit</p>
                     </div>
                 </div>
             </a>   
              
-             <a href="/daftarumkm">
+             <a href="/comingsoon">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
                         <img src="/assets/css/fe_css/images/tentangkami/listumkm.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
-                        {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                        <p class="font-semibold text-sm">Daftar UMKM</p>
+                        <p class="font-semibold text-sm" style="color: #000000">List Rumah Sakit</p>
                     </div>
                 </div>
             </a>   
@@ -51,96 +49,44 @@
             <div class="mt-[30px] z-10">
                 @if(auth()->check()) 
                             <!-- Jika pengguna sudah login -->
-                            <h1 class="font-semibold leading-[36px] text-white text-center" style="font-size: 18px;">Selamat Datang ! <span class="font-bold" style="color:white"> {{ auth()->user()->name }}</span></h1>
+                            <h1 class="font-semibold leading-[36px] text-center" style="font-size: 18px; color:#000000;">Selamat Datang ! <span class="font-bold" style="color:white"> {{ auth()->user()->name }}</span></h1>
                         @else
                             <!-- Jika pengguna belum login -->
-                            <h1 class="font-extrabold leading-[36px] text-white text-center" style="font-size: 18px;">Haiu Care Indonesia<br></h1>
+                            <h1 class="font-extrabold leading-[36px] text-white text-center" style="font-size: 18px; color:#000000">Haiu Care Indonesia<br></h1>
                         @endif
              
                  @if(auth()->check()) 
                             <!-- Jika pengguna sudah login -->
-                            <h1 class="font-semibold leading-[36px] text-white text-center" style="font-size: 18px;">Anda Adalah <span class="font-bold" style="color:white"> {{ auth()->user()->is_admin }}</span></h1>
+                            <h1 class="font-semibold leading-[36px] text-white text-center" style="font-size: 18px; color:#000000">Anda Adalah <span class="font-bold" style="color:white"> {{ auth()->user()->is_admin }}</span></h1>
                         @else
                             <!-- Jika pengguna belum login -->
-                            <h1 class="font-extrabold leading-[36px] text-white text-center" style="font-size: 18px;">Program Makan Gratis<br></h1>
+                            <h1 class="font-extrabold leading-[36px] text-white text-center" style="font-size: 18px; color: black">Program Kesehatan <br></h1>
                         @endif
 
             </div>
             
-            <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 1rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                <img src="assets/css/fe_css/images/backgrounds/newselamatdatang.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+            <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 1rem; margin-bottom: 2rem; margin-left: auto; margin-right: auto;">
+                <img src="/assets/css/fe_css/images/programkami/kesehatan.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
             </div>
 
-            <div class="container" style="display: flex; justify-content: center; margin-top: 10px; margin-left: 10px; margin-right: 10px;">
-                <div class="scrollable-div" style="width: 100%; max-width: 100%; height: 300px; overflow-y: scroll; border: 1px solid #ccc; border-radius: 8px;">
-                      
-                    <div id="latest-fundrising">
-                       <br>
-                       <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 14px; padding-left: 10px; padding-right: 10px;">
-
-
-@foreach ($data_lokasimakangratis as $data)
-    
-
-<a href="/paymentgateway/mitra/{{ $data->kota}}" class="card">
-    <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
-        <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-            <img src="{{$data->daftarmitrarumahmakann->gambar}}" class="w-full h-full object-cover" alt="assets/images/programmakangratis/makangratiscileunyi.jpeg">
-        </div>
-        
-        <div class="flex flex-col gap-1">
-            <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis {{ $data->kota}}</p>
-            <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px; color:blue;">Rumah Makan : {{ $data->daftarmitrarumahmakann->namarumahmakan}}</p>
-            {{-- <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p> --}}
-            <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
-                {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
-                    Donasi
-                </div>
-            </div>
-        </div>
-    </div>
-</a>
-
-@endforeach
-                            
-                            
-                            
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-<a href="/paymentgateways">
-
-    <div style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
-        <div style="text-align: center;">
-            <button style="padding: 8px 12px; border-radius: 9999px; background-color: silver; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s; border: none;">
-                Donasi
-            </button>
-        </div>
-                
-    </div>
 
 </div>
-</a>
 
 
         {{-- ========================================= --}}
-
+{{-- 
         <div id="best-choices" class="mt-8 -mb-6">
             <div class="px-4 flex justify-between items-center">
                 <h2 class="font-bold text-sm">HaiuCare Indonesia <br>Kebaikan Untuk Sesama</h2>
                 <a href="/daftarmitra" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                     <i class="fas fa-file" style="margin-right: 5px;"></i> Daftar Mitra
-                  </a>
+                  </a> --}}
                   
                   
                 {{-- <a href="" class="p-[6px_12px] rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">Daftar Mitra</a> --}}
-            </div>
+            {{-- </div> --}}
             
-            <div class="main-carousel" style="margin-top: 14px; display: flex; flex-direction: row; overflow-x: auto;">
+            {{-- <div class="main-carousel" style="margin-top: 14px; display: flex; flex-direction: row; overflow-x: auto;">
                 <div class="carousel-item" style="padding: 0 2px;">
                     <div class="carousel-content" style="border: 1px solid #E8E9EE; padding: 14px; width: 208px; border-radius: 1rem;">
                         <a href="/paymentgateways">
@@ -199,9 +145,9 @@
                         </a>
                     </div>
                 </div>
-            
+             --}}
                 <!-- Konten carousel selanjutnya disini -->
-            </div>
+            {{-- </div> --}}
             
 
             
@@ -212,44 +158,37 @@
         {{-- ===================================================================================================== --}}
 
         <div class="px-4 flex justify-between items-center mb-4">
-            <h2 class="font-bold text-sm">Program <br>Makan Gratis</h2>
-            <a href="/lokasipengajuan" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
+            <h2 class="font-bold text-sm">Program Kesehatan<br>Yayasan Haiu Care Indonesia</h2>
+            {{-- <a href="/lokasipengajuan" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                <i class="fas fa-utensil-spoon" style="margin-right: 5px;"></i> Ajukan Lokasi
-              </a>
+              </a> --}}
             
               
             {{-- <a href="" class="p-[6px_12px] rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">Daftar Mitra</a> --}}
         </div>
         <br>
                 <div id="popular-fundrising" class="mt-4" style="display: flex; overflow-x: auto;">
-                    <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
-                        <a href="/haiucaresprogramkami" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
-                            <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                                <img src="/assets/css/fe_css/images/menupilihan/programkami.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
-                            </div>
-                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Program Kami</span>
-                        </a>
-                    </div>
+                    
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
                         <a href="/comingsoon" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                                <img src="/assets/css/fe_css/images/menupilihan/laporandistribusi.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
+                                <img src="/assets/css/fe_css/images/menupilihan/programkesehatan/distribusiobatobatan.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
-                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Distribusi Makan Gratis</span>
+                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Distribusi Obat-obatan</span>
                         </a>
                     </div>
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
                         <a href="/daftarmitra" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                                <img src="/assets/css/fe_css/images/menupilihan/mitraumkm.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
+                                <img src="/assets/css/fe_css/images/menupilihan/programkesehatan/mitrakesehatan.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
-                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Mitra UMKM</span>
+                            <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Mitra Kesehatan</span>
                         </a>
                     </div>
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
                         <a href="/comingsoon" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                                <img src="/assets/css/fe_css/images/menupilihan/laporan.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
+                                <img src="/assets/css/fe_css/images/menupilihan/programkesehatan/laporanpenerimamanfaat.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
                             <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Laporan Distribusi </span>
                         </a>
@@ -258,7 +197,7 @@
                     <div class="px-4 first-of-type:pl-8 last-of-type:pr-8 ml-4 mr-4" style="margin-left: 8px; margin-right: 8px; flex: 0 0 auto; width: 135px;">
                         <a href="/daftarmenu" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px; border: 1px solid #E8E9EE; border-radius: 30px; min-height: 160px; width: 135px;">
                             <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                                <img src="/assets/css/fe_css/images/menupilihan/daftarmenumakanan.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
+                                <img src="/assets/css/fe_css/images/menupilihan/prograkesehatan/daftarobatobatan.png" alt="icon" style="width: 60px; height: 60px; flex-shrink: 0; overflow: hidden;">
                             </div>
                             <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Daftar Menu Makanan</span>
                         </a>
@@ -290,14 +229,13 @@
                             <span class="font-semibold text-center my-auto" style="font-weight: 600; text-align: center; font-size:14px">Sponsor Kami</span>
                         </a>
                     </div>
-                    
-                    <!-- Tambahkan div lainnya di sini dengan gaya yang sama -->
+                          <!-- Tambahkan div lainnya di sini dengan gaya yang sama -->
                 </div>
 
                 
                 {{-- =============================================================================== --}}
         
-                <div id="popular-fundrising" class="mt-8">
+                {{-- <div id="popular-fundrising" class="mt-8">
                     <div class="px-4 popular-link" style="display: flex; justify-content: center; align-items: center;">
                       <a href="/comingsoon" style="display: flex; align-items: center; padding: 4px 12px; margin: 0 12px 12px 0; border-radius: 9999px; background-color: #3b82f6; font-weight: bold; font-size: 0.875rem; color: #fff; transition: background-color 0.3s, color 0.3s; font-size:12px">
                         <img src="assets/css/fe_css/images/icons/kontributors.svg" alt="icon" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;">
@@ -323,7 +261,22 @@
                       </a>
                     </div>
                   </div>
-                  
+                   --}}
+
+                      
+                <div style="margin-top:2rem; display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, #f1f5f7, #d2d9f3); ">
+                      
+                    <h2 class="font-bold text-sm" style="margin-left: 10px; font-size:14px; margin-top:20px; text-align:center" >Program Kesehatan</h2>
+                    <div class="aspect-[61/30] rounded-full bg-[#D9D9D9] overflow-hidden" style="padding: 20px 20px; background-image: linear-gradient(to bottom, #f1f5f7, #d2d9f3); ">
+                        <img src="/assets/css/fe_css/images/daftarmitrarumahmakan/janganlupabahagia.jpg" class="w-full h-full object-cover" alt="thumbnail">
+                        {{-- <img src="{{ asset($data->gambar)}}" class="w-full h-full object-cover" alt="thumbnail"> --}}
+                    </div>
+                    <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px; color:black; margin-top:5px; margin-bottom:20px; margin-right:10px;">Keterangan : <br>
+
+                        "Dengan penuh tanggung jawab, kami dengan gembira mengumumkan bahwa bantuan yang diberikan oleh para donatur telah berhasil kami salurkan dalam program kesehatan. Melalui upaya kolaboratif kami dengan berbagai lembaga kesehatan dan relawan, kami telah berhasil menyediakan layanan kesehatan kepada mereka yang membutuhkan, terutama yang terdampak langsung oleh masalah kesehatan atau krisis medis. Dengan dukungan yang berkelanjutan dari para donatur, kami berharap dapat terus memperluas cakupan program ini dan memberikan bantuan kesehatan yang lebih besar kepada mereka yang membutuhkan dalam komunitas kami."
+                    </div>
+                
+                
         
                   @include('fe_dashboard.menu.android')
                   

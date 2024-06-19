@@ -222,6 +222,14 @@ Route::get('/haiucaresprogramkami', function () {
         ]);
         });
 
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK USERS ADMINISTRASI |||||||||||||||||||||||||||||||||||
+Route::get('/programkesehatan', function () {
+    return view('fe_dashboard.a_programkami.programkesehatan.index', [
+        'title' => 'Program Kesehatan',
+        ]);
+        });
+
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 // Route::get('/profile/{name}', [UserController::class, 'index'])->middleware('auth');
 
