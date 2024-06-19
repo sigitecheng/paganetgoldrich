@@ -70,11 +70,11 @@
         
         
            <div class="px-4 flex justify-center items-center mt-[5px]" style="display: flex; justify-content: center; align-items: center; margin-top: 5px;">
-               <h2 class="font-bold text-sm text-stone-800 border-spacing-2" style="font-weight: 700; font-size: 0.875rem; color: #4B5563;">PT. HaiuCare Bangun Indonesia</h2>
+               <h2 class="font-bold text-sm text-stone-800 border-spacing-2" style="font-weight: 700; font-size: 0.875rem; color: #4B5563;">Yayasan Haiu Care Indonesia</h2>
            </div>
        
            <a href="#" style="display: block; text-align: center;">
-               <h6 class="text-center font-semibold text-sm text-stone-600" style="text-align: center; font-weight: 600; font-size: 0.875rem; color: #4B5563;"> @2024 </h6>
+               <h6 class="text-center font-semibold text-sm text-stone-600" style="text-align: center; font-weight: 600; font-size: 0.875rem; color: #4B5563;"> HCI @2024 </h6>
            </a>
 
 
