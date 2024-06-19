@@ -51,10 +51,10 @@
             <div class="mt-[30px] z-10">
                 @if(auth()->check()) 
                             <!-- Jika pengguna sudah login -->
-                            <h1 class="font-semibold text-2xl leading-[36px] text-white text-center" style="font-size: 16px;">Selamat Datang ! <span class="font-bold" style="color:white"> {{ auth()->user()->name }}</span></h1>
+                            <h1 class="font-semibold leading-[36px] text-white text-center" style="font-size: 18px;">Selamat Datang ! <span class="font-bold" style="color:white"> {{ auth()->user()->name }}</span></h1>
                         @else
                             <!-- Jika pengguna belum login -->
-                            <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">HaiuCare Bangun Indonesia<br></h1>
+                            <h1 class="font-extrabold leading-[36px] text-white text-center" style="font-size: 18px;">HaiuCare Bangun Indonesia<br></h1>
                         @endif
              
                  @if(auth()->check()) 
