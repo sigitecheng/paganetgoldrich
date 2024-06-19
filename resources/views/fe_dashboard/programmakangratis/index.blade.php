@@ -12,7 +12,7 @@
              <a href="/tentangkami">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img src="/assets/css/fe_css/images/tentangkami/haiutentangkami.png" alt="icon">
+                        <img src="/assets/css/fe_css/images/tentangkami/tentangkamiah.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
@@ -24,7 +24,7 @@
              <a href="/lokasimakangratis">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0 text-white">
-                        <img src="/assets/css/fe_css/images/tentangkami/haiulokasimakangratis.png" alt="icon">
+                        <img src="/assets/css/fe_css/images/tentangkami/tempatmakangratis.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}
@@ -36,7 +36,7 @@
              <a href="/daftarumkm">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
-                        <img src="/assets/css/fe_css/images/tentangkami/haiudaftarmitra.png" alt="icon">
+                        <img src="/assets/css/fe_css/images/tentangkami/listumkm.png" alt="icon">
                     </div>
                     <div class="flex flex-col text-white">
                         {{-- <p class="text-xs leading-[18px]">Location</p> --}}

@@ -56,7 +56,7 @@ class DaftarmitrarumahmakannController extends Controller
     public function rejectedmitra()
     {
         //
-        return view('be_dashboard.daftarmitraumkm.rejectedmitra',[
+        return view('be_dashboard.daftarmitraumkm.rejectermitra',[
             'title' => 'Rejected Mitra',
             'title_data'             => 'Data Rejected Mitra ',
             // 'title_halamandata'     => 'Data Users',
