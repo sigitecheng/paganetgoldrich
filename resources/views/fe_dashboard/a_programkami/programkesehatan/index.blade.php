@@ -301,7 +301,8 @@
                     </div>
                     <p class="text-sm leading-[26px] font-semibold line-clamp-1 hover:line-clamp-none" style="text-align: justify; margin-left:10px; color:black; margin-top:5px; margin-bottom:20px; margin-right:10px;">Keterangan : <br>
 
-                        "Dengan penuh tanggung jawab, kami dengan gembira mengumumkan bahwa bantuan yang diberikan oleh para donatur telah berhasil kami salurkan dalam program kesehatan. Melalui upaya kolaboratif kami dengan berbagai lembaga kesehatan dan relawan, kami telah berhasil menyediakan layanan kesehatan kepada mereka yang membutuhkan, terutama yang terdampak langsung oleh masalah kesehatan atau krisis medis. Dengan dukungan yang berkelanjutan dari para donatur, kami berharap dapat terus memperluas cakupan program ini dan memberikan bantuan kesehatan yang lebih besar kepada mereka yang membutuhkan dalam komunitas kami."
+                        {{-- "Dengan penuh tanggung jawab, kami dengan gembira mengumumkan bahwa bantuan yang diberikan oleh para donatur telah berhasil kami salurkan dalam program kesehatan. Melalui upaya kolaboratif kami dengan berbagai lembaga kesehatan dan relawan, kami telah berhasil menyediakan layanan kesehatan kepada mereka yang membutuhkan, terutama yang terdampak langsung oleh masalah kesehatan atau krisis medis. Dengan dukungan yang berkelanjutan dari para donatur, kami berharap dapat terus memperluas cakupan program ini dan memberikan bantuan kesehatan yang lebih besar kepada mereka yang membutuhkan dalam komunitas kami." --}}
+                   "Segera Hadir"
                     </div>
                 
                 
