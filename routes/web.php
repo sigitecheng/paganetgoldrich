@@ -209,9 +209,18 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
-require __DIR__.'/auth.php';
+// ===============================================================================================
+// ===============================================================================================
 // ===============================================================================================
 
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK USERS ADMINISTRASI |||||||||||||||||||||||||||||||||||
+Route::get('/haiucaresprogramkami', function () {
+    return view('fe_dashboard.a_programkami.index', [
+        'title' => 'Program Kami',
+        ]);
+        });
 
 // ROUTE UNTUK PANGAMBILAN DATA PENANGGUNGJAWAB
 // Route::get('/profile/{name}', [UserController::class, 'index'])->middleware('auth');
@@ -219,7 +228,7 @@ require __DIR__.'/auth.php';
 
 // Route::get('/', function () {
     //     return view('welcome');
-// });
+    // });
 // Route::middleware('auth')->group(function () {
     //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -321,10 +330,12 @@ Route::get('/daftardonatur', [DonaturController::class, 'index'])->middleware('a
 // });
 
 // Route::get('/daftarmitrasuccess', function () {
-//     return view('fe_dashboard.daftarjadimitra.success',[
+    //     return view('fe_dashboard.daftarjadimitra.success',[
     //         'title' => 'Registration Successful!',
     //     ]);
 // })->middleware('auth');
 
 
 
+
+        require __DIR__.'/auth.php';
