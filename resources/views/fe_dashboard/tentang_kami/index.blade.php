@@ -43,7 +43,7 @@
                         <img src="/assets/css/fe_css/images/logohaiucare/logohaiucareindonesia.png" class="w-full h-full object-cover" alt="thumbnail">
                     </div>
                     <div class="flex flex-col gap-1" style="margin-left: 15px; font-size:14px;">
-                        <p class="font-semibold text-white border-spacing-5"><i class="fas fa-home"></i>  Nama Perusahaan </p>
+                        <p class="font-semibold text-white border-spacing-5"><i class="fas fa-home"></i>  Nama Yayasan </p>
                         <p class="font-semibold line-clamp-1 hover:line-clamp-none text-white">{{ $data->nama_perusahaan}}</p>
                         {{-- <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 55.000.000</span></p> --}}
                         {{-- <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">

@@ -232,7 +232,7 @@ class DatabaseSeeder extends Seeder
         
 
         Tentangkami::factory()->create([
-            'nama_perusahaan' => 'PT. HaiuCare Bangun Indonesia',
+            'nama_perusahaan' => 'Yayasan Haiu Care Indonesia',
             'deskripsi' => '
             HaiuCare Bangun Indonesia adalah sebuah perusahaan yang berfokus pada bidang kemanusiaan dengan misi utama untuk meningkatkan kesejahteraan masyarakat Indonesia. Melalui berbagai program dan inisiatif, HaiuCare berkomitmen untuk memberikan bantuan kepada mereka yang membutuhkan, baik dalam bentuk dukungan kesehatan, pendidikan, pemberdayaan ekonomi, serta pembangunan infrastruktur. Dengan pendekatan yang holistik, perusahaan ini berupaya menciptakan dampak positif yang berkelanjutan bagi komunitas-komunitas yang dilayani.
             
