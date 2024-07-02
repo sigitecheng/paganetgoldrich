@@ -13,7 +13,7 @@ class ProgrammakangratisController extends Controller
     {
         //
         return view('fe_dashboard.programmakangratis.index',[
-            'title' => 'HaiuCare Bangun Indonesia',
+            'title' => 'Haiu Care Indonesia',
             // 'title_halaman' => 'Halaman Fundraising',
 
             'data_lokasimakangratis'  => Lokasimakangratis::all(),

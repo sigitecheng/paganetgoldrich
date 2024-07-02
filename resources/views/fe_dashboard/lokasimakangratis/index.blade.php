@@ -28,7 +28,7 @@
                </div>
                
                <div style="width: 30%; height: fit-content; overflow: hidden; margin-top: 0.25rem; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                   <img src="/assets/css/fe_css/images/tentangkami/lokasimakangratis.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+                   <img src="/assets/css/fe_css/images/tentangkami/listantrianmitra.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
                </div>
    
         </div>
@@ -45,7 +45,7 @@
                     <div class="flex flex-col gap-1">
                         {{-- <p class="font-bold text-blue-800 border-spacing-2" style="font-size: 14px; color : blue; ">{{ $data->kota }}, Kota Bandung, Jawa Barat</p> --}}
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-home"></i> Rumah Makan : <span style="font-size: 14px; color: white ">{{ $data->daftarmitrarumahmakann->namarumahmakan}}</span></p> 
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-road"></i> Alamat : <span style="font-size: 14px; color: white;">{{ $data->alamat}}</span></p> 
+                        {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-road"></i> Alamat : <span style="font-size: 14px; color: white;">{{ $data->alamat}}</span></p>  --}}
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-city"></i> Kota : <span style="font-size: 14px; color:white ;">{{ $data->kota}}</span></p> 
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-phone"></i> Kontak : <span style="font-size: 14px; color:white">{{ $data->daftarmitrarumahmakann->telepon}}</span></p> 
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]" style="font-size: 14px; color:white"><i class="fas fa-calendar"></i> Jam Operational : <span style="font-size: 14px; color:white">{{ $data->jam_operasional}}</span></p> 
