@@ -30,19 +30,19 @@
         </div>
     </a>
   
-    <a href="/comingsoon" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
+    <a href="/404" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
         <div style="display: flex; align-items: center; justify-content: center; overflow: hidden; font-size:100px">
             <img src="/assets/css/fe_css/images/icons/menuandroid/androiddonasi.png" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
     </a>
 
-    <a href="/comingsoon" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
+    <a href="/404" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
         <div style="  display: flex; align-items: center; justify-content: center; overflow: hidden; font-size:100px">
             <img src="/assets/css/fe_css/images/icons/menuandroid/icondonasi.png" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
     </a>
 
-    <a href="/pengaturan" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
+    <a href="/404" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
         <div style="display: flex; align-items: center; justify-content: center; overflow: hidden; font-size:100px">
             <img src="/assets/css/fe_css/images/icons/menuandroid/androidsettings.png" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
@@ -59,7 +59,7 @@
     
     @else
     <!-- Jika pengguna belum login -->
-    <a href="/login" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
+    <a href="/404" class="flex items-center justify-center w-[50px] h-[50px] p-[13px_15px]">
         <div style=" display: flex; align-items: center; justify-content: center; overflow: hidden; font-size:100px">
             <img src="/assets/css/fe_css/images/icons/menuandroid/menulogin.png" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
         </div>

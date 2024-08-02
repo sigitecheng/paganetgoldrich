@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/fe_css/js/flickity.min.css" media="screen">
     <title>{{ $title }}</title>
     <!-- Ganti dengan lokasi yang benar sesuai dengan struktur folder proyek Anda -->
-    <link rel="icon" type="image/png" href="/assets/css/fe_css/images/icons/menuandroid/logohaiufull.jpg">
+    <link rel="icon" type="image/png" href="/assets/menuicon/LOGOGR.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 

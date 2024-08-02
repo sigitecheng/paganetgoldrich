@@ -97,7 +97,7 @@
             <!-- Copyright -->
             <div class="copyright text-center">
                 <div class="mb-2">
-                    &copy; 2024 <strong class="text-theme mb-2">HaiuCare Bangun Indonesia </strong>. All rights reserved.
+                    &copy; 2024 <strong class="text-theme mb-2">Goldrich Renergybar </strong>. All rights reserved.
                 </div>
                 <div class="mb-2">
                     <a href="#">Terms of use</a> / <a href="#">Privacy Policy</a>
