@@ -95,7 +95,7 @@
                        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 14px; padding-left: 10px; padding-right: 10px;">
 
  --}}
-{{-- @foreach ($data_lokasimakangratis as $data) --}}
+{{--  --}}
     
 
 {{-- <a href="/paymentgateway/mitra/{{ $data->kota}}" class="card">
@@ -117,9 +117,7 @@
         </div>
     </div> --}}
 {{-- </a>
-
-@endforeach --}}
-                            
+                           
                             
                             
                             <br><br>

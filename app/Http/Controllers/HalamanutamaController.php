@@ -16,8 +16,8 @@ class HalamanutamaController extends Controller
             'title' => 'Goldrich Renergybar',
             // 'title_halaman' => 'Halaman Fundraising',
 
-            'data_lokasimakangratis'  => Lokasimakangratis::all(),
-            'data_daftarmitrarumahmakan'  => Daftarmitrarumahmakann::all(),
+            // 'data_lokasimakangratis'  => Lokasimakangratis::all(),
+            // 'data_daftarmitrarumahmakan'  => Daftarmitrarumahmakann::all(),
 
         ]); 
     }
