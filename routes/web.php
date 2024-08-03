@@ -100,9 +100,9 @@ Route::get('/404', function () {
 // ==========================================================
 // |||||||||||||||||| ROUTE UNTUK AKSES LOGIN PENGGUNA |||||||||||||||||||||||||||||||||||
 // Route::resource('/logins', LoginController::class);
-// Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');  
-// Route::post('/login', [LoginController::class, 'authenticate']);
-// Route::post('/logout', [LoginController::class, 'logout']);
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');  
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
 // // --------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -1,8 +1,23 @@
-@include('fe_dashboard.menu.header')
+{{-- @include('fe_dashboard.menu.header') --}}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/fe_css/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/fe_css/js/flickity.min.css" media="screen">
+    <title>Silahkan Login !</title>
+    <!-- Ganti dengan lokasi yang benar sesuai dengan struktur folder proyek Anda -->
+    <link rel="icon" type="image/png" href="/assets/menuicon/LOGOGR.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body class="font-poppins text-[#292E4B] bg-[#7ca4ce]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
   
-        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, #2fb7da, #1539b1); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
+        <div style="display: flex; flex-direction: column; background-image: linear-gradient(to bottom, black, white); border-radius: 0 0 50px 50px; overflow: hidden;" class="header">
              
             
             {{-- <nav class="pt-5 px-3 flex justify-between items-center">
@@ -22,17 +37,17 @@
                </nav> --}}
    
                <div class="mt-[10px] z-10">
-                   <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center" style="font-size:20px; margin-top:10px;">HaiuCare Bangun Indonesia<br></h1>
+                   <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center" style="font-size:20px; margin-top:10px;">Goldrich Renergybar<br></h1>
                    <h4 class="font-extrabold text-xl leading-[36px] text-white text-center" style="font-size: 14px">Silahkan Login !</h4>
                </div>
                
-               <div style="width: 35%; height: fit-content; overflow: hidden; margin-top: 10px; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-                   <img src="assets/css/fe_css/images/tentangkami/halamanlogin.png" class="width: 100%; height: 100%; object-fit: contain" alt="background">
+               <div style="width: 20%; height: fit-content; overflow: hidden; margin-top: 10px; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+                   <img src="/assets/gambargambar/loginmenu.png" class="width: 75%; height: 75%; object-fit: contain" alt="background">
                </div>
    
         </div>
          
-        <div style="margin-top:20px; display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, rgb(166, 204, 233), rgb(55, 89, 241));">
+        <div style="margin-top:20px; display: flex; flex-direction: column; gap: 10px; padding: 5px; border-radius: 20px; background-image: linear-gradient(to bottom, white, black);">
                       
             <h2 class="font-semibold text-sm"></h2>
             <div class="container-fluid login-wrapper">
@@ -47,7 +62,7 @@
                             <form action="/login" method="post" class="mt-2">
                               @csrf
                                 <div class="input-group mb-3" style="margin-top: 15px;">
-                                    <label class="font-semibold" for="">Email</label>
+                                    <label class="font-semibold" for=""><i class="fas fa-envelope" style="margin-right: 10px;"></i> Email</label>
                                     <br>
                                     <input style="padding: 5px 40px; margin-bottom:20px;" type="text" name="email" class="form-control rounded-full mt-0 @error('email') is-invalid @enderror" id="email" placeholder="Email" required value="{{ old('email') }}">
                                     @error('email') 
@@ -58,7 +73,7 @@
                                 </div>
         
                                 <div class="input-group mb-3">
-                                    <label class="font-semibold" for="" style="margin-left: 10px;">Password</label>
+                                    <label class="font-semibold" for="" style="margin-left: 10px;"><i class="fas fa-key" style="margin-right: 10px;"></i>Password</label>
                                     <br>
                                     <input style="padding: 5px 40px; margin-bottom:10px" type="text" name="password" class="form-control rounded-full mt-0 @error('password') is-invalid @enderror" id="password" placeholder="Password" required value="{{ old('password') }}">
                                     @error('password') 
@@ -71,12 +86,12 @@
                                 
                                 <div class="form-group mt-4">
                                   {{-- <input type="submit" class="btn solid" /> --}}
-                                    <button type="submit" style="margin-top:10px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:250px; background-color: #0814b9; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">Login</button>
+                                    <button type="submit" style="margin-top:10px; margin-bottom:10px; display: inline-block; padding: 10px 22px; font-weight: bold; font-size: 14px; color: #fff; border-radius: 9999px; width:250px; background-color: #C0C0C0; line-height: 18px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#fff';">Login</button>
                                     <div style="text-align: right; margin-bottom: 10px;"> 
                                       {{-- <a href="{{ route('password.request') }}"> <!-- Mengarahkan ke halaman forgot password -->
                                           <small class="text-theme" style="color: white; margin-bottom:10x;"><strong>Forgot password?</strong></small>
                                       </a> --}}
-                                      <a href="/register" style="margin-left: 25px; color:white; margin-right:15px;"> <!-- Mengarahkan ke halaman forgot password -->
+                                      <a href="/registers" style="margin-left: 25px; color:white; margin-right:15px;"> <!-- Mengarahkan ke halaman forgot password -->
                                           <small class="text-theme"><strong>Register Here?</strong></small>
                                       </a>
                                   </div>
@@ -117,7 +132,7 @@
         {{-- @include('fe_dashboard.menu.enter') --}}
 
 
-        @include('fe_dashboard.menu.android')
+        {{-- @include('fe_dashboard.menu.android') --}}
 
         
 

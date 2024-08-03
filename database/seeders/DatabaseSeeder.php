@@ -29,63 +29,39 @@ class DatabaseSeeder extends Seeder
             // ]);
 
 
-            Kategorit::create([
-                'nama'  => 'Makanan',
-                'slug' => '-makanan',
-            ]);
-            Kategorit::create([
-                'nama'  => 'Kesehatan',
-                'slug' => '-kesehatan',
-            ]);
-            Kategorit::create([
-                'nama'  => 'Pendidikan',
-                'slug' => '-pendidikan',
-            ]);
-            Kategorit::create([
-                'nama'  => 'Infrastruktur',
-                'slug' => '-infrastrukturs',
-            ]);
+            // Kategorit::create([
+            //     'nama'  => 'Makanan',
+            //     'slug' => '-makanan',
+            // ]);
+            // Kategorit::create([
+            //     'nama'  => 'Kesehatan',
+            //     'slug' => '-kesehatan',
+            // ]);
+            // Kategorit::create([
+            //     'nama'  => 'Pendidikan',
+            //     'slug' => '-pendidikan',
+            // ]);
+            // Kategorit::create([
+            //     'nama'  => 'Infrastruktur',
+            //     'slug' => '-infrastrukturs',
+            // ]);
 
             User::create([
                 'name'  => 'Ini Adalah Admin',
                 'username' => 'adminku',
                 'is_admin' => 'super_admin',
-                'email' => 'adminsigimatika1@gmail.com',
-                'password' => bcrypt('adminadmin')
+                'email' => 'goldrich@gmail.com',
+                'password' => bcrypt('adminadmin123$$')
             ]);
 
 
             User::create([
                 'name'  => 'Ini Adalah Admin',
                 'username' => 'adminku',
-                'is_admin' => 'super_admin',
-                'email' => 'adminsigimatika2@gmail.com',
-                'password' => bcrypt('adminadmin')
-            ]);
-            
-            User::create([
-                'name'  => 'Sigit Septiadi',
-                'username' => 'iqlima Nuri',
                 'is_admin' => 'super_admin',
                 'email' => 'sigitseptiadi1@gmail.com',
                 'password' => bcrypt('adminadmin')
             ]);
-            
-            User::create([
-                'name'  => 'Yogi Maxi Antony',
-                'username' => 'Yogi Maxi',
-                'is_admin' => 'super_admin',
-                'email' => 'yogimaxy@iuj.ac.jp',
-                'password' => bcrypt('Lovehate12345678')
-            ]); 
-            
-            User::create([
-                'name'  => 'Sigit Dwi Prasetyo',
-                'username' => 'Sigit Dwi',
-                'is_admin' => 'super_admin',
-                'email' => 'sigitdwi@gmail.com',
-                'password' => bcrypt('adminadmin')
-            ]);    
             
         Daftarmitrarumahmakann::factory()->create([
             'gambar' => 'assets/css/fe_css/images/daftarmitrarumahmakan/warteg1.jpeg',
