@@ -34,45 +34,46 @@
 
     <div class="main-carousel mt-[50px] ml-[100px]" style="display: flex; margin-top: 50px; margin-left: 15px;">
         
-        <a href="/comingsoon">
+        <a href="/404">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="/assets/css/fe_css/images/icons/icontiktok.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/medsos/facebook.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
         <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
-        <a href="/comingsoon">
+        <a href="/404">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="/assets/css/fe_css/images/icons/iconyoutube.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/medsos/instagram.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
-
-        <a href="/comingsoon">
+        <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
+        <a href="/404">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="/assets/css/fe_css/images/icons/iconinstagram.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/medsos/tiktok.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
-
-        <a href="/comingsoon">
+        <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
+        <a href="/404">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="/assets/css/fe_css/images/icons/icontwitter.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/medsos/twitter.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
-        
-        <a href="/comingsoon">
+        <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
+        <a href="/404">
             <div class="px-2 first-of-type:pl-4 last-of-type:pr-4" style="margin-left: 3px; margin-right: 3px;">
                 <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3" style="width: 40px; height: 40px; display: flex; align-items: center; overflow: hidden;">
-                    <img src="/assets/css/fe_css/images/icons/iconfacebook.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
+                    <img src="/assets/medsos/youtube.png" alt="icon" style="width: 25px; height: 25px; flex-shrink: 0;">
                 </div>
             </div>
         </a>
+        <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
         <!-- Sisipkan div lainnya di sini dengan gaya yang sama -->
 
     </div>
