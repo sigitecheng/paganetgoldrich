@@ -268,7 +268,7 @@
 
         <div class="px-4 flex justify-between items-center mb-4">
             <h2 class="font-bold text-sm">More Informations<br>Goldrich Renergybar</h2>
-            <a href="/lokasipengajuan" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
+            <a href="/404" style="padding: 6px 12px; border-radius: 9999px; background-color: #E8E9EE; font-weight: bold; font-size:12px; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s;" class="rounded-full bg-[#E8E9EE] font-semibold text-sm">
                <i class="fas fa-file" style="margin-right: 5px;"></i> Our Menus
               </a>
             
