@@ -8,7 +8,7 @@
             
             <nav class="pt-5 px-3 flex justify-between items-center">
              
-             <a href="/404">
+             <a href="/aboutus">
                  <div class="flex items-center gap-[10px]">
                      <div class="w-10 h-10 flex shrink-0">
                         <img src="/assets/menuicon/aboutusgr.png" alt="icon">
@@ -19,31 +19,6 @@
                     </div>
                 </div>
             </a>   
-             
-             {{-- <a href="/lokasimakangratis">
-                 <div class="flex items-center gap-[10px]">
-                     <div class="w-10 h-10 flex shrink-0 text-white">
-                        <img src="/assets/css/fe_css/images/tentangkami/tempatmakangratis.png" alt="icon">
-                    </div> --}}
-                    {{-- <div class="flex flex-col text-white"> --}}
-                        {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                        {{-- <p class="font-semibold text-sm">Lokasi Makan Gratis</p>
-                    </div> --}}
-                {{-- </div>
-            </a>    --}}
-             
-             {{-- <a href="/daftarumkm">
-                 <div class="flex items-center gap-[10px]">
-                     <div class="w-10 h-10 flex shrink-0">
-                        <img src="/assets/css/fe_css/images/tentangkami/listumkm.png" alt="icon">
-                    </div>
-                    <div class="flex flex-col text-white"> --}}
-                        {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                        {{-- <p class="font-semibold text-sm">Daftar UMKM</p>
-                    </div>
-                </div>
-            </a>   
-              --}}
              
             </nav>
 
@@ -87,60 +62,7 @@
 </div>
 
 
-            {{-- <div class="container" style="display: flex; justify-content: center; margin-top: 10px; margin-left: 10px; margin-right: 10px;">
-                <div class="scrollable-div" style="width: 100%; max-width: 100%; height: 300px; overflow-y: scroll; border: 1px solid #ccc; border-radius: 8px;">
-                      
-                    <div id="latest-fundrising">
-                       <br>
-                       <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 14px; padding-left: 10px; padding-right: 10px;">
-
- --}}
-{{--  --}}
-    
-
-{{-- <a href="/paymentgateway/mitra/{{ $data->kota}}" class="card">
-    <div style="` border: 1px solid #E8E9EE; display: flex; align-items: center; padding: 14px; gap: 0.75rem; border-radius: 1rem; background-color: #fff; margin-bottom:8px">
-        <div style="width: 20%; height: 90px; flex-shrink: 0; border-radius: 1rem; overflow: hidden; margin-right: 1rem;">
-            <img src="{{$data->daftarmitrarumahmakann->gambar}}" class="w-full h-full object-cover" alt="assets/images/programmakangratis/makangratiscileunyi.jpeg">
-        </div> --}}
-        
-        {{-- <div class="flex flex-col gap-1">
-            <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px;">Makan Gratis {{ $data->kota}}</p>
-            <p class="font-bold line-clamp-1 hover:line-clamp-none" style="font-size: 14px; color:blue;">Rumah Makan : {{ $data->daftarmitrarumahmakann->namarumahmakan}}</p> --}}
-            {{-- <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p> --}}
-            {{-- <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end"> --}}
-                {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
-                {{-- <div style="display: inline-block; text-align: center; background-color: silver; padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.25rem; padding-bottom: 0.25rem; border-radius: 9999px; color: #000000; font-weight: bold; transition: background-color 0.3s, color 0.3s; font-size: 0.75rem;" class="badge">
-                    Donasi
-                </div>
-            </div>
-        </div>
-    </div> --}}
-{{-- </a>
-                           
-                            
-                            
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-<a href="/404">
-
-    <div style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
-        <div style="text-align: center;">
-            <button style="padding: 8px 12px; border-radius: 9999px; background-color: silver; font-weight: bold; font-size: 0.875rem; text-decoration: none; color: #000000; transition: background-color 0.3s, color 0.3s; border: none;">
-                Our Product
-            </button>
-        </div>
-                
-    </div>
-
-</div>
-</a>
-
-
+         
         {{-- ========================================= --}}
 
         <div id="best-choices" class="mt-8 -mb-6">

@@ -367,8 +367,13 @@ Route::get('/daftardonatur', [DonaturController::class, 'index'])->middleware('a
 
 // ==========================================================
 // // |||||||||||||||||| ROUTE UNTUK USERS DASHBOARD PROGRAM MAKAN GRATIS |||||||||||||||||||||||||||||||||||
-// Route::get('/', [HalamanutamaController::class, 'index']]);
 Route::get('/', [HalamanutamaController::class, 'index']);
+Route::get('/aboutus', [HalamanutamaController::class, 'aboutus']);
+
+// ==========================================================
+// |||||||||||||||||| ROUTE UNTUK AKSES TENTANG KAMI |||||||||||||||||||||||||||||||||||
+// --------------------------------------------------------------------------------------------------------------------------------
+
 
 // // Route::resource('/dashboard', ProgrammakangratisController::class);
 // // --------------------------------------------------------------------------------------------------------------------------------

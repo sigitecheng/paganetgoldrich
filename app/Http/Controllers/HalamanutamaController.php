@@ -21,4 +21,16 @@ class HalamanutamaController extends Controller
 
         ]); 
     }
+
+    public function aboutus()
+    {
+        //
+        return view('halaman_utama.about_us.index',[
+            'title' => 'About Us',
+            // 'title_halaman' => 'Halaman Fundraising',
+
+            // 'data_tentangkami'  => Tentangkami::all(),
+
+        ]); 
+    }
 }
