@@ -11,6 +11,7 @@ use App\Models\Lokasimakangratis;
 use App\Models\Lokasipengajuan;
 use App\Models\User;
 use App\Models\Donatur;
+use App\Models\fruit;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -232,6 +233,123 @@ class DatabaseSeeder extends Seeder
          Jadimitra::factory(1)->create();
          Donatur::factory(50)->create();
         //  User::factory(100)->create();
+
+// ====================== ====================== ====================== ======================
+        fruit::create([
+            'name' => 'Apple',
+            'calories' => 130,
+            'fat' => 0,
+            'sodium' => 0,
+            'potassium' => 260,
+            'carbohydrate' => 34,
+            'dietary_fiber' => 5,
+            'sugar' => 25,
+            'protein' => 1,
+            'vit_a' => 2,
+            'vit_c' => 8,
+            'calcium' => 2,
+            'iron' => 2,
+        ]);
+       
+        fruit::create([
+            'name' => 'Avocado',
+            'calories' => 50,
+            'fat' => 35,
+            'sodium' => 0,
+            'potassium' => 140,
+            'carbohydrate' => 3,
+            'dietary_fiber' => 1,
+            'sugar' => 0,
+            'protein' => 1,
+            'vit_a' => 0,
+            'vit_c' => 4,
+            'calcium' => 0,
+            'iron' => 2,
+        ]);
+       
+        fruit::create([
+            'name' => 'Banana',
+            'calories' => 110,
+            'fat' => 0,
+            'sodium' => 0,
+            'potassium' => 450,
+            'carbohydrate' => 30,
+            'dietary_fiber' => 3,
+            'sugar' => 19,
+            'protein' => 1,
+            'vit_a' => 2,
+            'vit_c' => 15,
+            'calcium' => 0,
+            'iron' => 2,
+        ]);
+       
+        fruit::create([
+            'name' => 'Cantaloupe',
+            'calories' => 50,
+            'fat' => 0,
+            'sodium' => 20,
+            'potassium' => 240,
+            'carbohydrate' => 12,
+            'dietary_fiber' => 1,
+            'sugar' => 11,
+            'protein' => 1,
+            'vit_a' => 120,
+            'vit_c' => 80,
+            'calcium' => 2,
+            'iron' => 2,
+        ]);
+       
+        fruit::create([
+            'name' => 'Grapefruit',
+            'calories' => 60,
+            'fat' => 0,
+            'sodium' => 0,
+            'potassium' => 260,
+            'carbohydrate' => 15,
+            'dietary_fiber' => 2,
+            'sugar' => 11,
+            'protein' => 1,
+            'vit_a' => 35,
+            'vit_c' => 100,
+            'calcium' => 4,
+            'iron' => 0,
+        ]);
+       
+        fruit::create([
+            'name' => 'Grapes',
+            'calories' => 90,
+            'fat' => 0,
+            'sodium' => 15,
+            'potassium' => 240,
+            'carbohydrate' => 23,
+            'dietary_fiber' => 1,
+            'sugar' => 20,
+            'protein' => 0,
+            'vit_a' => 0,
+            'vit_c' => 2,
+            'calcium' => 2,
+            'iron' => 0,
+        ]);
+       
+        fruit::create([
+            'name' => 'Honeydew Melon',
+            'calories' => 50,
+            'fat' => 0,
+            'sodium' => 30,
+            'potassium' => 240,
+
+            // baru sampai sini 
+            'carbohydrate' => 23,
+            'dietary_fiber' => 1,
+            'sugar' => 20,
+            'protein' => 0,
+            'vit_a' => 0,
+            'vit_c' => 2,
+            'calcium' => 2,
+            'iron' => 0,
+        ]);
+
+        
     
     }
 }
